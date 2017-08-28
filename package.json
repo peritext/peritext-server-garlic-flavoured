@@ -1,7 +1,7 @@
 {
   "name": "peritext-server-garlic-flavoured",
   "version": "0.1.0",
-  "description": "Server application for garlic-flavoured peritext client applications",
+  "description": "Server application for garlic-flavoured peritext client application",
   "main": "server.js",
   "scripts": {
     "test": "mocha -R spec --recursive $(find tests -name '*.spec.js')",
