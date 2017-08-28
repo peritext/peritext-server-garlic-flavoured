@@ -7,7 +7,7 @@
     "test": "mocha -R spec --recursive $(find tests -name '*.spec.js')",
     "start": "concurrently \"node cron\" \"node server\"",
     "build-apps": "# rm -rf builds; mkdir builds;node services/storyAppBuilder/",
-    "postinstall": "npm run build-apps;cd peritext-generator-next;npm install;cd .."
+    "postinstall": "rm -rf temp;mkdir temp;npm run build-apps;cd peritext-generator-next;npm install;cd .."
   },
   "repository": {
     "type": "git",
