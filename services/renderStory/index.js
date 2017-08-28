@@ -109,7 +109,8 @@ module.exports = function renderStory(story, format, finalCallback) {
         outputDirPath: path.resolve(__dirname + '/../../temp/'),
         tempDirPath: path.resolve(__dirname + '/../../temp/')
       }, (err, url) => {
-        finalCallback(null, '/temp/' + story.id + '.epub');
+        console.log('returning the result', '/temp/' + story.id + '.epub');
+        finalCallback(err, '/temp/' + story.id + '.epub');
         // res.status(200).send('/temp/' + story.id + '.epub');
       });
       break;

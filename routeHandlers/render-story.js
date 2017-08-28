@@ -36,6 +36,7 @@ module.exports = (req, res) => {
       const format = req.query.format;
       renderStory(story, format, (error, resource) => {
         if (error) {
+          console.log('there was an error. sending error', error);
           res.status(error.code).send(error);
         } else {
           res.status(200).send(resource);
