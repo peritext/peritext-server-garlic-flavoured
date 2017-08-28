@@ -69,7 +69,7 @@ module.exports = app;
 // app.delete('/stories/:id', storiesRoutes.deleteStory);
 
 // app.post('/render-presentation', renderPresentation);
-app.post('/render-story', renderStory);
+app.post('/render-story', cors(), renderStory);
 
 // proxy used in the github oauth authentication process
 app.post('/oauth-proxy/:appName', cors(),  oAuthProxy);

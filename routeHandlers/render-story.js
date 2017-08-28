@@ -9,7 +9,7 @@ const renderStory = require('../services/renderStory');
 
 
 const renderings = [];
-
+// todo: this is a baaad way of handling multiple processes
 function updateRenderings () {
   if (renderings.length) {
     const lastRendering = renderings[renderings.length - 1];
