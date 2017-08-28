@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+config.json
+npm-debug.log
+builds/presentation/*
+prod.sh
+peritext-generator-next/node_modules
+temp/*
