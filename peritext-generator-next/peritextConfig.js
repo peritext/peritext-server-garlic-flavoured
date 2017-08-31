@@ -1,3 +1,29 @@
+let dynamicTemplateSs;
+let staticTemplateSs;
+let dataSs;
+let dictoSs;
+const isBrowser=new Function("try {return this===window;}catch(e){ return false;}");
+const inBrowser = isBrowser();
+// we do that to handle upstream requirement of
+// these files on a server that does not use webpack
+if (inBrowser) {
+  dynamicTemplateSs = require('peritext-template-dynamic-garlic/dist/main.css');
+  dataSs = require('peritext-contextualizer-data-presentation/dist/main.css');
+  dictoSs = require('peritext-contextualizer-dicto/dist/main.css');
+} else {
+  const readFileSync = require('fs').readFileSync;
+  const resolve = require('path').resolve;
+  dynamicTemplateSs = readFileSync('node_modules/peritext-template-static-garlic/dist/main.css')
+  staticTemplateSs = readFileSync('node_modules/peritext-template-dynamic-garlic/dist/main.css')
+  dataSs = readFileSync('node_modules/peritext-contextualizer-data-presentation/dist/main.css')
+  dictoSs = readFileSync('node_modules/peritext-contextualizer-dicto/dist/main.css')
+
+  // dynamicTemplateSs = readFileSync(resolve(__dirname + '/node_modules/peritext-template-static-garlic/dist/main.css' ))
+  // staticTemplateSs = readFileSync(resolve(__dirname + '/node_modules/peritext-template-dynamic-garlic/dist/main.css' ))
+  // dataSs = readFileSync(resolve(__dirname + '/node_modules/peritext-contextualizer-data-presentation/dist/main.css'))
+  // dictoSs = readFileSync(resolve(__dirname + '/node_modules/peritext-contextualizer-dicto/dist/main.css' ))
+}
+  
 module.exports = {
   templates: {
     web: require('peritext-template-dynamic-garlic'),
@@ -5,6 +31,9 @@ module.exports = {
   },
   contextualizers: {
     bib: require('peritext-contextualizer-bib'),
+    vegalite: require('peritext-contextualizer-vegalite'),
+    codefiles: require('peritext-contextualizer-codefiles'),
+    p5: require('peritext-contextualizer-p5'),
     glossary: require('peritext-contextualizer-glossary'),
     video: require('peritext-contextualizer-video'),
     embed: require('peritext-contextualizer-embed'),
@@ -16,8 +45,16 @@ module.exports = {
   },
   // disabled because I don't want to use webpack upstream
   // todo: find a solution
-  additionalStylesheets: [
-    // require('raw-loader!peritext-template-dynamic-garlic/dist/main.css'),
-    // require('raw-loader!peritext-contextualizer-data-presentation/dist/main.css')
-  ]
+  additionalStylesheets: {
+    shared: [
+      dataSs,
+      dictoSs,
+    ],
+    web: [
+      dynamicTemplateSs,
+      ],
+    codex: [
+      staticTemplateSs,
+    ]
+  }
 }

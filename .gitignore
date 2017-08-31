@@ -6,3 +6,4 @@ builds/presentation/*
 prod.sh
 peritext-generator-next/node_modules
 temp/*
+deploy.sh

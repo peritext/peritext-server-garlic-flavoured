@@ -34,7 +34,7 @@ module.exports = function renderStory(story, format, finalCallback) {
         },
         // update build
         (callback) => {
-          const command = 'cd peritext-generator-next;npm run export;cd ..; exit 59';
+          const command = 'cd peritext-generator-next;npm run build-html;cd ..; exit 59';
           console.log('building website with command: ', command);
           const child = runScript(command);
           child.once('error', (error) => {
@@ -107,7 +107,8 @@ module.exports = function renderStory(story, format, finalCallback) {
         template: staticTemplate,
         locale: locale,
         outputDirPath: path.resolve(__dirname + '/../../temp/'),
-        tempDirPath: path.resolve(__dirname + '/../../temp/')
+        tempDirPath: path.resolve(__dirname + '/../../temp/'),
+        additionalStylesheets: config.additionalStylesheets.shared.concat(config.additionalStylesheets.web)
       }, (err, url) => {
         console.log('returning the result', '/temp/' + story.id + '.epub');
         finalCallback(err, '/temp/' + story.id + '.epub');

@@ -63,6 +63,7 @@ var Contents = function (_Component) {
 
       var pdfUrl = '/static/generated/' + id + '.pdf';
       var epubUrl = '/static/generated/' + id + '.epub';
+      var jsonUrl = '/static/story.json';
       if (inBrowser) {
         pdfUrl = window.location.origin + pdfUrl;
         epubUrl = window.location.origin + epubUrl;
@@ -70,7 +71,8 @@ var Contents = function (_Component) {
       return _react2.default.createElement(Dimensio, {
         storyTitle: title,
         pdfUrl: pdfUrl,
-        epubUrl: epubUrl
+        epubUrl: epubUrl,
+        jsonUrl: jsonUrl
       });
     };
 

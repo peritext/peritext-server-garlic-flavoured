@@ -13,6 +13,7 @@ const prepareParts = require('peritext-rendering-utils').prepareDynamicParts;
 const writeFileSync = require('fs').writeFileSync;
 
 const contextualizers = require('./peritextConfig').contextualizers;
+const additionalStylesheets = require('./peritextConfig').additionalStylesheets;
 
 function prepareData({
   story,
@@ -21,12 +22,13 @@ function prepareData({
   contextualizers,
 }, finalCallback) {
   console.log('next generator: starting to prepare data for story ', story.id);
-  let prefix = path.resolve(__dirname + '/.next/dist/static/');
+  // let prefix = path.resolve(__dirname + '/.next/dist/static/');
+  let prefix = path.resolve(__dirname + '/static/');
   console.log('prefix', prefix);
   waterfall([
     function(callback) {
-      console.log('writing story file')
-      fs.writeFile(prefix + 'story.json', JSON.stringify(story), callback);
+      console.log('writing story file at ', path.resolve(prefix + '/story.json'));
+      fs.writeFile(path.resolve(prefix + '/story.json'), JSON.stringify(story), callback);
     },
     function(callback) {
       console.log('preparing the parts');
@@ -46,7 +48,8 @@ function prepareData({
         contextualizers,
         template: template,
         locale: locale,
-        outputDirPath: prefix
+        outputDirPath: prefix,
+        additionalStylesheets: additionalStylesheets
       }, callback);
     },
     function(url, callback) {
@@ -56,7 +59,8 @@ function prepareData({
         contextualizers,
         template: template,
         locale: locale,
-        outputDirPath: prefix
+        outputDirPath: prefix,
+        additionalStylesheets: additionalStylesheets
       }, callback);
     }
   ], function(err, finalUrl) {

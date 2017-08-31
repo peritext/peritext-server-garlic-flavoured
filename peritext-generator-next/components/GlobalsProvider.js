@@ -12,11 +12,8 @@ import {typefaceNames} from 'peritext-template-dynamic-garlic';
 
 import peritextConfig from '../peritextConfig';
 
-// const {additionalStylesheets} = peritextConfig;
-const additionalStylesheets = [
-  require('peritext-template-dynamic-garlic/dist/main.css'),
-  require('peritext-contextualizer-data-presentation/dist/main.css')
-];
+const {additionalStylesheets} = peritextConfig;
+const additionalCss = additionalStylesheets.shared.concat(additionalStylesheets.web).join('\n')
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -43,11 +40,7 @@ export default class GlobalsProvider extends Component {
     }, '') 
     + '\n' 
     + (
-      additionalStylesheets ?
-      additionalStylesheets 
-      .reduce((str, stylesheet) => str + '\n' + stylesheet, '')
-      : '')
-    // + dataStyleSheet  + '\n' 
+      additionalCss || '')
     + '\n'
     + (story.settings.css && story.settings.css.web ? story.settings.css.web : '')
   }

@@ -63,8 +63,9 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-// const {additionalStylesheets} = peritextConfig;
-var additionalStylesheets = [require('peritext-template-dynamic-garlic/dist/main.css'), require('peritext-contextualizer-data-presentation/dist/main.css')];
+var additionalStylesheets = _peritextConfig2.default.additionalStylesheets;
+
+var additionalCss = additionalStylesheets.shared.concat(additionalStylesheets.web).join('\n');
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -93,11 +94,7 @@ var GlobalsProvider = function (_Component) {
       return (0, _keys2.default)(contextualizers).reduce(function (result, type) {
         var defaultCss = contextualizers[type] ? contextualizers[type].defaultCss : '';
         return result + '\n' + defaultCss;
-      }, '') + '\n' + (additionalStylesheets ? additionalStylesheets.reduce(function (str, stylesheet) {
-        return str + '\n' + stylesheet;
-      }, '') : '')
-      // + dataStyleSheet  + '\n' 
-      + '\n' + (_story2.default.settings.css && _story2.default.settings.css.web ? _story2.default.settings.css.web : '');
+      }, '') + '\n' + (additionalCss || '') + '\n' + (_story2.default.settings.css && _story2.default.settings.css.web ? _story2.default.settings.css.web : '');
     };
 
     _this.render = function () {

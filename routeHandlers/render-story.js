@@ -6,44 +6,114 @@
  */
 // the module acts just as an interface to the renderStory service
 const renderStory = require('../services/renderStory');
+const genId = require('uuid').v4;
+const queue = require('queue');
+const q = queue({
+  autostart: true
+});
 
+const jobs = {};
 
-const renderings = [];
-// todo: this is a baaad way of handling multiple processes
-function updateRenderings () {
-  if (renderings.length) {
-    const lastRendering = renderings[renderings.length - 1];
-    lastRendering.handler(lastRendering.req, lastRendering.res, (err, resource) => {
-      renderings.pop();
-      console.log('last rendering done, remaining', renderings.length);
-      updateRenderings();
-    })
+function addRenderingJob(format, story, jobId) {
+  jobs[jobId] = {
+    status: 'processing',
+    format: format
   }
+  q.push(function(cb) {
+    renderStory(story, format, (error, url) => {
+      cb(null, {
+        format,
+        story,
+        error,
+        jobId,
+        url
+      });
+        // if (error) {
+
+        //   console.log('there was an error. sending error', error);
+        // } else {
+
+        // }
+    });
+  })
 }
+
+q.on('success', function (result, job) {
+  if (result.error) {
+    jobs[result.jobId] = {status: 'error', format: result.format};
+    console.log('job', result.jobId, ' featured an error - format : ', result.format);
+    console.log(result.error);
+  } else {
+    jobs[result.jobId] = {status: 'ok', url: result.url, format: result.format}
+  }
+});
+
+
+// const renderings = [];
+// // todo: this is a baaad way of handling multiple processes
+// function updateRenderings () {
+//   if (renderings.length) {
+//     const lastRendering = renderings[renderings.length - 1];
+//     lastRendering.handler(lastRendering.req, lastRendering.res, (err, resource) => {
+//       renderings.pop();
+//       console.log('last rendering done, remaining', renderings.length);
+//       updateRenderings();
+//     })
+//   }
+// }
 
 /**
  * Resolves a story rendering request
  * @param {obj} req - the request object
  * @param {obj} res- the resource object
  */
-module.exports = (req, res) => {
+const createRenderingJob = (req, res) => {
+  const jobId = genId();
+  const story = req.body;
+  const format = req.query.format;
+  res.status(200).send({status: 'processing', jobId: jobId, format: format});
+  
+  addRenderingJob(format, story, jobId);
+  // renderStory(story, format, (error, resource) => {
+  //   if (error) {
+  //     console.log('there was an error. sending error', error);
+  //     res.status(error.code).send(error);
+  //   } else {
+  //     res.status(200).send(resource);
+  //   }
+  //   callback(error, resource);
+  // });
 
-  renderings.unshift({
-    req: req,
-    res: res,
-    handler: (req, res, callback) => {
-      const story = req.body;
-      const format = req.query.format;
-      renderStory(story, format, (error, resource) => {
-        if (error) {
-          console.log('there was an error. sending error', error);
-          res.status(error.code).send(error);
-        } else {
-          res.status(200).send(resource);
-        }
-        callback(error, resource);
-      });
-    }
-  });
-  updateRenderings();
+  // renderings.unshift({
+  //   req: req,
+  //   res: res,
+  //   handler: (req, res, callback) => {
+  //     const story = req.body;
+  //     const format = req.query.format;
+  //     renderStory(story, format, (error, resource) => {
+  //       if (error) {
+  //         console.log('there was an error. sending error', error);
+  //         res.status(error.code).send(error);
+  //       } else {
+  //         res.status(200).send(resource);
+  //       }
+  //       callback(error, resource);
+  //     });
+  //   }
+  // });
+  // updateRenderings();
 };
+
+const getRenderingJob = (req, res) => {
+  const jobId = req.query.jobId;
+  if (jobs[jobId]) {
+    res.status(200).send(jobs[jobId]);
+  } else {
+    res.status(404).send('job not found');
+  }
+}
+
+module.exports = {
+  createRenderingJob: createRenderingJob,
+  getRenderingJob: getRenderingJob
+}
