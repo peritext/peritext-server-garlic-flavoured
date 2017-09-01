@@ -1,0 +1,8 @@
+{
+  "buildpacks": [
+    {
+      "url": "https://github.com/robindemourat/heroku-buildpack-nodejs"
+    }
+  ],
+  "description": "peritext server implementation with default contextualizers and garlic template"
+}
