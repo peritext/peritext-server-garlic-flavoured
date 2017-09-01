@@ -1,6 +1,6 @@
 {
   "name": "peritext-server-garlic-flavoured",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Server application for garlic-flavoured peritext client application",
   "main": "server.js",
   "scripts": {
