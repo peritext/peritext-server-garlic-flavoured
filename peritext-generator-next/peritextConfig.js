@@ -7,27 +7,23 @@ const inBrowser = isBrowser();
 // we do that to handle upstream requirement of
 // these files on a server that does not use webpack
 if (inBrowser) {
-  dynamicTemplateSs = require('peritext-template-dynamic-garlic/dist/main.css');
+  dynamicTemplateSs = require('peritext-template-web-garlic/dist/main.css');
   dataSs = require('peritext-contextualizer-data-presentation/dist/main.css');
   dictoSs = require('peritext-contextualizer-dicto/dist/main.css');
 } else {
   const readFileSync = require('fs').readFileSync;
   const resolve = require('path').resolve;
-  dynamicTemplateSs = readFileSync('node_modules/peritext-template-static-garlic/dist/main.css')
-  staticTemplateSs = readFileSync('node_modules/peritext-template-dynamic-garlic/dist/main.css')
+  dynamicTemplateSs = readFileSync('node_modules/peritext-template-web-garlic/dist/main.css')
+  staticTemplateSs = readFileSync('node_modules/peritext-template-codex-garlic/dist/main.css')
   dataSs = readFileSync('node_modules/peritext-contextualizer-data-presentation/dist/main.css')
   dictoSs = readFileSync('node_modules/peritext-contextualizer-dicto/dist/main.css')
 
-  // dynamicTemplateSs = readFileSync(resolve(__dirname + '/node_modules/peritext-template-static-garlic/dist/main.css' ))
-  // staticTemplateSs = readFileSync(resolve(__dirname + '/node_modules/peritext-template-dynamic-garlic/dist/main.css' ))
-  // dataSs = readFileSync(resolve(__dirname + '/node_modules/peritext-contextualizer-data-presentation/dist/main.css'))
-  // dictoSs = readFileSync(resolve(__dirname + '/node_modules/peritext-contextualizer-dicto/dist/main.css' ))
 }
   
 module.exports = {
   templates: {
-    web: require('peritext-template-dynamic-garlic'),
-    codex: require('peritext-template-static-garlic'),
+    web: require('peritext-template-web-garlic'),
+    codex: require('peritext-template-codex-garlic'),
   },
   contextualizers: {
     bib: require('peritext-contextualizer-bib'),

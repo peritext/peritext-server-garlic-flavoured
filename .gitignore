@@ -5,5 +5,7 @@ npm-debug.log
 builds/presentation/*
 prod.sh
 peritext-generator-next/node_modules
+peritext-generator-next/out/
+peritext-generator-next/.next
 temp/*
 deploy.sh

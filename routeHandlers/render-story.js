@@ -20,21 +20,24 @@ function addRenderingJob(format, story, jobId) {
     format: format
   }
   q.push(function(cb) {
-    renderStory(story, format, (error, url) => {
-      cb(null, {
-        format,
-        story,
-        error,
-        jobId,
-        url
+    try{
+      renderStory(story, format, (error, url) => {
+        cb(null, {
+          format,
+          story,
+          error,
+          jobId,
+          url
+        });
       });
-        // if (error) {
-
-        //   console.log('there was an error. sending error', error);
-        // } else {
-
-        // }
-    });
+    } catch(e) {
+      cb(null, {
+          format,
+          story,
+          error: e,
+          jobId,
+        });
+    }
   })
 }
 

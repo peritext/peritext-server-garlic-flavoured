@@ -1,9 +1,4 @@
 {
-  "github_fonio_client_id":"[client id]",
-  "github_fonio_client_secret":"[client secret]",
-  "github_bulgur_client_id":"[client id]",
-  "github_bulgur_client_secret":"[client secret]",
-  "adminUserName": "my user name",
-  "adminPassword": "my password",
+  "url": "*******",
   "port": 3001
 }

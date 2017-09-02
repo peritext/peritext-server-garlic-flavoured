@@ -10,7 +10,7 @@ const path = require('path');
 const archiver = require('archiver');
 const generatePdf = require('peritext-generator-pdf');
 const generateEpub = require('peritext-generator-epub');
-const staticTemplate = require('peritext-template-static-garlic');
+const staticTemplate = require('peritext-template-codex-garlic');
 
 const runScript = require('npm-run-script');
 

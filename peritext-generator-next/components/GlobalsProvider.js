@@ -6,9 +6,10 @@ import LinkWrapper from './LinkWrapper';
 import HeadMaker from '../components/HeadMaker';
 
 import story from '../static/story';
+import {url} from '../config';
 import citations from '../static/generated/citations';
 
-import {typefaceNames} from 'peritext-template-dynamic-garlic';
+import {typefaceNames} from 'peritext-template-web-garlic';
 
 import peritextConfig from '../peritextConfig';
 
@@ -50,7 +51,12 @@ export default class GlobalsProvider extends Component {
     const styles = this.makeStyles();
     return (
       <div id="globals-provider">
-        <Head>
+        <HeadMaker
+          title={story.metadata.title}
+          authors={story.metadata.authors}
+          description={story.metadata.description}
+          url={url}
+        >
           <base href="/" />
           {
             typefaceNames.map(name => {
@@ -59,8 +65,7 @@ export default class GlobalsProvider extends Component {
             })
           }
           <style dangerouslySetInnerHTML={{ __html: styles }} />
-        </Head>
-        {/*<HeadMaker title={story.metadata.title} />*/}
+        </HeadMaker>
         {children}
       </div>
     )

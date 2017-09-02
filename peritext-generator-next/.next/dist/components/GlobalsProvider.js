@@ -49,11 +49,13 @@ var _story = require('../static/story');
 
 var _story2 = _interopRequireDefault(_story);
 
+var _config = require('../config');
+
 var _citations = require('../static/generated/citations');
 
 var _citations2 = _interopRequireDefault(_citations);
 
-var _peritextTemplateDynamicGarlic = require('peritext-template-dynamic-garlic');
+var _peritextTemplateWebGarlic = require('peritext-template-web-garlic');
 
 var _peritextConfig = require('../peritextConfig');
 
@@ -101,7 +103,12 @@ var GlobalsProvider = function (_Component) {
       var children = _this.props.children;
 
       var styles = _this.makeStyles();
-      return _react2.default.createElement('div', { id: 'globals-provider' }, _react2.default.createElement(_head2.default, null, _react2.default.createElement('base', { href: '/' }), _peritextTemplateDynamicGarlic.typefaceNames.map(function (name) {
+      return _react2.default.createElement('div', { id: 'globals-provider' }, _react2.default.createElement(_HeadMaker2.default, {
+        title: _story2.default.metadata.title,
+        authors: _story2.default.metadata.authors,
+        description: _story2.default.metadata.description,
+        url: _config.url
+      }, _react2.default.createElement('base', { href: '/' }), _peritextTemplateWebGarlic.typefaceNames.map(function (name) {
         var googleName = capitalizeFirstLetter(name).replace(' ', '+');
         return _react2.default.createElement('link', { key: name, href: 'https://fonts.googleapis.com/css?family=' + googleName + ':300,400,700,800', rel: 'stylesheet' });
       }), _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: styles } })), children);
