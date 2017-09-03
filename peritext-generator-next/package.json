@@ -9,7 +9,7 @@
     "start": "NODE_ENV=production node server.js",
     "build-html": "next build && next export",
     "export": "next export",
-    "postinstall": "chmod -R +x node_modules/next/dist/bin/next-* && npm run build",
+    "postinstall": "chmod -R +x node_modules/next/dist/bin/next-* && npm run build"
   },
   "author": "Robin de Mourat",
   "license": "ISC",
