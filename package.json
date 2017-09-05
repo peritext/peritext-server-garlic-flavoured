@@ -2,8 +2,8 @@
   "name": "peritext-server-garlic-flavoured",
   "version": "0.1.1",
   "description": "Server application for garlic-flavoured peritext client application",
-  "main": "server.js",
   "scripts": {
+    "preinstall": "npm install pm2 -g",
     "test": "mocha -R spec --recursive $(find tests -name '*.spec.js')",
     "dev": "concurrently \"node cron\" \"node server\"",
     "start": "pm2 start ecosystem.config.js",
