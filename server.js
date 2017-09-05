@@ -28,9 +28,12 @@ if (process.env.NODE_ENV === 'production') {
   };
 }
 // in development mode config variables are retrieved from a json file
-else { 
-  config = require('./config');
-}
+// else { 
+//   config = require('./config');
+// }
+config = {
+    port: process.env.PORT || 3000,
+  };
 
 const app = express();
 
