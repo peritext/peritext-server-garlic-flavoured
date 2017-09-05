@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/bibliotheca/index.js" as="script"/><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js" as="script"/><link rel="preload" href="/_next/b0f231a65417c81b58521484262c5514/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-05T12:37:40.179Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
+<!DOCTYPE html><html><head><link rel="preload" href="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/bibliotheca/index.js" as="script"/><link rel="preload" href="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/_error/index.js" as="script"/><link rel="preload" href="/_next/a236e83d31b6188e8200082f832ee5c0/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-05T21:19:50.850Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta name="viewport" content="user-scalable=no,width=device-width" class="next-head"/><meta name="twitter:card" value="summary" class="next-head"/><meta name="twitter:site" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta name="twitter:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="twitter:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta itemprop="name" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta itemprop="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta property="og:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta property="og:type" content="website" class="next-head"/><meta property="og:url" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta property="og:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
@@ -1635,6 +1635,7 @@ Il est donc nécessaire d’inventer de nouvelles manières de connecter les mod
 .dicto-player-Railway .player-ui button#volume-symbol:hover span {
   font-size: 1em; }
 
+@charset "UTF-8";
 /**
  * Template-specific reusable elements (variables, mixins, abstract classes)
  */
@@ -1854,7 +1855,9 @@ Il est donc nécessaire d’inventer de nouvelles manières de connecter les mod
   background: #f32e36; }
 
 body {
-  background: #fdfff8; }
+  background: #fdfff8;
+  text-rendering: optimizeLegibility;
+  hyphens: none; }
 
 /**
  * Animations
@@ -1886,7 +1889,7 @@ body {
  */
 .garlic-layout {
   font-family: Merriweather, serif;
-  font-size: 1.056rem;
+  font-size: 1.408rem;
   position: relative;
   color: #414e4d;
   background: #fdfff8;
@@ -1904,8 +1907,8 @@ body {
     .garlic-layout .section-player .notes-container {
       z-index: 3; }
       .garlic-layout .section-player .notes-container.notes-container-position-aside {
-        left: 2%;
-        width: 15%; }
+        left: 3%;
+        width: 22.5%; }
     .garlic-layout .section-player footer {
       position: absolute;
       bottom: 0;
@@ -1914,9 +1917,7 @@ body {
       .garlic-layout .section-player footer ul {
         padding: 0; }
         .garlic-layout .section-player footer ul li {
-          padding: 0;
-          padding-top: 2.9988rem;
-          padding-bottom: 2.9988rem;
+          padding: 1.3328rem;
           list-style-type: none;
           -webkit-transition: all 0.5s ease;
           -moz-transition: all 0.5s ease;
@@ -1925,10 +1926,18 @@ body {
           transition: all 0.5s ease;
           flex: 1; }
           .garlic-layout .section-player footer ul li:first-of-type {
-            padding-right: 2.9988rem; }
+            padding-right: 1.3328rem; }
           .garlic-layout .section-player footer ul li:last-of-type {
-            padding-left: 2.9988rem;
+            padding-left: 1.3328rem;
             text-align: right; }
+          .garlic-layout .section-player footer ul li.prev {
+            border-right: 1px solid #e7eae1; }
+          .garlic-layout .section-player footer ul li.next {
+            border-left: 1px solid #e7eae1; }
+          .garlic-layout .section-player footer ul li.next .link, .garlic-layout .section-player footer ul li.prev .link {
+            border: none;
+            font-size: 1.408rem;
+            font-weight: 800; }
           .garlic-layout .section-player footer ul li.next {
             text-align: right; }
     .garlic-layout .section-player .BlockAssetWrapper {
@@ -1946,7 +1955,7 @@ body {
         overflow: auto;
         max-width: 100%;
         margin-right: 18%;
-        margin-left: 18%;
+        margin-left: 27%;
         box-shadow: 0 0 5px #e7eae1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block iframe {
           width: 100%;
@@ -1956,7 +1965,7 @@ body {
           border: none; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block + figcaption {
         margin-right: 20%;
-        margin-left: 20%; }
+        margin-left: 30%; }
       .garlic-layout .section-player .BlockAssetWrapper.fixed {
         z-index: 4; }
         .garlic-layout .section-player .BlockAssetWrapper.fixed .peritext-contextualizer-video iframe {
@@ -1965,7 +1974,7 @@ body {
           width: 100%;
           height: 100%; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib {
-        padding: 0.9996rem;
+        padding: 1.3328rem;
         background: #e7eae1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib .csl-left-margin {
           display: none; }
@@ -1975,7 +1984,7 @@ body {
         color: #fdfff8;
         background: #f32e36; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list li {
-          padding: 0.9996rem;
+          padding: 1.3328rem;
           list-style-type: none;
           cursor: pointer; }
           .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list li.active {
@@ -1987,11 +1996,12 @@ body {
         counter-reset: line;
         flex: 1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line {
-          line-height: 0.9996rem;
+          font-size: 1.408rem;
+          line-height: 1.9712rem;
           display: block; }
           .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line:before {
             display: inline-block;
-            width: 0.9996rem;
+            width: 1.3328rem;
             margin-right: .5em;
             padding: 0 .5em;
             content: counter(line);
@@ -2019,21 +2029,23 @@ body {
         padding: 0; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-dicto .dicto-player-ColumnsLayout {
           font-family: Merriweather, serif;
-          font-size: 0.66rem;
+          font-size: 0.88rem;
           position: absolute;
           height: 100%; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-dicto figcaption {
           position: relative;
           top: 100%; }
+      .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-data-presentation h1 {
+        font-size: 2.2528rem; }
       .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player {
-        font-size: 0.66rem;
+        font-size: 0.88rem;
         background: #fdfff8; }
         .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .read-mode-toggler {
           z-index: 2;
           padding: 0;
-          padding: 0 0 0 2.499rem; }
+          padding: 0 0 0 3.332rem; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .read-mode-toggler li {
-            padding: 0.9996rem;
+            padding: 1.3328rem;
             list-style-type: none;
             cursor: pointer;
             text-transform: uppercase;
@@ -2054,13 +2066,13 @@ body {
           z-index: 2;
           background: #fdfff8; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .caption-header .presentation-title {
-            padding-left: 1.9992rem; }
+            padding-left: 2.6656rem; }
         .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .slide-caption {
           position: relative;
           cursor: pointer; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .slide-caption .slide-content {
             overflow: visible;
-            padding: 0.9996rem;
+            padding: 1.3328rem;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -ms-transition: all 0.5s ease;
@@ -2070,12 +2082,12 @@ body {
               color: #fdfff8;
               background: #87240e; }
       .garlic-layout .section-player .BlockAssetWrapper .ReactTable {
-        font-size: 0.66rem; }
+        font-size: 0.88rem; }
       .garlic-layout .section-player .BlockAssetWrapper > figcaption {
-        font-size: 0.594rem;
-        margin-right: 0.9996rem;
-        margin-left: 0.6rem;
-        padding: 0.9996rem;
+        font-size: 0.792rem;
+        margin-right: 1.3328rem;
+        margin-left: 0.8rem;
+        padding: 1.3328rem;
         padding-top: 0;
         opacity: .7; }
         .garlic-layout .section-player .BlockAssetWrapper > figcaption > * {
@@ -2091,8 +2103,8 @@ body {
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom {
           position: absolute;
           z-index: 5;
-          right: 0.9996rem;
-          padding: 0.6rem;
+          right: 1.3328rem;
+          padding: 0.8rem;
           cursor: pointer;
           pointer-events: all;
           color: #fdfff8;
@@ -2107,60 +2119,91 @@ body {
           .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom:hover {
             background: #87240e; }
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-top {
-          top: 0.9996rem; }
+          top: 1.3328rem; }
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom {
-          bottom: 0.9996rem; }
+          bottom: 1.3328rem; }
   .garlic-layout .contents-wrapper .main-contents-container {
     min-height: 110%;
-    padding-bottom: 17.9928rem; }
+    padding-bottom: 23.9904rem; }
+    .garlic-layout .contents-wrapper .main-contents-container li {
+      margin-bottom: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote {
+      padding: 3.9984rem;
+      background: #e7eae1;
+      line-height: 2.112rem;
+      quotes: "\AB   " " \BB";
+      position: relative; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote::before {
+      content: open-quote;
+      position: absolute;
+      top: 1.3328rem;
+      left: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote::after {
+      content: close-quote;
+      position: absolute;
+      bottom: 1.3328rem;
+      right: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h1, .garlic-layout .contents-wrapper .main-contents-container h2, .garlic-layout .contents-wrapper .main-contents-container h3 {
+      font-family: Roboto, serif; }
+    .garlic-layout .contents-wrapper .main-contents-container h1 {
+      font-size: 3.60448rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h2 {
+      font-size: 2.2528rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h3 {
+      font-size: 1.408rem; }
     .garlic-layout .contents-wrapper .main-contents-container .home-header {
-      margin-top: 0.9996rem;
+      margin-top: 1.3328rem;
       margin-right: 20%;
-      margin-left: 20%;
+      margin-left: 30%;
       text-align: center; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header.hidden {
         display: none; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header h1 {
-        font-size: 2.70336rem;
+        font-size: 3.60448rem;
         margin: 0; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header .subtitle {
-        font-size: 1.6896rem;
+        font-size: 2.2528rem;
         font-style: italic;
         margin: 0; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header .authors {
-        font-size: 1.056rem; }
+        font-size: 1.408rem; }
     .garlic-layout .contents-wrapper .main-contents-container .story-description {
       margin: 0;
-      margin-top: 2.9988rem;
-      margin-bottom: 2.9988rem;
-      padding: 2.9988rem;
+      margin-top: 3.9984rem;
+      margin-bottom: 3.9984rem;
+      padding: 3.9984rem;
       background: #e7eae1; }
     .garlic-layout .contents-wrapper .main-contents-container .cover-image {
-      margin-top: 0.9996rem;
+      margin-top: 1.3328rem;
       box-shadow: 0 0 5px #e7eae1; }
       .garlic-layout .contents-wrapper .main-contents-container .cover-image .link {
         border: none; }
+      .garlic-layout .contents-wrapper .main-contents-container .cover-image a {
+        border-bottom: none; }
     .garlic-layout .contents-wrapper .main-contents-container .contents-guttered {
       margin-right: 20%;
-      margin-left: 20%; }
+      margin-left: 30%; }
+      .garlic-layout .contents-wrapper .main-contents-container .contents-guttered p {
+        font-size: 1.408rem;
+        line-height: 1.9712rem; }
     .garlic-layout .contents-wrapper .main-contents-container footer {
-      left: 20%;
-      width: 60%; }
+      left: 30%;
+      width: 50%; }
     .garlic-layout .contents-wrapper .main-contents-container .section-title {
       font-family: Roboto, serif;
-      font-size: 4.32538rem;
+      font-size: 5.76717rem;
       margin-top: 0;
       margin-right: 20%;
-      margin-left: 20%; }
+      margin-left: 30%; }
     .garlic-layout .contents-wrapper .main-contents-container > div {
       position: relative; }
       .garlic-layout .contents-wrapper .main-contents-container > div > h1, .garlic-layout .contents-wrapper .main-contents-container > div > h2, .garlic-layout .contents-wrapper .main-contents-container > div > h3, .garlic-layout .contents-wrapper .main-contents-container > div > h4, .garlic-layout .contents-wrapper .main-contents-container > div > h5, .garlic-layout .contents-wrapper .main-contents-container > div > h6, .garlic-layout .contents-wrapper .main-contents-container > div > p, .garlic-layout .contents-wrapper .main-contents-container > div > ul, .garlic-layout .contents-wrapper .main-contents-container > div > ol, .garlic-layout .contents-wrapper .main-contents-container > div > blockquote, .garlic-layout .contents-wrapper .main-contents-container > div > pre {
         margin-right: 20%;
-        margin-left: 20%; }
+        margin-left: 30%; }
   .garlic-layout nav {
     font-family: Roboto, serif;
     z-index: 5;
-    width: 20%;
+    width: 30%;
     height: 100%;
     user-select: none;
     pointer-events: none;
@@ -2187,7 +2230,7 @@ body {
     .garlic-layout nav .body,
     .garlic-layout nav .footer {
       max-height: 0;
-      padding: 0.9996rem 0.9996rem 0 0.9996rem;
+      padding: 1.3328rem 1.3328rem 0 1.3328rem;
       opacity: 0;
       -webkit-transition: 0.5s all ease;
       -moz-transition: 0.5s all ease;
@@ -2224,7 +2267,7 @@ body {
         max-height: 100%;
         opacity: 1; }
     .garlic-layout nav .link {
-      font-size: 1.056rem;
+      font-size: 1.408rem;
       border: none;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
@@ -2236,22 +2279,22 @@ body {
     .garlic-layout nav .nav-title {
       text-overflow: ellipsis; }
       .garlic-layout nav .nav-title .link {
-        font-size: 1.6896rem;
+        font-size: 2.2528rem;
         font-weight: 700; }
   .garlic-layout .table-of-contents .section-link-level-0 {
     padding-left: 0; }
   .garlic-layout .table-of-contents .section-link-level-1 {
-    padding-left: 0.6rem; }
+    padding-left: 0.8rem; }
   .garlic-layout .table-of-contents .section-link-level-2 {
-    padding-left: 0.9rem; }
-  .garlic-layout .table-of-contents .section-link-level-3 {
     padding-left: 1.2rem; }
+  .garlic-layout .table-of-contents .section-link-level-3 {
+    padding-left: 1.6rem; }
   .garlic-layout .table-of-contents .section-link-level-4 {
-    padding-left: 1.5rem; }
+    padding-left: 2rem; }
   .garlic-layout .table-of-contents .section-link-level-5 {
-    padding-left: 1.8rem; }
+    padding-left: 2.4rem; }
   .garlic-layout .section-aside {
-    font-size: 0.66rem;
+    font-size: 0.88rem;
     position: fixed;
     z-index: 4;
     width: 16%;
@@ -2270,18 +2313,18 @@ body {
   .garlic-layout .RelatedContexts {
     overflow: hidden; }
     .garlic-layout .RelatedContexts > .header, .garlic-layout .RelatedContexts > .body {
-      margin-right: 0.9996rem; }
+      margin-right: 1.3328rem; }
     .garlic-layout .RelatedContexts > .header {
       padding-left: 0;
       border-bottom: 1px solid #f32e36; }
       .garlic-layout .RelatedContexts > .header h2 {
         font-family: Roboto, serif;
-        font-size: 1.056rem; }
+        font-size: 1.408rem; }
         .garlic-layout .RelatedContexts > .header h2 .csl-left-margin {
           display: none; }
       .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib {
         margin: 0;
-        margin-bottom: 0.9996rem;
+        margin-bottom: 1.3328rem;
         padding: 0; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib ul {
           padding: 0; }
@@ -2293,18 +2336,18 @@ body {
     .garlic-layout .RelatedContexts .body {
       overflow: auto;
       padding: 0;
-      padding-top: 0.9996rem;
+      padding-top: 1.3328rem;
       flex: 1; }
       .garlic-layout .RelatedContexts .body li {
         padding: 0;
         list-style-type: none; }
       .garlic-layout .RelatedContexts .body .ContextMention {
-        margin-bottom: 0.9996rem; }
+        margin-bottom: 1.3328rem; }
     .garlic-layout .RelatedContexts .close-context-btn {
-      font-size: 0.66rem;
+      font-size: 0.88rem;
       position: absolute;
-      top: 0.9996rem;
-      right: 0.9996rem;
+      top: 1.3328rem;
+      right: 1.3328rem;
       cursor: pointer;
       text-align: center;
       color: #f32e36;
@@ -2321,13 +2364,14 @@ body {
   .garlic-layout .output-group > h2 {
     font-family: Roboto, serif;
     margin-bottom: 0;
-    padding-bottom: 0.9996rem;
-    border-bottom: 3px solid #f32e36; }
+    padding-bottom: 1.3328rem;
+    border-bottom: 3px solid #f32e36;
+    font-weight: 400; }
   .garlic-layout .mentions-container .csl-left-margin,
   .garlic-layout .output-group .csl-left-margin {
     display: none; }
   .garlic-layout .mentions-list-container .mentions-list {
-    font-family: 0.66rem;
+    font-family: 0.88rem;
     overflow: hidden;
     max-height: 0;
     margin: 0;
@@ -2348,14 +2392,15 @@ body {
     margin: 0;
     padding: 0; }
     .garlic-layout .index-list li {
-      margin-bottom: 0.9996rem;
+      margin-bottom: 1.3328rem;
       padding: 0;
       list-style-type: none; }
     .garlic-layout .index-list .index-list-title {
-      padding-bottom: 0.9996rem;
-      cursor: pointer; }
+      padding-bottom: 1.3328rem;
+      cursor: pointer;
+      font-weight: 400; }
       .garlic-layout .index-list .index-list-title .collapse-btn {
-        padding: 0.6rem;
+        padding: 0.8rem;
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
@@ -2371,7 +2416,7 @@ body {
           background: #87240e; }
   .garlic-layout .download-button {
     display: block;
-    padding: 0.6rem;
+    padding: 0.8rem;
     text-align: center;
     color: #fdfff8 !important;
     background: #f32e36;
@@ -2383,7 +2428,7 @@ body {
     .garlic-layout .download-button:hover {
       background: #87240e; }
   .garlic-layout .pdf-nav button {
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     cursor: pointer;
     text-align: center;
     background: #e7eae1;
@@ -2397,7 +2442,7 @@ body {
       color: #fdfff8;
       background: #f32e36; }
   .garlic-layout .pdf-nav span {
-    padding: 0.9996rem; }
+    padding: 1.3328rem; }
   .garlic-layout .pdf-player-container {
     text-align: center; }
     .garlic-layout .pdf-player-container canvas {
@@ -2444,20 +2489,20 @@ body {
     max-width: 100%;
     max-height: 100%; }
   .garlic-layout .ContextMention {
-    padding: 0.6rem;
+    padding: 0.8rem;
     background: #e7eae1; }
     .garlic-layout .ContextMention .header {
-      margin-bottom: 0.6rem; }
+      margin-bottom: 0.8rem; }
     .garlic-layout .ContextMention .exerpt {
       overflow: auto;
       max-height: 20rem;
-      padding: 0.6rem;
+      padding: 0.8rem;
       color: #fdfff8;
       background: #414e4d; }
     .garlic-layout .ContextMention .footer {
-      padding: 0.6rem; }
+      padding: 0.8rem; }
   .garlic-layout .popover-button {
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     cursor: pointer;
     color: #fdfff8;
     background: #414e4d;
@@ -2471,9 +2516,9 @@ body {
   .garlic-layout #burger-menu {
     position: relative;
     display: inline-block;
-    width: 1.056rem;
-    height: 1.056rem;
-    margin-bottom: 0.9996rem;
+    width: 1.408rem;
+    height: 1.408rem;
+    margin-bottom: 1.3328rem;
     cursor: pointer;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -2488,7 +2533,7 @@ body {
       left: 0;
       display: block;
       width: 100%;
-      height: 0.2112rem;
+      height: 0.2816rem;
       -webkit-transition: .25s ease-in-out;
       -moz-transition: .25s ease-in-out;
       -o-transition: .25s ease-in-out;
@@ -2498,18 +2543,18 @@ body {
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
       opacity: 1;
-      border-radius: 0.0352rem;
+      border-radius: 0.04693rem;
       background: #f32e36; }
       .garlic-layout #burger-menu span:nth-child(1), .garlic-layout #burger-menu span:nth-child(2) {
         top: 0; }
       .garlic-layout #burger-menu span:nth-child(3) {
-        top: 0.35165rem; }
+        top: 0.46886rem; }
       .garlic-layout #burger-menu span:nth-child(4) {
-        top: 0.7033rem; }
+        top: 0.93773rem; }
     .garlic-layout #burger-menu.open span {
       background: #87240e; }
       .garlic-layout #burger-menu.open span:nth-child(1) {
-        top: 0.352rem;
+        top: 0.46933rem;
         left: 50%;
         width: 0; }
       .garlic-layout #burger-menu.open span:nth-child(2) {
@@ -2523,18 +2568,19 @@ body {
         -o-transform: rotate(-45deg) translateX(25%);
         transform: rotate(-45deg) translateX(25%); }
       .garlic-layout #burger-menu.open span:nth-child(4) {
-        top: 0.352rem;
+        top: 0.46933rem;
         left: 50%;
         width: 0; }
   .garlic-layout .note-item {
-    font-size: 0.66rem;
+    font-size: 0.88rem;
     position: relative;
     overflow: visible;
     max-width: 100%;
-    margin-bottom: 0.9996rem;
-    padding-bottom: 0.6rem;
+    margin-bottom: 1.3328rem;
+    padding-bottom: 0.8rem;
     list-style-type: none;
-    border-bottom: 0.132rem solid #f32e36;
+    border-bottom: 0.176rem solid #f32e36;
+    opacity: .8;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -2542,32 +2588,49 @@ body {
     transition: all 0.5s ease; }
     .garlic-layout .note-item p,
     .garlic-layout .note-item ul {
-      line-height: 1.32rem; }
+      font-size: 0.88rem;
+      line-height: 1.232rem; }
     .garlic-layout .note-item > div {
       display: inline;
-      margin-left: 0.6rem; }
+      margin-left: 0.8rem; }
       .garlic-layout .note-item > div > * {
         display: inline; }
     .garlic-layout .note-item iframe {
       max-width: 100%; }
-  .garlic-layout .note-content-pointer,
+    .garlic-layout .note-item .BlockAssetWrapper .peritext-contextualization,
+    .garlic-layout .note-item .BlockAssetWrapper > figcaption {
+      padding: 0 !important;
+      margin: 0 !important; }
   .garlic-layout .note-block-pointer {
-    font-size: 0.66rem;
-    line-height: 1.386rem;
+    font-size: 0.44rem;
+    line-height: 0.88rem;
     display: inline-block;
-    width: 1.2672rem;
-    height: 1.2672rem;
+    width: 0.8448rem;
+    height: 0.8448rem;
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
     color: #fdfff8;
     border-radius: 50%;
     background: #f32e36; }
-    .garlic-layout .note-content-pointer:hover,
     .garlic-layout .note-block-pointer:hover {
       background: #87240e; }
   .garlic-layout .note-content-pointer {
-    margin-left: 0.6rem; }
+    font-size: 0.88rem;
+    line-height: 1.76rem;
+    display: inline-block;
+    width: 1.6896rem;
+    height: 1.6896rem;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: #fdfff8;
+    border-radius: 50%;
+    background: #f32e36; }
+    .garlic-layout .note-content-pointer:hover {
+      background: #87240e; }
+  .garlic-layout .note-content-pointer {
+    margin-left: 0.8rem; }
   .garlic-layout .player-container canvas {
     box-shadow: 0 0 5px #e7eae1; }
   .garlic-layout .epub-player-wrapper .epub-player-container {
@@ -2585,14 +2648,14 @@ body {
   .garlic-layout pre {
     font-family: monospace;
     overflow: auto;
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     background: #e7eae1; }
   .garlic-layout #disqus_thread {
-    margin-top: 2.9988rem;
+    margin-top: 3.9984rem;
     margin-right: 20%;
-    margin-left: 20%; }
+    margin-left: 30%; }
 
-</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="1476730354"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:17%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class=" section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introduction</a></li><li class=" section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="23">L&#x27;écosystème des modules peritext</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="25">Des systèmes documentaires riches et exploitables</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="27">Un design adaptable et modulaire</a></li><li class=" section-link-level-0" data-reactid="28"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="29">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="31">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="33">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="35">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="37">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="39">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="41">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="43">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="45">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="47">Contextualiseur vegalite</a></li><li class=" section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-1" data-reactid="50"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="51">Contextualiseur data-presentation</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="53">Gabarits</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="55">Générateurs</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="57">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="59">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="60"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="61">À propos</a></li></ul></div><div class="footer" data-reactid="62"><ul data-reactid="63"><li class="" data-reactid="64"><a href="/lexicon/" data-reactid="65">Glossaire</a></li><li class="active" data-reactid="66"><a href="/bibliotheca/" data-reactid="67">Références</a></li><li class="" data-reactid="68"><a href="/dimensio/" data-reactid="69">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="70"><section class="main-contents-container" data-reactid="71"><div class="contents-guttered" data-reactid="72"><div class="mentions-container end-references-container" data-reactid="73"><h2 data-reactid="74">Références</h2><ul class="index-list" data-reactid="75"><li id="[object Object]" class="mentions-list-container " data-reactid="76"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20De%20Mourat&amp;amp;rft.atitle=Vectors%20-%20une%20analyse&amp;amp;rft_id=http%3A%2F%2Fdicto-formats.herokuapp.com%2Fshare%2Ftranscription%2Fvectors-une-analyse%3Fdisplay%3Dfullscreen%26showtags%3D1%26showrailway%3D1%26leftcolumn%3D50&amp;amp;rft.genre=document" data-reactid="77"></span><h3 class="index-list-title" data-reactid="78"><div data-reactid="79">  <div class="csl-entry">
+</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="-841409101"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:27%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class=" section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introduction</a></li><li class=" section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="23">L&#x27;écosystème des modules peritext</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="25">Des systèmes documentaires riches et exploitables</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="27">Un design adaptable et modulaire</a></li><li class=" section-link-level-0" data-reactid="28"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="29">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="31">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="33">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="35">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="37">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="39">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="41">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="43">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="45">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="47">Contextualiseur vegalite</a></li><li class=" section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-1" data-reactid="50"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="51">Contextualiseur data-presentation</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="53">Gabarits</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="55">Générateurs</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="57">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="59">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="60"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="61">À propos</a></li></ul></div><div class="footer" data-reactid="62"><ul data-reactid="63"><li class="" data-reactid="64"><a href="/lexicon/" data-reactid="65">Glossaire</a></li><li class="active" data-reactid="66"><a href="/bibliotheca/" data-reactid="67">Références</a></li><li class="" data-reactid="68"><a href="/dimensio/" data-reactid="69">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="70"><section class="main-contents-container" data-reactid="71"><div class="contents-guttered" data-reactid="72"><div class="mentions-container end-references-container" data-reactid="73"><h2 data-reactid="74">Références</h2><ul class="index-list" data-reactid="75"><li id="[object Object]" class="mentions-list-container " data-reactid="76"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20De%20Mourat&amp;amp;rft.atitle=Vectors%20-%20une%20analyse&amp;amp;rft_id=http%3A%2F%2Fdicto-formats.herokuapp.com%2Fshare%2Ftranscription%2Fvectors-une-analyse%3Fdisplay%3Dfullscreen%26showtags%3D1%26showrailway%3D1%26leftcolumn%3D50&amp;amp;rft.genre=document" data-reactid="77"></span><h3 class="index-list-title" data-reactid="78"><div data-reactid="79">  <div class="csl-entry">
     <div class="csl-left-margin">1. </div><div class="csl-right-inline">DE MOURAT, Robin. <a href="http://dicto-formats.herokuapp.com/share/transcription/vectors-une-analyse?display=fullscreen&showtags=1&showrailway=1&leftcolumn=50" target="blank"><i>Vectors - une analyse</i></a> [en ligne]. Disponible à l’adresse : <a href="http://dicto-formats.herokuapp.com/share/transcription/vectors-une-analyse?display=fullscreen&#38;showtags=1&#38;showrailway=1&#38;leftcolumn=50" target="blank">http://dicto-formats.herokuapp.com/share/transcription/vectors-une-analyse?display=fullscreen&#38;showtags=1&#38;showrailway=1&#38;leftcolumn=50</a></div>
   <div class="csl-right-inline">Analyse par étiquettage des différents articles du journal Vectors</div>
   </div>
@@ -2660,114 +2723,114 @@ body {
 </div><!-- react-text: 220 --> <!-- /react-text --><button class="collapse-btn " data-reactid="221">+ Montrer les mentions</button></h3><span data-reactid="222"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="223"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Donato%20Ricci%20&amp;amp;rft.au=%20Robin%20De%20Mourat%20&amp;amp;rft.au=%20Christophe%20%20Leclerq&amp;amp;rft.au=%20Bruno%20%20Latour&amp;amp;rft.atitle=Clues%2C%20Anomalies%2C%20Understanding.%20Detecting%20underlying%20assumptions%20and%20expected%20practices%20in%20the%20Digital%20Humanities%20through%20the%20AIME%20project.&amp;amp;rft_id=http%3A%2F%2Fvisiblelanguagejournal.com%2Fissue%2F172%2Farticle%2F1172&amp;amp;rft.atitle=Clues%2C%20Anomalies%2C%20Understanding.%20Detecting%20underlying%20assumptions%20and%20expected%20practices%20in%20the%20Digital%20Humanities%20through%20the%20AIME%20project.&amp;amp;rft.volume=49&amp;amp;rft.issue=3&amp;amp;rft.genre=article&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" data-reactid="224"></span><h3 class="index-list-title" data-reactid="225"><div data-reactid="226">  <div class="csl-entry">
     <div class="csl-left-margin">22. </div><div class="csl-right-inline">RICCI ,  Donato, DE MOURAT ,  Robin,  LECLERQ,  Christophe et  LATOUR,  Bruno. <a href="http://visiblelanguagejournal.com/issue/172/article/1172" target="blank"><i>Clues, Anomalies, Understanding. Detecting underlying assumptions and expected practices in the Digital Humanities through the AIME project.</i></a> [en ligne]. 2015. Visible Language. Disponible à l’adresse : <a href="http://visiblelanguagejournal.com/issue/172/article/1172" target="blank">http://visiblelanguagejournal.com/issue/172/article/1172</a></div>
   </div>
-</div><!-- react-text: 227 --> <!-- /react-text --><button class="collapse-btn " data-reactid="228">+ Montrer les mentions</button></h3><span data-reactid="229"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="230"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Donato%20Ricci%20&amp;amp;rft.au=Robin%20%20%20De%20Mourat&amp;amp;rft.au=%20Pierre-Laurent%20Boulanger%20&amp;amp;rft.atitle=AIME%3A%20opening%20the%20context%20of%20a%20Humanities%20inquiry&amp;amp;rft_id=http%3A%2F%2Fechappees.esapyrenees.fr%2Fcontent%2F2-numeros%2F3-numero3%2F5-an-account-of-digital-humanities-from-the-aime-project%2Fechappees-an-account-of-digital-humanities-from-the-aime-project.pdf&amp;amp;rft.genre=document" data-reactid="231"></span><h3 class="index-list-title" data-reactid="232"><div data-reactid="233">  <div class="csl-entry">
-    <div class="csl-left-margin">23. </div><div class="csl-right-inline">RICCI ,  Donato,  DE MOURAT, Robin  et BOULANGER ,  Pierre-Laurent. <a href="http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf" target="blank">AIME: opening the context of a Humanities inquiry. </a>[en ligne]. 2015. Disponible à l’adresse : <a href="http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf" target="blank">http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf</a></div>
+</div><!-- react-text: 227 --> <!-- /react-text --><button class="collapse-btn " data-reactid="228">+ Montrer les mentions</button></h3><span data-reactid="229"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="230"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Donato%20%20Ricci&amp;amp;rft.atitle=An%20Account%20of%20Digital%20Humanities%20from%20the%20AIME%20Project&amp;amp;rft_id=http%3A%2F%2Fechappees.esapyrenees.fr%2Fcontent%2F2-numeros%2F3-numero3%2F5-an-account-of-digital-humanities-from-the-aime-project%2Fechappees-an-account-of-digital-humanities-from-the-aime-project.pdf&amp;amp;rft.atitle=An%20Account%20of%20Digital%20Humanities%20from%20the%20AIME%20Project&amp;amp;rft.issue=3&amp;amp;rft.genre=article&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" data-reactid="231"></span><h3 class="index-list-title" data-reactid="232"><div data-reactid="233">  <div class="csl-entry">
+    <div class="csl-left-margin">23. </div><div class="csl-right-inline"> RICCI,  Donato. <a href="http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf" target="blank"><i>An Account of Digital Humanities from the AIME Project</i></a> [en ligne]. 2016. Revue échappées. Disponible à l’adresse : <a href="http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf" target="blank">http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf</a></div>
   </div>
-</div><!-- react-text: 234 --> <!-- /react-text --><button class="collapse-btn " data-reactid="235">+ Montrer les mentions</button></h3><span data-reactid="236"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="237"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Donato%20%20Ricci&amp;amp;rft.atitle=An%20Account%20of%20Digital%20Humanities%20from%20the%20AIME%20Project&amp;amp;rft_id=http%3A%2F%2Fechappees.esapyrenees.fr%2Fcontent%2F2-numeros%2F3-numero3%2F5-an-account-of-digital-humanities-from-the-aime-project%2Fechappees-an-account-of-digital-humanities-from-the-aime-project.pdf&amp;amp;rft.atitle=An%20Account%20of%20Digital%20Humanities%20from%20the%20AIME%20Project&amp;amp;rft.issue=3&amp;amp;rft.genre=article&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" data-reactid="238"></span><h3 class="index-list-title" data-reactid="239"><div data-reactid="240">  <div class="csl-entry">
-    <div class="csl-left-margin">24. </div><div class="csl-right-inline"> RICCI,  Donato. <a href="http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf" target="blank"><i>An Account of Digital Humanities from the AIME Project</i></a> [en ligne]. 2016. Revue échappées. Disponible à l’adresse : <a href="http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf" target="blank">http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf</a></div>
+</div><!-- react-text: 234 --> <!-- /react-text --><button class="collapse-btn " data-reactid="235">+ Montrer les mentions</button></h3><span data-reactid="236"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="237"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Outil%20et%20de%20pr%C3%A9visualisation%20d&#x27;%C3%A9dition%20de%20la%20grammaire%20vega&amp;amp;rft_id=https%3A%2F%2Fvega.github.io%2Feditor%2F%23%2Fedited&amp;amp;rft.genre=document" data-reactid="238"></span><h3 class="index-list-title" data-reactid="239"><div data-reactid="240">  <div class="csl-entry">
+    <div class="csl-left-margin">24. </div><div class="csl-right-inline"><a href="https://vega.github.io/editor/#/edited" target="blank">Outil et de prévisualisation d’édition de la grammaire vega. </a>[en ligne]. Disponible à l’adresse : <a href="https://vega.github.io/editor/#/edited" target="blank">https://vega.github.io/editor/#/edited</a></div>
   </div>
-</div><!-- react-text: 241 --> <!-- /react-text --><button class="collapse-btn " data-reactid="242">+ Montrer les mentions</button></h3><span data-reactid="243"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="244"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Outil%20et%20de%20pr%C3%A9visualisation%20d&#x27;%C3%A9dition%20de%20la%20grammaire%20vega&amp;amp;rft_id=https%3A%2F%2Fvega.github.io%2Feditor%2F%23%2Fedited&amp;amp;rft.genre=document" data-reactid="245"></span><h3 class="index-list-title" data-reactid="246"><div data-reactid="247">  <div class="csl-entry">
-    <div class="csl-left-margin">25. </div><div class="csl-right-inline"><a href="https://vega.github.io/editor/#/edited" target="blank">Outil et de prévisualisation d’édition de la grammaire vega. </a>[en ligne]. Disponible à l’adresse : <a href="https://vega.github.io/editor/#/edited" target="blank">https://vega.github.io/editor/#/edited</a></div>
+</div><!-- react-text: 241 --> <!-- /react-text --><button class="collapse-btn " data-reactid="242">+ Montrer les mentions</button></h3><span data-reactid="243"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="244"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Vega%20lite&amp;amp;rft_id=https%3A%2F%2Fvega.github.io%2Fvega-lite%2Fdocs%2F&amp;amp;rft.genre=document" data-reactid="245"></span><h3 class="index-list-title" data-reactid="246"><div data-reactid="247">  <div class="csl-entry">
+    <div class="csl-left-margin">25. </div><div class="csl-right-inline"><a href="https://vega.github.io/vega-lite/docs/" target="blank">Vega lite. </a>[en ligne]. Disponible à l’adresse : <a href="https://vega.github.io/vega-lite/docs/" target="blank">https://vega.github.io/vega-lite/docs/</a></div>
   </div>
-</div><!-- react-text: 248 --> <!-- /react-text --><button class="collapse-btn " data-reactid="249">+ Montrer les mentions</button></h3><span data-reactid="250"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="251"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Vega%20lite&amp;amp;rft_id=https%3A%2F%2Fvega.github.io%2Fvega-lite%2Fdocs%2F&amp;amp;rft.genre=document" data-reactid="252"></span><h3 class="index-list-title" data-reactid="253"><div data-reactid="254">  <div class="csl-entry">
-    <div class="csl-left-margin">26. </div><div class="csl-right-inline"><a href="https://vega.github.io/vega-lite/docs/" target="blank">Vega lite. </a>[en ligne]. Disponible à l’adresse : <a href="https://vega.github.io/vega-lite/docs/" target="blank">https://vega.github.io/vega-lite/docs/</a></div>
-  </div>
-</div><!-- react-text: 255 --> <!-- /react-text --><button class="collapse-btn " data-reactid="256">+ Montrer les mentions</button></h3><span data-reactid="257"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="258"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Exemple%20de%20ressource%20codefiles&amp;amp;rft.genre=document" data-reactid="259"></span><h3 class="index-list-title" data-reactid="260"><div data-reactid="261">  <div class="csl-entry">
-    <div class="csl-left-margin">27. </div><div class="csl-right-inline"><i>Exemple de ressource codefiles</i>.</div>
+</div><!-- react-text: 248 --> <!-- /react-text --><button class="collapse-btn " data-reactid="249">+ Montrer les mentions</button></h3><span data-reactid="250"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="251"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Exemple%20de%20ressource%20codefiles&amp;amp;rft.genre=document" data-reactid="252"></span><h3 class="index-list-title" data-reactid="253"><div data-reactid="254">  <div class="csl-entry">
+    <div class="csl-left-margin">26. </div><div class="csl-right-inline"><i>Exemple de ressource codefiles</i>.</div>
    </div>
-</div><!-- react-text: 262 --> <!-- /react-text --><button class="collapse-btn " data-reactid="263">+ Montrer les mentions</button></h3><span data-reactid="264"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="265"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Mon%20beau%20r%C3%A9seau%20roi%20des%20for%C3%AAts&amp;amp;rft.genre=document" data-reactid="266"></span><h3 class="index-list-title" data-reactid="267"><div data-reactid="268">  <div class="csl-entry">
-    <div class="csl-left-margin">28. </div><div class="csl-right-inline"><i>Mon beau réseau roi des forêts</i>.</div>
+</div><!-- react-text: 255 --> <!-- /react-text --><button class="collapse-btn " data-reactid="256">+ Montrer les mentions</button></h3><span data-reactid="257"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="258"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Mon%20beau%20r%C3%A9seau%20roi%20des%20for%C3%AAts&amp;amp;rft.genre=document" data-reactid="259"></span><h3 class="index-list-title" data-reactid="260"><div data-reactid="261">  <div class="csl-entry">
+    <div class="csl-left-margin">27. </div><div class="csl-right-inline"><i>Mon beau réseau roi des forêts</i>.</div>
    </div>
-</div><!-- react-text: 269 --> <!-- /react-text --><button class="collapse-btn " data-reactid="270">+ Montrer les mentions</button></h3><span data-reactid="271"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="272"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Scalar&amp;amp;rft_id=http%3A%2F%2Fscalar.usc.edu%2F&amp;amp;rft.genre=document" data-reactid="273"></span><h3 class="index-list-title" data-reactid="274"><div data-reactid="275">  <div class="csl-entry">
-    <div class="csl-left-margin">29. </div><div class="csl-right-inline"><a href="http://scalar.usc.edu/" target="blank">Scalar. </a>[en ligne]. Disponible à l’adresse : <a href="http://scalar.usc.edu/" target="blank">http://scalar.usc.edu/</a></div>
+</div><!-- react-text: 262 --> <!-- /react-text --><button class="collapse-btn " data-reactid="263">+ Montrer les mentions</button></h3><span data-reactid="264"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="265"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Scalar&amp;amp;rft_id=http%3A%2F%2Fscalar.usc.edu%2F&amp;amp;rft.genre=document" data-reactid="266"></span><h3 class="index-list-title" data-reactid="267"><div data-reactid="268">  <div class="csl-entry">
+    <div class="csl-left-margin">28. </div><div class="csl-right-inline"><a href="http://scalar.usc.edu/" target="blank">Scalar. </a>[en ligne]. Disponible à l’adresse : <a href="http://scalar.usc.edu/" target="blank">http://scalar.usc.edu/</a></div>
   </div>
-</div><!-- react-text: 276 --> <!-- /react-text --><button class="collapse-btn " data-reactid="277">+ Montrer les mentions</button></h3><span data-reactid="278"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="279"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Ted%20Nelson%20demonstrates%20Xanadu%20Space&amp;amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEn_2T7KH6RA&amp;amp;rft.genre=document" data-reactid="280"></span><h3 class="index-list-title" data-reactid="281"><div data-reactid="282">  <div class="csl-entry">
-    <div class="csl-left-margin">30. </div><div class="csl-right-inline"><a href="https://www.youtube.com/watch?v=En_2T7KH6RA" target="blank">Ted Nelson demonstrates Xanadu Space. </a>[en ligne]. Disponible à l’adresse : <a href="https://www.youtube.com/watch?v=En_2T7KH6RA" target="blank">https://www.youtube.com/watch?v=En_2T7KH6RA</a></div>
+</div><!-- react-text: 269 --> <!-- /react-text --><button class="collapse-btn " data-reactid="270">+ Montrer les mentions</button></h3><span data-reactid="271"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="272"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Ted%20Nelson%20demonstrates%20Xanadu%20Space&amp;amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEn_2T7KH6RA&amp;amp;rft.genre=document" data-reactid="273"></span><h3 class="index-list-title" data-reactid="274"><div data-reactid="275">  <div class="csl-entry">
+    <div class="csl-left-margin">29. </div><div class="csl-right-inline"><a href="https://www.youtube.com/watch?v=En_2T7KH6RA" target="blank">Ted Nelson demonstrates Xanadu Space. </a>[en ligne]. Disponible à l’adresse : <a href="https://www.youtube.com/watch?v=En_2T7KH6RA" target="blank">https://www.youtube.com/watch?v=En_2T7KH6RA</a></div>
   <div class="csl-right-inline">Ted Nelson présente le logiciel Xanadu Space qui spatialise en trois dimensions un système hypertexte.</div>
   </div>
-</div><!-- react-text: 283 --> <!-- /react-text --><button class="collapse-btn " data-reactid="284">+ Montrer les mentions</button></h3><span data-reactid="285"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="286"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=La%20norme%20OpenURL%20et%20la%20technologie%20Context%20Objects%20in%20Span&amp;amp;rft_id=http%3A%2F%2Fblog.stephanepouyllau.org%2F116&amp;amp;rft.genre=document" data-reactid="287"></span><h3 class="index-list-title" data-reactid="288"><div data-reactid="289">  <div class="csl-entry">
-    <div class="csl-left-margin">31. </div><div class="csl-right-inline"><a href="http://blog.stephanepouyllau.org/116" target="blank">La norme OpenURL et la technologie Context Objects in Span. </a>[en ligne]. Disponible à l’adresse : <a href="http://blog.stephanepouyllau.org/116" target="blank">http://blog.stephanepouyllau.org/116</a></div>
+</div><!-- react-text: 276 --> <!-- /react-text --><button class="collapse-btn " data-reactid="277">+ Montrer les mentions</button></h3><span data-reactid="278"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="279"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=La%20norme%20OpenURL%20et%20la%20technologie%20Context%20Objects%20in%20Span&amp;amp;rft_id=http%3A%2F%2Fblog.stephanepouyllau.org%2F116&amp;amp;rft.genre=document" data-reactid="280"></span><h3 class="index-list-title" data-reactid="281"><div data-reactid="282">  <div class="csl-entry">
+    <div class="csl-left-margin">30. </div><div class="csl-right-inline"><a href="http://blog.stephanepouyllau.org/116" target="blank">La norme OpenURL et la technologie Context Objects in Span. </a>[en ligne]. Disponible à l’adresse : <a href="http://blog.stephanepouyllau.org/116" target="blank">http://blog.stephanepouyllau.org/116</a></div>
   </div>
-</div><!-- react-text: 290 --> <!-- /react-text --><button class="collapse-btn " data-reactid="291">+ Montrer les mentions</button></h3><span data-reactid="292"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="293"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=CitationStyles.org&amp;amp;rft_id=http%3A%2F%2Fcitationstyles.org%2F&amp;amp;rft.genre=document" data-reactid="294"></span><h3 class="index-list-title" data-reactid="295"><div data-reactid="296">  <div class="csl-entry">
-    <div class="csl-left-margin">32. </div><div class="csl-right-inline"><a href="http://citationstyles.org/" target="blank">CitationStyles.org. </a>[en ligne]. Disponible à l’adresse : <a href="http://citationstyles.org/" target="blank">http://citationstyles.org/</a></div>
+</div><!-- react-text: 283 --> <!-- /react-text --><button class="collapse-btn " data-reactid="284">+ Montrer les mentions</button></h3><span data-reactid="285"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="286"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=CitationStyles.org&amp;amp;rft_id=http%3A%2F%2Fcitationstyles.org%2F&amp;amp;rft.genre=document" data-reactid="287"></span><h3 class="index-list-title" data-reactid="288"><div data-reactid="289">  <div class="csl-entry">
+    <div class="csl-left-margin">31. </div><div class="csl-right-inline"><a href="http://citationstyles.org/" target="blank">CitationStyles.org. </a>[en ligne]. Disponible à l’adresse : <a href="http://citationstyles.org/" target="blank">http://citationstyles.org/</a></div>
   </div>
-</div><!-- react-text: 297 --> <!-- /react-text --><button class="collapse-btn " data-reactid="298">+ Montrer les mentions</button></h3><span data-reactid="299"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="300"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Ressource%20processing%20js&amp;amp;rft.genre=document" data-reactid="301"></span><h3 class="index-list-title" data-reactid="302"><div data-reactid="303">  <div class="csl-entry">
-    <div class="csl-left-margin">33. </div><div class="csl-right-inline"><i>Ressource processing js</i>.</div>
+</div><!-- react-text: 290 --> <!-- /react-text --><button class="collapse-btn " data-reactid="291">+ Montrer les mentions</button></h3><span data-reactid="292"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="293"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Ressource%20processing%20js&amp;amp;rft.genre=document" data-reactid="294"></span><h3 class="index-list-title" data-reactid="295"><div data-reactid="296">  <div class="csl-entry">
+    <div class="csl-left-margin">32. </div><div class="csl-right-inline"><i>Ressource processing js</i>.</div>
    </div>
-</div><!-- react-text: 304 --> <!-- /react-text --><button class="collapse-btn " data-reactid="305">+ Montrer les mentions</button></h3><span data-reactid="306"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="307"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=ManyLines&amp;amp;rft_id=http%3A%2F%2Ftools.medialab.sciences-po.fr%2Fmanylines&amp;amp;rft.genre=document" data-reactid="308"></span><h3 class="index-list-title" data-reactid="309"><div data-reactid="310">  <div class="csl-entry">
-    <div class="csl-left-margin">34. </div><div class="csl-right-inline"><a href="http://tools.medialab.sciences-po.fr/manylines" target="blank">ManyLines. </a>[en ligne]. Disponible à l’adresse : <a href="http://tools.medialab.sciences-po.fr/manylines" target="blank">http://tools.medialab.sciences-po.fr/manylines</a></div>
+</div><!-- react-text: 297 --> <!-- /react-text --><button class="collapse-btn " data-reactid="298">+ Montrer les mentions</button></h3><span data-reactid="299"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="300"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=ManyLines&amp;amp;rft_id=http%3A%2F%2Ftools.medialab.sciences-po.fr%2Fmanylines&amp;amp;rft.genre=document" data-reactid="301"></span><h3 class="index-list-title" data-reactid="302"><div data-reactid="303">  <div class="csl-entry">
+    <div class="csl-left-margin">33. </div><div class="csl-right-inline"><a href="http://tools.medialab.sciences-po.fr/manylines" target="blank">ManyLines. </a>[en ligne]. Disponible à l’adresse : <a href="http://tools.medialab.sciences-po.fr/manylines" target="blank">http://tools.medialab.sciences-po.fr/manylines</a></div>
   </div>
-</div><!-- react-text: 311 --> <!-- /react-text --><button class="collapse-btn " data-reactid="312">+ Montrer les mentions</button></h3><span data-reactid="313"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="314"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Exemple%20de%20pr%C3%A9sentation%20SVG&amp;amp;rft.genre=document" data-reactid="315"></span><h3 class="index-list-title" data-reactid="316"><div data-reactid="317">  <div class="csl-entry">
-    <div class="csl-left-margin">35. </div><div class="csl-right-inline">DE MOURAT, Robin. <i>Exemple de présentation SVG</i>.</div>
+</div><!-- react-text: 304 --> <!-- /react-text --><button class="collapse-btn " data-reactid="305">+ Montrer les mentions</button></h3><span data-reactid="306"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="307"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Exemple%20de%20pr%C3%A9sentation%20SVG&amp;amp;rft.genre=document" data-reactid="308"></span><h3 class="index-list-title" data-reactid="309"><div data-reactid="310">  <div class="csl-entry">
+    <div class="csl-left-margin">34. </div><div class="csl-right-inline">DE MOURAT, Robin. <i>Exemple de présentation SVG</i>.</div>
    </div>
-</div><!-- react-text: 318 --> <!-- /react-text --><button class="collapse-btn " data-reactid="319">+ Montrer les mentions</button></h3><span data-reactid="320"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="321"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Histoire%20du%20Fort%20et%20des%20combats%20de%201870-1871&amp;amp;rft.genre=document" data-reactid="322"></span><h3 class="index-list-title" data-reactid="323"><div data-reactid="324">  <div class="csl-entry">
-    <div class="csl-left-margin">36. </div><div class="csl-right-inline">DE MOURAT, Robin. <i>Histoire du Fort et des combats de 1870-1871</i>. </div>
+</div><!-- react-text: 311 --> <!-- /react-text --><button class="collapse-btn " data-reactid="312">+ Montrer les mentions</button></h3><span data-reactid="313"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="314"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Histoire%20du%20Fort%20et%20des%20combats%20de%201870-1871&amp;amp;rft.genre=document" data-reactid="315"></span><h3 class="index-list-title" data-reactid="316"><div data-reactid="317">  <div class="csl-entry">
+    <div class="csl-left-margin">35. </div><div class="csl-right-inline">DE MOURAT, Robin. <i>Histoire du Fort et des combats de 1870-1871</i>. </div>
   <div class="csl-right-inline">Une histoire du fort d’Issy</div>
   </div>
-</div><!-- react-text: 325 --> <!-- /react-text --><button class="collapse-btn " data-reactid="326">+ Montrer les mentions</button></h3><span data-reactid="327"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="328"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Histoire%20de%20la%20visualisation&amp;amp;rft.genre=document" data-reactid="329"></span><h3 class="index-list-title" data-reactid="330"><div data-reactid="331">  <div class="csl-entry">
-    <div class="csl-left-margin">37. </div><div class="csl-right-inline">DE MOURAT, Robin. <i>Histoire de la visualisation</i>. </div>
+</div><!-- react-text: 318 --> <!-- /react-text --><button class="collapse-btn " data-reactid="319">+ Montrer les mentions</button></h3><span data-reactid="320"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="321"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Histoire%20de%20la%20visualisation&amp;amp;rft.genre=document" data-reactid="322"></span><h3 class="index-list-title" data-reactid="323"><div data-reactid="324">  <div class="csl-entry">
+    <div class="csl-left-margin">36. </div><div class="csl-right-inline">DE MOURAT, Robin. <i>Histoire de la visualisation</i>. </div>
   <div class="csl-right-inline">Cette présentation traite de l’histoire de la visualisation</div>
   </div>
-</div><!-- react-text: 332 --> <!-- /react-text --><button class="collapse-btn " data-reactid="333">+ Montrer les mentions</button></h3><span data-reactid="334"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="335"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20mod%C3%A8le%20de%20document%20Peritext&amp;amp;rft.genre=document" data-reactid="336"></span><h3 class="index-list-title" data-reactid="337"><div data-reactid="338">  <div class="csl-entry">
-    <div class="csl-left-margin">38. </div><div class="csl-right-inline"><i>Le modèle de document Peritext</i>.</div>
+</div><!-- react-text: 325 --> <!-- /react-text --><button class="collapse-btn " data-reactid="326">+ Montrer les mentions</button></h3><span data-reactid="327"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="328"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20mod%C3%A8le%20de%20document%20Peritext&amp;amp;rft.genre=document" data-reactid="329"></span><h3 class="index-list-title" data-reactid="330"><div data-reactid="331">  <div class="csl-entry">
+    <div class="csl-left-margin">37. </div><div class="csl-right-inline"><i>Le modèle de document Peritext</i>.</div>
    </div>
-</div><!-- react-text: 339 --> <!-- /react-text --><button class="collapse-btn " data-reactid="340">+ Montrer les mentions</button></h3><span data-reactid="341"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="342"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Projet%20MONADE&amp;amp;rft_id=https%3A%2F%2Fwww.mshb.fr%2Fprojets_mshb%2Fmonade%2F2289%2F&amp;amp;rft.genre=document" data-reactid="343"></span><h3 class="index-list-title" data-reactid="344"><div data-reactid="345">  <div class="csl-entry">
-    <div class="csl-left-margin">39. </div><div class="csl-right-inline"><a href="https://www.mshb.fr/projets_mshb/monade/2289/" target="blank">Projet MONADE. </a>[en ligne]. Disponible à l’adresse : <a href="https://www.mshb.fr/projets_mshb/monade/2289/" target="blank">https://www.mshb.fr/projets_mshb/monade/2289/</a></div>
+</div><!-- react-text: 332 --> <!-- /react-text --><button class="collapse-btn " data-reactid="333">+ Montrer les mentions</button></h3><span data-reactid="334"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="335"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Projet%20MONADE&amp;amp;rft_id=https%3A%2F%2Fwww.mshb.fr%2Fprojets_mshb%2Fmonade%2F2289%2F&amp;amp;rft.genre=document" data-reactid="336"></span><h3 class="index-list-title" data-reactid="337"><div data-reactid="338">  <div class="csl-entry">
+    <div class="csl-left-margin">38. </div><div class="csl-right-inline"><a href="https://www.mshb.fr/projets_mshb/monade/2289/" target="blank">Projet MONADE. </a>[en ligne]. Disponible à l’adresse : <a href="https://www.mshb.fr/projets_mshb/monade/2289/" target="blank">https://www.mshb.fr/projets_mshb/monade/2289/</a></div>
   </div>
-</div><!-- react-text: 346 --> <!-- /react-text --><button class="collapse-btn " data-reactid="347">+ Montrer les mentions</button></h3><span data-reactid="348"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="349"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Le%20Signe&amp;amp;rft.atitle=Une%20cartographie%20de%20la%20recherche%20en%20design%20graphique%20-%20Biennale%20de%20design%20graphique%202017&amp;amp;rft_id=http%3A%2F%2Fwww.centrenationaldugraphisme.fr%2Ffr%2Fcig%2Fpage%2Fbiennale-de-design-graphique-2017%2Fexpositions%2Fune-cartographie-de-la-recherche-en-design-graphique&amp;amp;rft.genre=document" data-reactid="350"></span><h3 class="index-list-title" data-reactid="351"><div data-reactid="352">  <div class="csl-entry">
-    <div class="csl-left-margin">40. </div><div class="csl-right-inline">LE SIGNE. <a href="http://www.centrenationaldugraphisme.fr/fr/cig/page/biennale-de-design-graphique-2017/expositions/une-cartographie-de-la-recherche-en-design-graphique" target="blank">Une cartographie de la recherche en design graphique - Biennale de design graphique 2017. </a>[en ligne]. Disponible à l’adresse : <a href="http://www.centrenationaldugraphisme.fr/fr/cig/page/biennale-de-design-graphique-2017/expositions/une-cartographie-de-la-recherche-en-design-graphique" target="blank">http://www.centrenationaldugraphisme.fr/fr/cig/page/biennale-de-design-graphique-2017/expositions/une-cartographie-de-la-recherche-en-design-graphique</a></div>
+</div><!-- react-text: 339 --> <!-- /react-text --><button class="collapse-btn " data-reactid="340">+ Montrer les mentions</button></h3><span data-reactid="341"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="342"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Le%20Signe&amp;amp;rft.atitle=Une%20cartographie%20de%20la%20recherche%20en%20design%20graphique%20-%20Biennale%20de%20design%20graphique%202017&amp;amp;rft_id=http%3A%2F%2Fwww.centrenationaldugraphisme.fr%2Ffr%2Fcig%2Fpage%2Fbiennale-de-design-graphique-2017%2Fexpositions%2Fune-cartographie-de-la-recherche-en-design-graphique&amp;amp;rft.genre=document" data-reactid="343"></span><h3 class="index-list-title" data-reactid="344"><div data-reactid="345">  <div class="csl-entry">
+    <div class="csl-left-margin">39. </div><div class="csl-right-inline">LE SIGNE. <a href="http://www.centrenationaldugraphisme.fr/fr/cig/page/biennale-de-design-graphique-2017/expositions/une-cartographie-de-la-recherche-en-design-graphique" target="blank">Une cartographie de la recherche en design graphique - Biennale de design graphique 2017. </a>[en ligne]. Disponible à l’adresse : <a href="http://www.centrenationaldugraphisme.fr/fr/cig/page/biennale-de-design-graphique-2017/expositions/une-cartographie-de-la-recherche-en-design-graphique" target="blank">http://www.centrenationaldugraphisme.fr/fr/cig/page/biennale-de-design-graphique-2017/expositions/une-cartographie-de-la-recherche-en-design-graphique</a></div>
   </div>
-</div><!-- react-text: 353 --> <!-- /react-text --><button class="collapse-btn " data-reactid="354">+ Montrer les mentions</button></h3><span data-reactid="355"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="356"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Pandoc&amp;amp;rft_id=https%3A%2F%2Fpandoc.org%2F&amp;amp;rft.genre=document" data-reactid="357"></span><h3 class="index-list-title" data-reactid="358"><div data-reactid="359">  <div class="csl-entry">
-    <div class="csl-left-margin">41. </div><div class="csl-right-inline"><a href="https://pandoc.org/" target="blank">Pandoc. </a>[en ligne]. Disponible à l’adresse : <a href="https://pandoc.org/" target="blank">https://pandoc.org/</a></div>
+</div><!-- react-text: 346 --> <!-- /react-text --><button class="collapse-btn " data-reactid="347">+ Montrer les mentions</button></h3><span data-reactid="348"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="349"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Pandoc&amp;amp;rft_id=https%3A%2F%2Fpandoc.org%2F&amp;amp;rft.genre=document" data-reactid="350"></span><h3 class="index-list-title" data-reactid="351"><div data-reactid="352">  <div class="csl-entry">
+    <div class="csl-left-margin">40. </div><div class="csl-right-inline"><a href="https://pandoc.org/" target="blank">Pandoc. </a>[en ligne]. Disponible à l’adresse : <a href="https://pandoc.org/" target="blank">https://pandoc.org/</a></div>
   </div>
-</div><!-- react-text: 360 --> <!-- /react-text --><button class="collapse-btn " data-reactid="361">+ Montrer les mentions</button></h3><span data-reactid="362"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="363"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Une%20visualisation%20h%C3%A9berg%C3%A9e%20sur%20tableau&amp;amp;rft_id=https%3A%2F%2Fpublic.tableau.com%2Fviews%2FMM34-5MillenniaofSolarEclipses%2FSolarEclipse%3F%3Aembed%3Dy%26%3Atoolbar%3Dno%26%3AloadOrderID%3D0%26%3Adisplay_count%3Dyes&amp;amp;rft.genre=document" data-reactid="364"></span><h3 class="index-list-title" data-reactid="365"><div data-reactid="366">  <div class="csl-entry">
-    <div class="csl-left-margin">42. </div><div class="csl-right-inline"><a href="https://public.tableau.com/views/MM34-5MillenniaofSolarEclipses/SolarEclipse?:embed=y&:toolbar=no&:loadOrderID=0&:display_count=yes" target="blank">Une visualisation hébergée sur tableau. </a>[en ligne]. Disponible à l’adresse : <a href="https://public.tableau.com/views/MM34-5MillenniaofSolarEclipses/SolarEclipse?:embed=y&#38;:toolbar=no&#38;:loadOrderID=0&#38;:display_count=yes" target="blank">https://public.tableau.com/views/MM34-5MillenniaofSolarEclipses/SolarEclipse?:embed=y&#38;:toolbar=no&#38;:loadOrderID=0&#38;:display_count=yes</a></div>
+</div><!-- react-text: 353 --> <!-- /react-text --><button class="collapse-btn " data-reactid="354">+ Montrer les mentions</button></h3><span data-reactid="355"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="356"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Une%20visualisation%20h%C3%A9berg%C3%A9e%20sur%20tableau&amp;amp;rft_id=https%3A%2F%2Fpublic.tableau.com%2Fviews%2FMM34-5MillenniaofSolarEclipses%2FSolarEclipse%3F%3Aembed%3Dy%26%3Atoolbar%3Dno%26%3AloadOrderID%3D0%26%3Adisplay_count%3Dyes&amp;amp;rft.genre=document" data-reactid="357"></span><h3 class="index-list-title" data-reactid="358"><div data-reactid="359">  <div class="csl-entry">
+    <div class="csl-left-margin">41. </div><div class="csl-right-inline"><a href="https://public.tableau.com/views/MM34-5MillenniaofSolarEclipses/SolarEclipse?:embed=y&:toolbar=no&:loadOrderID=0&:display_count=yes" target="blank">Une visualisation hébergée sur tableau. </a>[en ligne]. Disponible à l’adresse : <a href="https://public.tableau.com/views/MM34-5MillenniaofSolarEclipses/SolarEclipse?:embed=y&#38;:toolbar=no&#38;:loadOrderID=0&#38;:display_count=yes" target="blank">https://public.tableau.com/views/MM34-5MillenniaofSolarEclipses/SolarEclipse?:embed=y&#38;:toolbar=no&#38;:loadOrderID=0&#38;:display_count=yes</a></div>
   </div>
-</div><!-- react-text: 367 --> <!-- /react-text --><button class="collapse-btn " data-reactid="368">+ Montrer les mentions</button></h3><span data-reactid="369"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="370"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Communaut%C3%A9%20p5.js&amp;amp;rft.atitle=Site%20officiel%20de%20p5.js&amp;amp;rft_id=https%3A%2F%2Fp5js.org%2F&amp;amp;rft.genre=document" data-reactid="371"></span><h3 class="index-list-title" data-reactid="372"><div data-reactid="373">  <div class="csl-entry">
-    <div class="csl-left-margin">43. </div><div class="csl-right-inline">COMMUNAUTÉ P5.JS. <a href="https://p5js.org/" target="blank">Site officiel de p5.js. </a>[en ligne]. Disponible à l’adresse : <a href="https://p5js.org/" target="blank">https://p5js.org/</a></div>
+</div><!-- react-text: 360 --> <!-- /react-text --><button class="collapse-btn " data-reactid="361">+ Montrer les mentions</button></h3><span data-reactid="362"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="363"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Communaut%C3%A9%20p5.js&amp;amp;rft.atitle=Site%20officiel%20de%20p5.js&amp;amp;rft_id=https%3A%2F%2Fp5js.org%2F&amp;amp;rft.genre=document" data-reactid="364"></span><h3 class="index-list-title" data-reactid="365"><div data-reactid="366">  <div class="csl-entry">
+    <div class="csl-left-margin">42. </div><div class="csl-right-inline">COMMUNAUTÉ P5.JS. <a href="https://p5js.org/" target="blank">Site officiel de p5.js. </a>[en ligne]. Disponible à l’adresse : <a href="https://p5js.org/" target="blank">https://p5js.org/</a></div>
   </div>
-</div><!-- react-text: 374 --> <!-- /react-text --><button class="collapse-btn " data-reactid="375">+ Montrer les mentions</button></h3><span data-reactid="376"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="377"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Conventions%20de%20conversion%20de%20donn%C3%A9es%20pour%20le%20projet%20draft-js&amp;amp;rft_id=https%3A%2F%2Fdraftjs.org%2Fdocs%2Fapi-reference-data-conversion.html&amp;amp;rft.genre=document" data-reactid="378"></span><h3 class="index-list-title" data-reactid="379"><div data-reactid="380">  <div class="csl-entry">
-    <div class="csl-left-margin">44. </div><div class="csl-right-inline"><a href="https://draftjs.org/docs/api-reference-data-conversion.html" target="blank">Conventions de conversion de données pour le projet draft-js. </a>[en ligne]. Disponible à l’adresse : <a href="https://draftjs.org/docs/api-reference-data-conversion.html" target="blank">https://draftjs.org/docs/api-reference-data-conversion.html</a></div>
+</div><!-- react-text: 367 --> <!-- /react-text --><button class="collapse-btn " data-reactid="368">+ Montrer les mentions</button></h3><span data-reactid="369"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="370"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Conventions%20de%20conversion%20de%20donn%C3%A9es%20pour%20le%20projet%20draft-js&amp;amp;rft_id=https%3A%2F%2Fdraftjs.org%2Fdocs%2Fapi-reference-data-conversion.html&amp;amp;rft.genre=document" data-reactid="371"></span><h3 class="index-list-title" data-reactid="372"><div data-reactid="373">  <div class="csl-entry">
+    <div class="csl-left-margin">43. </div><div class="csl-right-inline"><a href="https://draftjs.org/docs/api-reference-data-conversion.html" target="blank">Conventions de conversion de données pour le projet draft-js. </a>[en ligne]. Disponible à l’adresse : <a href="https://draftjs.org/docs/api-reference-data-conversion.html" target="blank">https://draftjs.org/docs/api-reference-data-conversion.html</a></div>
   </div>
-</div><!-- react-text: 381 --> <!-- /react-text --><button class="collapse-btn " data-reactid="382">+ Montrer les mentions</button></h3><span data-reactid="383"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="384"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Vannevar%20Bush&amp;amp;rft.au=undefined%20undefined&amp;amp;rft.atitle=As%20we%20may%20think&amp;amp;rft.genre=document" data-reactid="385"></span><h3 class="index-list-title" data-reactid="386"><div data-reactid="387">  <div class="csl-entry">
-    <div class="csl-left-margin">45. </div><div class="csl-right-inline">BUSH, Vannevar et OTHERS. As we may think. <i>The atlantic monthly</i>. 1945. Vol. 176, n° 1, pp. 101‑108.</div>
+</div><!-- react-text: 374 --> <!-- /react-text --><button class="collapse-btn " data-reactid="375">+ Montrer les mentions</button></h3><span data-reactid="376"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="377"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Vannevar%20Bush&amp;amp;rft.au=undefined%20undefined&amp;amp;rft.atitle=As%20we%20may%20think&amp;amp;rft.genre=document" data-reactid="378"></span><h3 class="index-list-title" data-reactid="379"><div data-reactid="380">  <div class="csl-entry">
+    <div class="csl-left-margin">44. </div><div class="csl-right-inline">BUSH, Vannevar et OTHERS. As we may think. <i>The atlantic monthly</i>. 1945. Vol. 176, n° 1, pp. 101‑108.</div>
    </div>
-</div><!-- react-text: 388 --> <!-- /react-text --><button class="collapse-btn " data-reactid="389">+ Montrer les mentions</button></h3><span data-reactid="390"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="391"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20cabinet%20d&#x27;Ole%20Worm&amp;amp;rft.genre=document" data-reactid="392"></span><h3 class="index-list-title" data-reactid="393"><div data-reactid="394">  <div class="csl-entry">
-    <div class="csl-left-margin">46. </div><div class="csl-right-inline"><i>Le cabinet d’Ole Worm</i>. 1655. </div>
+</div><!-- react-text: 381 --> <!-- /react-text --><button class="collapse-btn " data-reactid="382">+ Montrer les mentions</button></h3><span data-reactid="383"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="384"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20cabinet%20d&#x27;Ole%20Worm&amp;amp;rft.genre=document" data-reactid="385"></span><h3 class="index-list-title" data-reactid="386"><div data-reactid="387">  <div class="csl-entry">
+    <div class="csl-left-margin">45. </div><div class="csl-right-inline"><i>Le cabinet d’Ole Worm</i>. 1655. </div>
   <div class="csl-right-inline">Reproduction de la gravure conservée à Modène représentant un cabinet de curiosités</div>
   </div>
-</div><!-- react-text: 395 --> <!-- /react-text --><button class="collapse-btn " data-reactid="396">+ Montrer les mentions</button></h3><span data-reactid="397"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="398"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=R%C3%A9pertoire%20peritext-core%20sur%20github&amp;amp;rft_id=https%3A%2F%2Fgithub.com%2Fperitext%2Fperitext-core&amp;amp;rft.genre=document" data-reactid="399"></span><h3 class="index-list-title" data-reactid="400"><div data-reactid="401">  <div class="csl-entry">
-    <div class="csl-left-margin">47. </div><div class="csl-right-inline">DE MOURAT, Robin. <a href="https://github.com/peritext/peritext-core" target="blank">Répertoire peritext-core sur github. </a>[en ligne]. Disponible à l’adresse : <a href="https://github.com/peritext/peritext-core" target="blank">https://github.com/peritext/peritext-core</a></div>
+</div><!-- react-text: 388 --> <!-- /react-text --><button class="collapse-btn " data-reactid="389">+ Montrer les mentions</button></h3><span data-reactid="390"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="391"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=R%C3%A9pertoire%20peritext-core%20sur%20github&amp;amp;rft_id=https%3A%2F%2Fgithub.com%2Fperitext%2Fperitext-core&amp;amp;rft.genre=document" data-reactid="392"></span><h3 class="index-list-title" data-reactid="393"><div data-reactid="394">  <div class="csl-entry">
+    <div class="csl-left-margin">46. </div><div class="csl-right-inline">DE MOURAT, Robin. <a href="https://github.com/peritext/peritext-core" target="blank">Répertoire peritext-core sur github. </a>[en ligne]. Disponible à l’adresse : <a href="https://github.com/peritext/peritext-core" target="blank">https://github.com/peritext/peritext-core</a></div>
   </div>
-</div><!-- react-text: 402 --> <!-- /react-text --><button class="collapse-btn " data-reactid="403">+ Montrer les mentions</button></h3><span data-reactid="404"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="405"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Peritext%20core%20-%20documentation%20technique&amp;amp;rft_id=https%3A%2F%2Fperitext.github.io%2Fperitext-core%2F&amp;amp;rft.genre=document" data-reactid="406"></span><h3 class="index-list-title" data-reactid="407"><div data-reactid="408">  <div class="csl-entry">
-    <div class="csl-left-margin">48. </div><div class="csl-right-inline"><a href="https://peritext.github.io/peritext-core/" target="blank">Peritext core - documentation technique. </a>[en ligne]. Disponible à l’adresse : <a href="https://peritext.github.io/peritext-core/" target="blank">https://peritext.github.io/peritext-core/</a></div>
+</div><!-- react-text: 395 --> <!-- /react-text --><button class="collapse-btn " data-reactid="396">+ Montrer les mentions</button></h3><span data-reactid="397"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="398"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Peritext%20core%20-%20documentation%20technique&amp;amp;rft_id=https%3A%2F%2Fperitext.github.io%2Fperitext-core%2F&amp;amp;rft.genre=document" data-reactid="399"></span><h3 class="index-list-title" data-reactid="400"><div data-reactid="401">  <div class="csl-entry">
+    <div class="csl-left-margin">47. </div><div class="csl-right-inline"><a href="https://peritext.github.io/peritext-core/" target="blank">Peritext core - documentation technique. </a>[en ligne]. Disponible à l’adresse : <a href="https://peritext.github.io/peritext-core/" target="blank">https://peritext.github.io/peritext-core/</a></div>
   </div>
-</div><!-- react-text: 409 --> <!-- /react-text --><button class="collapse-btn " data-reactid="410">+ Montrer les mentions</button></h3><span data-reactid="411"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="412"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Internet%20Engineering%20Task%20Force&amp;amp;rft.atitle=Sp%C3%A9cification%20JSON%20Schema&amp;amp;rft_id=http%3A%2F%2Fjson-schema.org%2F&amp;amp;rft.genre=document" data-reactid="413"></span><h3 class="index-list-title" data-reactid="414"><div data-reactid="415">  <div class="csl-entry">
-    <div class="csl-left-margin">49. </div><div class="csl-right-inline">INTERNET ENGINEERING TASK FORCE. <a href="http://json-schema.org/" target="blank">Spécification JSON Schema. </a>[en ligne]. Disponible à l’adresse : <a href="http://json-schema.org/" target="blank">http://json-schema.org/</a></div>
+</div><!-- react-text: 402 --> <!-- /react-text --><button class="collapse-btn " data-reactid="403">+ Montrer les mentions</button></h3><span data-reactid="404"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="405"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Internet%20Engineering%20Task%20Force&amp;amp;rft.atitle=Sp%C3%A9cification%20JSON%20Schema&amp;amp;rft_id=http%3A%2F%2Fjson-schema.org%2F&amp;amp;rft.genre=document" data-reactid="406"></span><h3 class="index-list-title" data-reactid="407"><div data-reactid="408">  <div class="csl-entry">
+    <div class="csl-left-margin">48. </div><div class="csl-right-inline">INTERNET ENGINEERING TASK FORCE. <a href="http://json-schema.org/" target="blank">Spécification JSON Schema. </a>[en ligne]. Disponible à l’adresse : <a href="http://json-schema.org/" target="blank">http://json-schema.org/</a></div>
   </div>
-</div><!-- react-text: 416 --> <!-- /react-text --><button class="collapse-btn " data-reactid="417">+ Montrer les mentions</button></h3><span data-reactid="418"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="419"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=L&#x27;organisation%20peritext%20sur%20github&amp;amp;rft_id=https%3A%2F%2Fgithub.com%2Fperitext%2F&amp;amp;rft.genre=document" data-reactid="420"></span><h3 class="index-list-title" data-reactid="421"><div data-reactid="422">  <div class="csl-entry">
-    <div class="csl-left-margin">50. </div><div class="csl-right-inline"><a href="https://github.com/peritext/" target="blank">L’organisation peritext sur github. </a>[en ligne]. Disponible à l’adresse : <a href="https://github.com/peritext/" target="blank">https://github.com/peritext/</a></div>
+</div><!-- react-text: 409 --> <!-- /react-text --><button class="collapse-btn " data-reactid="410">+ Montrer les mentions</button></h3><span data-reactid="411"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="412"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=L&#x27;organisation%20peritext%20sur%20github&amp;amp;rft_id=https%3A%2F%2Fgithub.com%2Fperitext%2F&amp;amp;rft.genre=document" data-reactid="413"></span><h3 class="index-list-title" data-reactid="414"><div data-reactid="415">  <div class="csl-entry">
+    <div class="csl-left-margin">49. </div><div class="csl-right-inline"><a href="https://github.com/peritext/" target="blank">L’organisation peritext sur github. </a>[en ligne]. Disponible à l’adresse : <a href="https://github.com/peritext/" target="blank">https://github.com/peritext/</a></div>
   </div>
-</div><!-- react-text: 423 --> <!-- /react-text --><button class="collapse-btn " data-reactid="424">+ Montrer les mentions</button></h3><span data-reactid="425"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="426"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=API%20du%20g%C3%A9n%C3%A9rateur%20epub&amp;amp;rft.genre=document" data-reactid="427"></span><h3 class="index-list-title" data-reactid="428"><div data-reactid="429">  <div class="csl-entry">
-    <div class="csl-left-margin">51. </div><div class="csl-right-inline"><i>API du générateur epub</i>.</div>
+</div><!-- react-text: 416 --> <!-- /react-text --><button class="collapse-btn " data-reactid="417">+ Montrer les mentions</button></h3><span data-reactid="418"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="419"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=API%20du%20g%C3%A9n%C3%A9rateur%20epub&amp;amp;rft.genre=document" data-reactid="420"></span><h3 class="index-list-title" data-reactid="421"><div data-reactid="422">  <div class="csl-entry">
+    <div class="csl-left-margin">50. </div><div class="csl-right-inline"><i>API du générateur epub</i>.</div>
    </div>
-</div><!-- react-text: 430 --> <!-- /react-text --><button class="collapse-btn " data-reactid="431">+ Montrer les mentions</button></h3><span data-reactid="432"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="433"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=API%20du%20contextualiseur%20vegalite&amp;amp;rft.genre=document" data-reactid="434"></span><h3 class="index-list-title" data-reactid="435"><div data-reactid="436">  <div class="csl-entry">
-    <div class="csl-left-margin">52. </div><div class="csl-right-inline"><i>API du contextualiseur vegalite</i>.</div>
+</div><!-- react-text: 423 --> <!-- /react-text --><button class="collapse-btn " data-reactid="424">+ Montrer les mentions</button></h3><span data-reactid="425"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="426"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=API%20du%20contextualiseur%20vegalite&amp;amp;rft.genre=document" data-reactid="427"></span><h3 class="index-list-title" data-reactid="428"><div data-reactid="429">  <div class="csl-entry">
+    <div class="csl-left-margin">51. </div><div class="csl-right-inline"><i>API du contextualiseur vegalite</i>.</div>
    </div>
-</div><!-- react-text: 437 --> <!-- /react-text --><button class="collapse-btn " data-reactid="438">+ Montrer les mentions</button></h3><span data-reactid="439"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="440"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=API%20du%20gabarit%20%22web-garlic%22&amp;amp;rft.genre=document" data-reactid="441"></span><h3 class="index-list-title" data-reactid="442"><div data-reactid="443">  <div class="csl-entry">
-    <div class="csl-left-margin">53. </div><div class="csl-right-inline"><i>API du gabarit « web-garlic »</i>.</div>
+</div><!-- react-text: 430 --> <!-- /react-text --><button class="collapse-btn " data-reactid="431">+ Montrer les mentions</button></h3><span data-reactid="432"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="433"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=API%20du%20gabarit%20%22web-garlic%22&amp;amp;rft.genre=document" data-reactid="434"></span><h3 class="index-list-title" data-reactid="435"><div data-reactid="436">  <div class="csl-entry">
+    <div class="csl-left-margin">52. </div><div class="csl-right-inline"><i>API du gabarit « web-garlic »</i>.</div>
    </div>
-</div><!-- react-text: 444 --> <!-- /react-text --><button class="collapse-btn " data-reactid="445">+ Montrer les mentions</button></h3><span data-reactid="446"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="447"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Exemple%20d&#x27;utilisation%20du%20g%C3%A9n%C3%A9rateur%20next%20comme%20API&amp;amp;rft_id=http%3A%2F%2Fperitext.robindemourat.com%2Fstatic%2Fgenerated%2Fresources.json&amp;amp;rft.genre=document" data-reactid="448"></span><h3 class="index-list-title" data-reactid="449"><div data-reactid="450">  <div class="csl-entry">
-    <div class="csl-left-margin">54. </div><div class="csl-right-inline"><a href="http://peritext.robindemourat.com/static/generated/resources.json" target="blank">Exemple d’utilisation du générateur next comme API. </a>[en ligne]. Disponible à l’adresse : <a href="http://peritext.robindemourat.com/static/generated/resources.json" target="blank">http://peritext.robindemourat.com/static/generated/resources.json</a></div>
+</div><!-- react-text: 437 --> <!-- /react-text --><button class="collapse-btn " data-reactid="438">+ Montrer les mentions</button></h3><span data-reactid="439"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="440"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Exemple%20d&#x27;utilisation%20du%20g%C3%A9n%C3%A9rateur%20next%20comme%20API&amp;amp;rft_id=http%3A%2F%2Fperitext.robindemourat.com%2Fstatic%2Fgenerated%2Fresources.json&amp;amp;rft.genre=document" data-reactid="441"></span><h3 class="index-list-title" data-reactid="442"><div data-reactid="443">  <div class="csl-entry">
+    <div class="csl-left-margin">53. </div><div class="csl-right-inline"><a href="http://peritext.robindemourat.com/static/generated/resources.json" target="blank">Exemple d’utilisation du générateur next comme API. </a>[en ligne]. Disponible à l’adresse : <a href="http://peritext.robindemourat.com/static/generated/resources.json" target="blank">http://peritext.robindemourat.com/static/generated/resources.json</a></div>
   </div>
-</div><!-- react-text: 451 --> <!-- /react-text --><button class="collapse-btn " data-reactid="452">+ Montrer les mentions</button></h3><span data-reactid="453"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="454"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Gayffier%20Eug%C3%A8ne%20de&amp;amp;rft.atitle=Herbier%20forestier%20de%20la%20France.%20Reproduction%20par%20la%20photographie...%20des%20principales%20plantes%20ligneuses%20qui%20croissent%20spontan%C3%A9ment%20en%20for%C3%AAt.%20Description%20botanique...%20&amp;amp;rft_id=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b86260659%2Ff19.double%3F&amp;amp;rft.genre=document" data-reactid="455"></span><h3 class="index-list-title" data-reactid="456"><div data-reactid="457">  <div class="csl-entry">
-    <div class="csl-left-margin">55. </div><div class="csl-right-inline">EUGÈNE DE, Gayffier. <a href="http://gallica.bnf.fr/ark:/12148/btv1b86260659/f19.double?" target="blank"><i>Herbier forestier de la France. Reproduction par la photographie... des principales plantes ligneuses qui croissent spontanément en forêt. Description botanique... </i></a> [en ligne]. 1868. Disponible à l’adresse : <a href="http://gallica.bnf.fr/ark:/12148/btv1b86260659/f19.double" target="blank">http://gallica.bnf.fr/ark:/12148/btv1b86260659/f19.double</a>?</div>
+</div><!-- react-text: 444 --> <!-- /react-text --><button class="collapse-btn " data-reactid="445">+ Montrer les mentions</button></h3><span data-reactid="446"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="447"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Eug%C3%A8ne%20de%20Gayffier&amp;amp;rft.atitle=Herbier%20forestier%20de%20la%20France.%20Reproduction%20par%20la%20photographie...%20des%20principales%20plantes%20ligneuses%20qui%20croissent%20spontan%C3%A9ment%20en%20for%C3%AAt.%20Description%20botanique...%20&amp;amp;rft_id=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b86260659%2Ff19.double%3F&amp;amp;rft.genre=document" data-reactid="448"></span><h3 class="index-list-title" data-reactid="449"><div data-reactid="450">  <div class="csl-entry">
+    <div class="csl-left-margin">54. </div><div class="csl-right-inline">DE GAYFFIER, Eugène. <a href="http://gallica.bnf.fr/ark:/12148/btv1b86260659/f19.double?" target="blank"><i>Herbier forestier de la France. Reproduction par la photographie... des principales plantes ligneuses qui croissent spontanément en forêt. Description botanique... </i></a> [en ligne]. 1868. Disponible à l’adresse : <a href="http://gallica.bnf.fr/ark:/12148/btv1b86260659/f19.double" target="blank">http://gallica.bnf.fr/ark:/12148/btv1b86260659/f19.double</a>?</div>
   </div>
-</div><!-- react-text: 458 --> <!-- /react-text --><button class="collapse-btn " data-reactid="459">+ Montrer les mentions</button></h3><span data-reactid="460"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="461"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Les%20modules%20de%20peritext&amp;amp;rft.genre=document" data-reactid="462"></span><h3 class="index-list-title" data-reactid="463"><div data-reactid="464">  <div class="csl-entry">
-    <div class="csl-left-margin">56. </div><div class="csl-right-inline"><i>Les modules de peritext</i>.</div>
+</div><!-- react-text: 451 --> <!-- /react-text --><button class="collapse-btn " data-reactid="452">+ Montrer les mentions</button></h3><span data-reactid="453"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="454"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Les%20modules%20de%20peritext&amp;amp;rft.genre=document" data-reactid="455"></span><h3 class="index-list-title" data-reactid="456"><div data-reactid="457">  <div class="csl-entry">
+    <div class="csl-left-margin">55. </div><div class="csl-right-inline"><i>Les modules de peritext</i>.</div>
    </div>
+</div><!-- react-text: 458 --> <!-- /react-text --><button class="collapse-btn " data-reactid="459">+ Montrer les mentions</button></h3><span data-reactid="460"></span></li><li id="[object Object]" class="mentions-list-container " data-reactid="461"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Donato%20Ricci%20&amp;amp;rft.au=Robin%20%20%20De%20Mourat&amp;amp;rft.au=%20Pierre-Laurent%20Boulanger%20&amp;amp;rft.atitle=AIME%3A%20opening%20the%20context%20of%20a%20Humanities%20inquiry&amp;amp;rft_id=http%3A%2F%2Fechappees.esapyrenees.fr%2Fcontent%2F2-numeros%2F3-numero3%2F5-an-account-of-digital-humanities-from-the-aime-project%2Fechappees-an-account-of-digital-humanities-from-the-aime-project.pdf&amp;amp;rft.genre=document" data-reactid="462"></span><h3 class="index-list-title" data-reactid="463"><div data-reactid="464">  <div class="csl-entry">
+    <div class="csl-left-margin">56. </div><div class="csl-right-inline">RICCI ,  Donato,  DE MOURAT, Robin  et BOULANGER ,  Pierre-Laurent. <a href="http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf" target="blank">AIME: opening the context of a Humanities inquiry. </a>[en ligne]. 2015. Disponible à l’adresse : <a href="http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf" target="blank">http://echappees.esapyrenees.fr/content/2-numeros/3-numero3/5-an-account-of-digital-humanities-from-the-aime-project/echappees-an-account-of-digital-humanities-from-the-aime-project.pdf</a></div>
+  </div>
 </div><!-- react-text: 465 --> <!-- /react-text --><button class="collapse-btn " data-reactid="466">+ Montrer les mentions</button></h3><span data-reactid="467"></span></li></ul></div></div></section></section></section><style data-reactid="468"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
-          __NEXT_DATA__ = {"props":{},"pathname":"/bibliotheca","query":{},"buildId":"dd7d89d1-222b-41a8-984a-4ef6f46c830d","buildStats":{"app.js":{"hash":"b0f231a65417c81b58521484262c5514"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+          __NEXT_DATA__ = {"props":{},"pathname":"/bibliotheca","query":{},"buildId":"4562cfb1-2071-4d09-af2f-8d36bf436f91","buildStats":{"app.js":{"hash":"a236e83d31b6188e8200082f832ee5c0"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
           module={}
           __NEXT_LOADED_PAGES__ = []
           __NEXT_LOADED_CHUNKS__ = []
@@ -2779,4 +2842,4 @@ body {
           __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
             __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
           }
-        </script><script async="" id="__NEXT_PAGE__/bibliotheca" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/bibliotheca/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/b0f231a65417c81b58521484262c5514/app.js" async=""></script></div></body></html>
+        </script><script async="" id="__NEXT_PAGE__/bibliotheca" type="text/javascript" src="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/bibliotheca/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/a236e83d31b6188e8200082f832ee5c0/app.js" async=""></script></div></body></html>

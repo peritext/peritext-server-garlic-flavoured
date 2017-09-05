@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/section/index.js" as="script"/><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js" as="script"/><link rel="preload" href="/_next/b0f231a65417c81b58521484262c5514/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-05T12:37:40.787Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
+<!DOCTYPE html><html><head><link rel="preload" href="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/section/index.js" as="script"/><link rel="preload" href="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/_error/index.js" as="script"/><link rel="preload" href="/_next/a236e83d31b6188e8200082f832ee5c0/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-05T21:19:51.629Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta name="viewport" content="user-scalable=no,width=device-width" class="next-head"/><meta name="twitter:card" value="summary" class="next-head"/><meta name="twitter:site" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta name="twitter:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="twitter:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta itemprop="name" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta itemprop="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta property="og:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta property="og:type" content="website" class="next-head"/><meta property="og:url" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta property="og:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
@@ -1635,6 +1635,7 @@ Il est donc nécessaire d’inventer de nouvelles manières de connecter les mod
 .dicto-player-Railway .player-ui button#volume-symbol:hover span {
   font-size: 1em; }
 
+@charset "UTF-8";
 /**
  * Template-specific reusable elements (variables, mixins, abstract classes)
  */
@@ -1854,7 +1855,9 @@ Il est donc nécessaire d’inventer de nouvelles manières de connecter les mod
   background: #f32e36; }
 
 body {
-  background: #fdfff8; }
+  background: #fdfff8;
+  text-rendering: optimizeLegibility;
+  hyphens: none; }
 
 /**
  * Animations
@@ -1886,7 +1889,7 @@ body {
  */
 .garlic-layout {
   font-family: Merriweather, serif;
-  font-size: 1.056rem;
+  font-size: 1.408rem;
   position: relative;
   color: #414e4d;
   background: #fdfff8;
@@ -1904,8 +1907,8 @@ body {
     .garlic-layout .section-player .notes-container {
       z-index: 3; }
       .garlic-layout .section-player .notes-container.notes-container-position-aside {
-        left: 2%;
-        width: 15%; }
+        left: 3%;
+        width: 22.5%; }
     .garlic-layout .section-player footer {
       position: absolute;
       bottom: 0;
@@ -1914,9 +1917,7 @@ body {
       .garlic-layout .section-player footer ul {
         padding: 0; }
         .garlic-layout .section-player footer ul li {
-          padding: 0;
-          padding-top: 2.9988rem;
-          padding-bottom: 2.9988rem;
+          padding: 1.3328rem;
           list-style-type: none;
           -webkit-transition: all 0.5s ease;
           -moz-transition: all 0.5s ease;
@@ -1925,10 +1926,18 @@ body {
           transition: all 0.5s ease;
           flex: 1; }
           .garlic-layout .section-player footer ul li:first-of-type {
-            padding-right: 2.9988rem; }
+            padding-right: 1.3328rem; }
           .garlic-layout .section-player footer ul li:last-of-type {
-            padding-left: 2.9988rem;
+            padding-left: 1.3328rem;
             text-align: right; }
+          .garlic-layout .section-player footer ul li.prev {
+            border-right: 1px solid #e7eae1; }
+          .garlic-layout .section-player footer ul li.next {
+            border-left: 1px solid #e7eae1; }
+          .garlic-layout .section-player footer ul li.next .link, .garlic-layout .section-player footer ul li.prev .link {
+            border: none;
+            font-size: 1.408rem;
+            font-weight: 800; }
           .garlic-layout .section-player footer ul li.next {
             text-align: right; }
     .garlic-layout .section-player .BlockAssetWrapper {
@@ -1946,7 +1955,7 @@ body {
         overflow: auto;
         max-width: 100%;
         margin-right: 18%;
-        margin-left: 18%;
+        margin-left: 27%;
         box-shadow: 0 0 5px #e7eae1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block iframe {
           width: 100%;
@@ -1956,7 +1965,7 @@ body {
           border: none; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block + figcaption {
         margin-right: 20%;
-        margin-left: 20%; }
+        margin-left: 30%; }
       .garlic-layout .section-player .BlockAssetWrapper.fixed {
         z-index: 4; }
         .garlic-layout .section-player .BlockAssetWrapper.fixed .peritext-contextualizer-video iframe {
@@ -1965,7 +1974,7 @@ body {
           width: 100%;
           height: 100%; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib {
-        padding: 0.9996rem;
+        padding: 1.3328rem;
         background: #e7eae1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib .csl-left-margin {
           display: none; }
@@ -1975,7 +1984,7 @@ body {
         color: #fdfff8;
         background: #f32e36; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list li {
-          padding: 0.9996rem;
+          padding: 1.3328rem;
           list-style-type: none;
           cursor: pointer; }
           .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list li.active {
@@ -1987,11 +1996,12 @@ body {
         counter-reset: line;
         flex: 1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line {
-          line-height: 0.9996rem;
+          font-size: 1.408rem;
+          line-height: 1.9712rem;
           display: block; }
           .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line:before {
             display: inline-block;
-            width: 0.9996rem;
+            width: 1.3328rem;
             margin-right: .5em;
             padding: 0 .5em;
             content: counter(line);
@@ -2019,21 +2029,23 @@ body {
         padding: 0; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-dicto .dicto-player-ColumnsLayout {
           font-family: Merriweather, serif;
-          font-size: 0.66rem;
+          font-size: 0.88rem;
           position: absolute;
           height: 100%; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-dicto figcaption {
           position: relative;
           top: 100%; }
+      .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-data-presentation h1 {
+        font-size: 2.2528rem; }
       .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player {
-        font-size: 0.66rem;
+        font-size: 0.88rem;
         background: #fdfff8; }
         .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .read-mode-toggler {
           z-index: 2;
           padding: 0;
-          padding: 0 0 0 2.499rem; }
+          padding: 0 0 0 3.332rem; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .read-mode-toggler li {
-            padding: 0.9996rem;
+            padding: 1.3328rem;
             list-style-type: none;
             cursor: pointer;
             text-transform: uppercase;
@@ -2054,13 +2066,13 @@ body {
           z-index: 2;
           background: #fdfff8; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .caption-header .presentation-title {
-            padding-left: 1.9992rem; }
+            padding-left: 2.6656rem; }
         .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .slide-caption {
           position: relative;
           cursor: pointer; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .slide-caption .slide-content {
             overflow: visible;
-            padding: 0.9996rem;
+            padding: 1.3328rem;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -ms-transition: all 0.5s ease;
@@ -2070,12 +2082,12 @@ body {
               color: #fdfff8;
               background: #87240e; }
       .garlic-layout .section-player .BlockAssetWrapper .ReactTable {
-        font-size: 0.66rem; }
+        font-size: 0.88rem; }
       .garlic-layout .section-player .BlockAssetWrapper > figcaption {
-        font-size: 0.594rem;
-        margin-right: 0.9996rem;
-        margin-left: 0.6rem;
-        padding: 0.9996rem;
+        font-size: 0.792rem;
+        margin-right: 1.3328rem;
+        margin-left: 0.8rem;
+        padding: 1.3328rem;
         padding-top: 0;
         opacity: .7; }
         .garlic-layout .section-player .BlockAssetWrapper > figcaption > * {
@@ -2091,8 +2103,8 @@ body {
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom {
           position: absolute;
           z-index: 5;
-          right: 0.9996rem;
-          padding: 0.6rem;
+          right: 1.3328rem;
+          padding: 0.8rem;
           cursor: pointer;
           pointer-events: all;
           color: #fdfff8;
@@ -2107,60 +2119,91 @@ body {
           .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom:hover {
             background: #87240e; }
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-top {
-          top: 0.9996rem; }
+          top: 1.3328rem; }
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom {
-          bottom: 0.9996rem; }
+          bottom: 1.3328rem; }
   .garlic-layout .contents-wrapper .main-contents-container {
     min-height: 110%;
-    padding-bottom: 17.9928rem; }
+    padding-bottom: 23.9904rem; }
+    .garlic-layout .contents-wrapper .main-contents-container li {
+      margin-bottom: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote {
+      padding: 3.9984rem;
+      background: #e7eae1;
+      line-height: 2.112rem;
+      quotes: "\AB   " " \BB";
+      position: relative; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote::before {
+      content: open-quote;
+      position: absolute;
+      top: 1.3328rem;
+      left: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote::after {
+      content: close-quote;
+      position: absolute;
+      bottom: 1.3328rem;
+      right: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h1, .garlic-layout .contents-wrapper .main-contents-container h2, .garlic-layout .contents-wrapper .main-contents-container h3 {
+      font-family: Roboto, serif; }
+    .garlic-layout .contents-wrapper .main-contents-container h1 {
+      font-size: 3.60448rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h2 {
+      font-size: 2.2528rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h3 {
+      font-size: 1.408rem; }
     .garlic-layout .contents-wrapper .main-contents-container .home-header {
-      margin-top: 0.9996rem;
+      margin-top: 1.3328rem;
       margin-right: 20%;
-      margin-left: 20%;
+      margin-left: 30%;
       text-align: center; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header.hidden {
         display: none; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header h1 {
-        font-size: 2.70336rem;
+        font-size: 3.60448rem;
         margin: 0; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header .subtitle {
-        font-size: 1.6896rem;
+        font-size: 2.2528rem;
         font-style: italic;
         margin: 0; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header .authors {
-        font-size: 1.056rem; }
+        font-size: 1.408rem; }
     .garlic-layout .contents-wrapper .main-contents-container .story-description {
       margin: 0;
-      margin-top: 2.9988rem;
-      margin-bottom: 2.9988rem;
-      padding: 2.9988rem;
+      margin-top: 3.9984rem;
+      margin-bottom: 3.9984rem;
+      padding: 3.9984rem;
       background: #e7eae1; }
     .garlic-layout .contents-wrapper .main-contents-container .cover-image {
-      margin-top: 0.9996rem;
+      margin-top: 1.3328rem;
       box-shadow: 0 0 5px #e7eae1; }
       .garlic-layout .contents-wrapper .main-contents-container .cover-image .link {
         border: none; }
+      .garlic-layout .contents-wrapper .main-contents-container .cover-image a {
+        border-bottom: none; }
     .garlic-layout .contents-wrapper .main-contents-container .contents-guttered {
       margin-right: 20%;
-      margin-left: 20%; }
+      margin-left: 30%; }
+      .garlic-layout .contents-wrapper .main-contents-container .contents-guttered p {
+        font-size: 1.408rem;
+        line-height: 1.9712rem; }
     .garlic-layout .contents-wrapper .main-contents-container footer {
-      left: 20%;
-      width: 60%; }
+      left: 30%;
+      width: 50%; }
     .garlic-layout .contents-wrapper .main-contents-container .section-title {
       font-family: Roboto, serif;
-      font-size: 4.32538rem;
+      font-size: 5.76717rem;
       margin-top: 0;
       margin-right: 20%;
-      margin-left: 20%; }
+      margin-left: 30%; }
     .garlic-layout .contents-wrapper .main-contents-container > div {
       position: relative; }
       .garlic-layout .contents-wrapper .main-contents-container > div > h1, .garlic-layout .contents-wrapper .main-contents-container > div > h2, .garlic-layout .contents-wrapper .main-contents-container > div > h3, .garlic-layout .contents-wrapper .main-contents-container > div > h4, .garlic-layout .contents-wrapper .main-contents-container > div > h5, .garlic-layout .contents-wrapper .main-contents-container > div > h6, .garlic-layout .contents-wrapper .main-contents-container > div > p, .garlic-layout .contents-wrapper .main-contents-container > div > ul, .garlic-layout .contents-wrapper .main-contents-container > div > ol, .garlic-layout .contents-wrapper .main-contents-container > div > blockquote, .garlic-layout .contents-wrapper .main-contents-container > div > pre {
         margin-right: 20%;
-        margin-left: 20%; }
+        margin-left: 30%; }
   .garlic-layout nav {
     font-family: Roboto, serif;
     z-index: 5;
-    width: 20%;
+    width: 30%;
     height: 100%;
     user-select: none;
     pointer-events: none;
@@ -2187,7 +2230,7 @@ body {
     .garlic-layout nav .body,
     .garlic-layout nav .footer {
       max-height: 0;
-      padding: 0.9996rem 0.9996rem 0 0.9996rem;
+      padding: 1.3328rem 1.3328rem 0 1.3328rem;
       opacity: 0;
       -webkit-transition: 0.5s all ease;
       -moz-transition: 0.5s all ease;
@@ -2224,7 +2267,7 @@ body {
         max-height: 100%;
         opacity: 1; }
     .garlic-layout nav .link {
-      font-size: 1.056rem;
+      font-size: 1.408rem;
       border: none;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
@@ -2236,22 +2279,22 @@ body {
     .garlic-layout nav .nav-title {
       text-overflow: ellipsis; }
       .garlic-layout nav .nav-title .link {
-        font-size: 1.6896rem;
+        font-size: 2.2528rem;
         font-weight: 700; }
   .garlic-layout .table-of-contents .section-link-level-0 {
     padding-left: 0; }
   .garlic-layout .table-of-contents .section-link-level-1 {
-    padding-left: 0.6rem; }
+    padding-left: 0.8rem; }
   .garlic-layout .table-of-contents .section-link-level-2 {
-    padding-left: 0.9rem; }
-  .garlic-layout .table-of-contents .section-link-level-3 {
     padding-left: 1.2rem; }
+  .garlic-layout .table-of-contents .section-link-level-3 {
+    padding-left: 1.6rem; }
   .garlic-layout .table-of-contents .section-link-level-4 {
-    padding-left: 1.5rem; }
+    padding-left: 2rem; }
   .garlic-layout .table-of-contents .section-link-level-5 {
-    padding-left: 1.8rem; }
+    padding-left: 2.4rem; }
   .garlic-layout .section-aside {
-    font-size: 0.66rem;
+    font-size: 0.88rem;
     position: fixed;
     z-index: 4;
     width: 16%;
@@ -2270,18 +2313,18 @@ body {
   .garlic-layout .RelatedContexts {
     overflow: hidden; }
     .garlic-layout .RelatedContexts > .header, .garlic-layout .RelatedContexts > .body {
-      margin-right: 0.9996rem; }
+      margin-right: 1.3328rem; }
     .garlic-layout .RelatedContexts > .header {
       padding-left: 0;
       border-bottom: 1px solid #f32e36; }
       .garlic-layout .RelatedContexts > .header h2 {
         font-family: Roboto, serif;
-        font-size: 1.056rem; }
+        font-size: 1.408rem; }
         .garlic-layout .RelatedContexts > .header h2 .csl-left-margin {
           display: none; }
       .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib {
         margin: 0;
-        margin-bottom: 0.9996rem;
+        margin-bottom: 1.3328rem;
         padding: 0; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib ul {
           padding: 0; }
@@ -2293,18 +2336,18 @@ body {
     .garlic-layout .RelatedContexts .body {
       overflow: auto;
       padding: 0;
-      padding-top: 0.9996rem;
+      padding-top: 1.3328rem;
       flex: 1; }
       .garlic-layout .RelatedContexts .body li {
         padding: 0;
         list-style-type: none; }
       .garlic-layout .RelatedContexts .body .ContextMention {
-        margin-bottom: 0.9996rem; }
+        margin-bottom: 1.3328rem; }
     .garlic-layout .RelatedContexts .close-context-btn {
-      font-size: 0.66rem;
+      font-size: 0.88rem;
       position: absolute;
-      top: 0.9996rem;
-      right: 0.9996rem;
+      top: 1.3328rem;
+      right: 1.3328rem;
       cursor: pointer;
       text-align: center;
       color: #f32e36;
@@ -2321,13 +2364,14 @@ body {
   .garlic-layout .output-group > h2 {
     font-family: Roboto, serif;
     margin-bottom: 0;
-    padding-bottom: 0.9996rem;
-    border-bottom: 3px solid #f32e36; }
+    padding-bottom: 1.3328rem;
+    border-bottom: 3px solid #f32e36;
+    font-weight: 400; }
   .garlic-layout .mentions-container .csl-left-margin,
   .garlic-layout .output-group .csl-left-margin {
     display: none; }
   .garlic-layout .mentions-list-container .mentions-list {
-    font-family: 0.66rem;
+    font-family: 0.88rem;
     overflow: hidden;
     max-height: 0;
     margin: 0;
@@ -2348,14 +2392,15 @@ body {
     margin: 0;
     padding: 0; }
     .garlic-layout .index-list li {
-      margin-bottom: 0.9996rem;
+      margin-bottom: 1.3328rem;
       padding: 0;
       list-style-type: none; }
     .garlic-layout .index-list .index-list-title {
-      padding-bottom: 0.9996rem;
-      cursor: pointer; }
+      padding-bottom: 1.3328rem;
+      cursor: pointer;
+      font-weight: 400; }
       .garlic-layout .index-list .index-list-title .collapse-btn {
-        padding: 0.6rem;
+        padding: 0.8rem;
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
@@ -2371,7 +2416,7 @@ body {
           background: #87240e; }
   .garlic-layout .download-button {
     display: block;
-    padding: 0.6rem;
+    padding: 0.8rem;
     text-align: center;
     color: #fdfff8 !important;
     background: #f32e36;
@@ -2383,7 +2428,7 @@ body {
     .garlic-layout .download-button:hover {
       background: #87240e; }
   .garlic-layout .pdf-nav button {
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     cursor: pointer;
     text-align: center;
     background: #e7eae1;
@@ -2397,7 +2442,7 @@ body {
       color: #fdfff8;
       background: #f32e36; }
   .garlic-layout .pdf-nav span {
-    padding: 0.9996rem; }
+    padding: 1.3328rem; }
   .garlic-layout .pdf-player-container {
     text-align: center; }
     .garlic-layout .pdf-player-container canvas {
@@ -2444,20 +2489,20 @@ body {
     max-width: 100%;
     max-height: 100%; }
   .garlic-layout .ContextMention {
-    padding: 0.6rem;
+    padding: 0.8rem;
     background: #e7eae1; }
     .garlic-layout .ContextMention .header {
-      margin-bottom: 0.6rem; }
+      margin-bottom: 0.8rem; }
     .garlic-layout .ContextMention .exerpt {
       overflow: auto;
       max-height: 20rem;
-      padding: 0.6rem;
+      padding: 0.8rem;
       color: #fdfff8;
       background: #414e4d; }
     .garlic-layout .ContextMention .footer {
-      padding: 0.6rem; }
+      padding: 0.8rem; }
   .garlic-layout .popover-button {
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     cursor: pointer;
     color: #fdfff8;
     background: #414e4d;
@@ -2471,9 +2516,9 @@ body {
   .garlic-layout #burger-menu {
     position: relative;
     display: inline-block;
-    width: 1.056rem;
-    height: 1.056rem;
-    margin-bottom: 0.9996rem;
+    width: 1.408rem;
+    height: 1.408rem;
+    margin-bottom: 1.3328rem;
     cursor: pointer;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -2488,7 +2533,7 @@ body {
       left: 0;
       display: block;
       width: 100%;
-      height: 0.2112rem;
+      height: 0.2816rem;
       -webkit-transition: .25s ease-in-out;
       -moz-transition: .25s ease-in-out;
       -o-transition: .25s ease-in-out;
@@ -2498,18 +2543,18 @@ body {
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
       opacity: 1;
-      border-radius: 0.0352rem;
+      border-radius: 0.04693rem;
       background: #f32e36; }
       .garlic-layout #burger-menu span:nth-child(1), .garlic-layout #burger-menu span:nth-child(2) {
         top: 0; }
       .garlic-layout #burger-menu span:nth-child(3) {
-        top: 0.35165rem; }
+        top: 0.46886rem; }
       .garlic-layout #burger-menu span:nth-child(4) {
-        top: 0.7033rem; }
+        top: 0.93773rem; }
     .garlic-layout #burger-menu.open span {
       background: #87240e; }
       .garlic-layout #burger-menu.open span:nth-child(1) {
-        top: 0.352rem;
+        top: 0.46933rem;
         left: 50%;
         width: 0; }
       .garlic-layout #burger-menu.open span:nth-child(2) {
@@ -2523,18 +2568,19 @@ body {
         -o-transform: rotate(-45deg) translateX(25%);
         transform: rotate(-45deg) translateX(25%); }
       .garlic-layout #burger-menu.open span:nth-child(4) {
-        top: 0.352rem;
+        top: 0.46933rem;
         left: 50%;
         width: 0; }
   .garlic-layout .note-item {
-    font-size: 0.66rem;
+    font-size: 0.88rem;
     position: relative;
     overflow: visible;
     max-width: 100%;
-    margin-bottom: 0.9996rem;
-    padding-bottom: 0.6rem;
+    margin-bottom: 1.3328rem;
+    padding-bottom: 0.8rem;
     list-style-type: none;
-    border-bottom: 0.132rem solid #f32e36;
+    border-bottom: 0.176rem solid #f32e36;
+    opacity: .8;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -2542,32 +2588,49 @@ body {
     transition: all 0.5s ease; }
     .garlic-layout .note-item p,
     .garlic-layout .note-item ul {
-      line-height: 1.32rem; }
+      font-size: 0.88rem;
+      line-height: 1.232rem; }
     .garlic-layout .note-item > div {
       display: inline;
-      margin-left: 0.6rem; }
+      margin-left: 0.8rem; }
       .garlic-layout .note-item > div > * {
         display: inline; }
     .garlic-layout .note-item iframe {
       max-width: 100%; }
-  .garlic-layout .note-content-pointer,
+    .garlic-layout .note-item .BlockAssetWrapper .peritext-contextualization,
+    .garlic-layout .note-item .BlockAssetWrapper > figcaption {
+      padding: 0 !important;
+      margin: 0 !important; }
   .garlic-layout .note-block-pointer {
-    font-size: 0.66rem;
-    line-height: 1.386rem;
+    font-size: 0.44rem;
+    line-height: 0.88rem;
     display: inline-block;
-    width: 1.2672rem;
-    height: 1.2672rem;
+    width: 0.8448rem;
+    height: 0.8448rem;
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
     color: #fdfff8;
     border-radius: 50%;
     background: #f32e36; }
-    .garlic-layout .note-content-pointer:hover,
     .garlic-layout .note-block-pointer:hover {
       background: #87240e; }
   .garlic-layout .note-content-pointer {
-    margin-left: 0.6rem; }
+    font-size: 0.88rem;
+    line-height: 1.76rem;
+    display: inline-block;
+    width: 1.6896rem;
+    height: 1.6896rem;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: #fdfff8;
+    border-radius: 50%;
+    background: #f32e36; }
+    .garlic-layout .note-content-pointer:hover {
+      background: #87240e; }
+  .garlic-layout .note-content-pointer {
+    margin-left: 0.8rem; }
   .garlic-layout .player-container canvas {
     box-shadow: 0 0 5px #e7eae1; }
   .garlic-layout .epub-player-wrapper .epub-player-container {
@@ -2585,15 +2648,15 @@ body {
   .garlic-layout pre {
     font-family: monospace;
     overflow: auto;
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     background: #e7eae1; }
   .garlic-layout #disqus_thread {
-    margin-top: 2.9988rem;
+    margin-top: 3.9984rem;
     margin-right: 20%;
-    margin-left: 20%; }
+    margin-left: 30%; }
 
-</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="-282673967"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:17%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class="active section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introduction</a></li><li class=" section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="23">L&#x27;écosystème des modules peritext</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="25">Des systèmes documentaires riches et exploitables</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="27">Un design adaptable et modulaire</a></li><li class=" section-link-level-0" data-reactid="28"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="29">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="31">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="33">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="35">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="37">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="39">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="41">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="43">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="45">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="47">Contextualiseur vegalite</a></li><li class=" section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-1" data-reactid="50"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="51">Contextualiseur data-presentation</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="53">Gabarits</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="55">Générateurs</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="57">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="59">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="60"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="61">À propos</a></li></ul></div><div class="footer" data-reactid="62"><ul data-reactid="63"><li class="" data-reactid="64"><a href="/lexicon/" data-reactid="65">Glossaire</a></li><li class="" data-reactid="66"><a href="/bibliotheca/" data-reactid="67">Références</a></li><li class="" data-reactid="68"><a href="/dimensio/" data-reactid="69">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="70"><section class="main-contents-container section-player" data-reactid="71"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Introduction&amp;amp;rft.genre=document" data-reactid="72"></span><h1 class="section-title" data-reactid="73">Introduction</h1><!-- react-text: 74 --><!-- /react-text --><div data-reactid="75"><p data-reactid="76"><!-- react-text: 77 -->Ce document est dédié à la présentation (et la démonstration) de l&#x27;écosystème Peritext, un projet ouvert et libre développé pour supporter des pratiques de publication académique tirant parti des données du web et autres ressources numériques convoquées dans les recherches, et autorisant une publication à haute qualité graphique et éditoriale sur toute la palette des formats de communication utilisés par les chercheurs aujourd&#x27;hui.<!-- /react-text --></p><p data-reactid="78"><!-- react-text: 79 -->En quoi consiste Peritext ? pour commencer, à produire le site que vous lisez en ce moment !<!-- /react-text --></p><h1 id="fnblr" data-reactid="80"><!-- react-text: 81 -->Pourquoi Peritext<!-- /react-text --></h1><p data-reactid="82"><!-- react-text: 83 -->En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent d&#x27;une manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.<!-- /react-text --></p><p data-reactid="84"><!-- react-text: 85 -->On assiste en effet, dans un large spectre de disciplines comme de sujets de publication, à la prolifération d’une variété d’objets hétéroclites qui participent de manière de plus en plus active aux processus de recherches. En témoignent des exemples aussi divers que l&#x27;utilisation croissante d’enregistrements audiovisuels en ligne produits ou analysés dans un contexte scientifique, l’utilisation des réseaux sociaux et de twitter comme élément de corpus et/ou de restitution des débats en cours, la mobilisation d’archives et de dépôts de sources numérisées rendant possible leur présentation sous forme diagrammatique ou tabulaire, etc.<!-- /react-text --></p><figure class="BlockAssetWrapper image" style="min-height:;height:;position:relative;" id="9b939ef6-f7d0-4d31-8ef2-6081b19cc565" data-reactid="86"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20cabinet%20d&#x27;Ole%20Worm&amp;amp;rft.genre=document" data-reactid="87"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-image" data-reactid="88"><img src="/static/generated/9cd2d79e-8988-44d7-9815-44e7007f0319.png" data-reactid="89"/></figure><figcaption data-reactid="90"><h4 data-reactid="91">Le cabinet d&#x27;Ole Worm</h4><p data-reactid="92">Reproduction de la gravure conservée à Modène représentant un cabinet de curiosités</p><p data-reactid="93"><!-- react-text: 94 -->Source: <!-- /react-text --><i data-reactid="95">Bibliothèque Estense, Modène.</i></p><p data-reactid="96"><button style="cursor:pointer;" data-reactid="97">🔀</button></p></figcaption></figure><p data-reactid="98"><!-- react-text: 99 -->Cela dit, dans les formats les plus répandus de l’édition scientifique, les traces du web et autres ressources numériques peinent encore à sortir de la marge des pages : on les remarquera subrepticement au détour d’une note de bas de page (sous la forme d’un discret hyperlien), ou timidement reproduites dans une annexe secondaire, à la fin d’une entrée bibliographique ou dans la légende d’une figure, etc. Ces connexions à des éléments externes désignent des ressources riches, dont le contenu contribue aux arguments développés, et est souvent disponible en intégralité en ligne par ailleurs. Elles restent pourtant souvent sur le seuil des échanges et des arguments, notamment du fait qu’elles s’effacent des documents une fois traduites et formatées selon les conventions de publication instituées (articles, monographies, actes, mémoires, thèses, …).<!-- /react-text --></p><p data-reactid="100"><!-- react-text: 101 -->D’un autre côté, l’essor de la publication en ligne, du mouvement de l’accès ouvert au résultats de la recherche, et de nouvelles pratiques de communication de la part des chercheurs eux-mêmes qui vont de l’usage des réseaux sociaux à l’expérimentation de diverses formes de publication en ligne, ont instauré un régime de production et de circulation des documents académiques extrêmement riche où ces derniers se voient discutés, critiqués, reformatés et éditorialisés par-delà une multitude de mondes scientifiques, sociaux et médiatiques.<!-- /react-text --></p><p data-reactid="102"><!-- react-text: 103 -->Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : <!-- /react-text --><strong data-reactid="104"><!-- react-text: 105 -->les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques.<!-- /react-text --></strong><!-- react-text: 106 --> C’est là le projet à la base de Peritext.<!-- /react-text --></p><h1 id="7gqbf" data-reactid="107"><!-- react-text: 108 -->Pour quels contextes Peritext est-il fait (et pas fait) ?<!-- /react-text --></h1><p data-reactid="109"><!-- react-text: 110 -->Peritext ne s&#x27;adresse pas à toutes les pratiques de publication académique, il n&#x27;entend en aucun cas proposer une solution totale prenant en charge l&#x27;intégralité d&#x27;un processus d&#x27;édition académique, ou couvrir la totalité des contextes de projet scientifiques ou éditoriaux.<!-- /react-text --></p><p data-reactid="111"><!-- react-text: 112 -->Il s&#x27;agit plutôt d&#x27;un écosystème ouvert (c&#x27;est-à-dire fait pour se connecter à un archipel de normes, outils, pratiques et projets existants), conçu pour des projets qui se placent à la marge des mondes académiques, et à la marge des formes rhétoriques propres aux formats établis, fortement (et souvent exclusivement) fondés sur une argumentation ou un compte-rendu sous forme textuelle.<!-- /react-text --></p><p data-reactid="113"><!-- react-text: 114 -->Peritext pourrait donc être pertinent pour vous si vous remplissez au moins deux des conditions suivantes :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="115"><li data-reactid="116"><strong data-reactid="117"><!-- react-text: 118 -->Vos recherches convoquent de manière très importante des documents extérieurs<!-- /react-text --></strong><!-- react-text: 119 --> (tableaux de données, médias, sites web, ...) et votre activité consiste notamment à les analyser et les commenter en profondeur<!-- /react-text --></li><li data-reactid="120"><strong data-reactid="121"><!-- react-text: 122 -->Vous désirez publier au-delà des formats traditionnels associés à la promotion et la reconnaissance officielle des chercheurs<!-- /react-text --></strong><!-- react-text: 123 -->, notamment en ayant une activité sur le web<!-- /react-text --></li><li data-reactid="124"><strong data-reactid="125"><!-- react-text: 126 -->Vous êtes attaché à la qualité technique &amp; documentaire des documents que vous produisez<!-- /react-text --></strong><!-- react-text: 127 -->, notamment en termes de métadonnées et d&#x27;indexation<!-- /react-text --></li><li data-reactid="128"><strong data-reactid="129"><!-- react-text: 130 -->Vous êtes attaché à la qualité graphique et éditoriale des documents que vous produisez<!-- /react-text --></strong><!-- react-text: 131 --> en tant que chercheur, que ce soit vous ou un membre de votre équipe qui s&#x27;en occupe<!-- /react-text --></li></ul><p data-reactid="132"><!-- react-text: 133 -->Par ailleurs, Peritext en tant que tel ne prend pas en charge les dimensions suivantes du travail de communication académique, et ne sera donc pas pertinent pour vous si :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="134"><li data-reactid="135"><!-- react-text: 136 -->votre projet éditorial mise de manière centrale sur la dimension collective &amp; réticulaire du travail de communication scientifique (commentaires, réactions, collaboration, ...). Tout cela peut se passer autour d&#x27;un document peritext, mais pas en son sein. Ce point ne devrait pas évoluer dans le futur du projet, et pour l&#x27;instant l&#x27;utilisation d&#x27;outils tiers tels qu&#x27;Hypothes.is ou disq.us est favorisée pour cela.<!-- /react-text --></li><li data-reactid="137"><!-- react-text: 138 -->vous comptez expérimenter avec des structures rhétoriques qui se départissent de l&#x27;organisation traditionnelle des documents académiques, faits de sections (chapitres, parties, ...) se suivant de manière linéaire, et d&#x27;un hypertexte assez simple permettant de produire une table des matières, un glossaire, et une liste de référence. Ce point est soumis à une probable évolution ultérieure.<!-- /react-text --></li><li data-reactid="139"><!-- react-text: 140 -->vous comptez expérimenter de formes de publication académique qui ne prennent pas le texte pour médium principal et structurant pour l&#x27;argumentation (organisées autour d&#x27;une vidéo ou d&#x27;une image par exemple)<!-- /react-text --></li></ul><p data-reactid="141"></p><figure class="BlockAssetWrapper embed" style="min-height:;height:;position:relative;" id="131836e5-8f60-40b6-8129-b374877edd4f" data-reactid="142"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Gayffier%20Eug%C3%A8ne%20de&amp;amp;rft.atitle=Herbier%20forestier%20de%20la%20France.%20Reproduction%20par%20la%20photographie...%20des%20principales%20plantes%20ligneuses%20qui%20croissent%20spontan%C3%A9ment%20en%20for%C3%AAt.%20Description%20botanique...%20&amp;amp;rft_id=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b86260659%2Ff19.double%3F&amp;amp;rft.genre=document" data-reactid="143"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-embed" data-reactid="144"><div style="padding: 0; padding-bottom: 56.25%; position: relative;  display: block; height: 0; "><iframe style="position: absolute;  top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0;" src="http://gallica.bnf.fr/ark:/12148/btv1b86260659/f19.double.mini"></iframe></div></figure><figcaption data-reactid="145"><h4 data-reactid="146">Herbier forestier de la France. Reproduction par la photographie... des principales plantes ligneuses qui croissent spontanément en forêt. Description botanique... </h4><p data-reactid="147"></p><p data-reactid="148"><!-- react-text: 149 -->Source: <!-- /react-text --><i data-reactid="150">Gallica</i></p><p data-reactid="151"><button style="cursor:pointer;" data-reactid="152">🔀</button></p></figcaption></figure><h1 id="ft96r" data-reactid="153"><!-- react-text: 154 -->Qu&#x27;est-ce que Peritext ?<!-- /react-text --></h1><p data-reactid="155"><!-- react-text: 156 -->Peritext est d&#x27;abord une <!-- /react-text --><strong data-reactid="157"><!-- react-text: 158 -->spécification technique<!-- /react-text --></strong><!-- react-text: 159 --> pour la description de documents académiques visant à terme à devenir un format ouvert et interopérable <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="3c0476d6-530a-492b-8f22-03663749697f" data-reactid="160"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=R%C3%A9pertoire%20peritext-core%20sur%20github&amp;amp;rft_id=https%3A%2F%2Fgithub.com%2Fperitext%2Fperitext-core&amp;amp;rft.genre=document" data-reactid="161"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="3c0476d6-530a-492b-8f22-03663749697f" data-reactid="162">(30)</cite></span><!-- react-text: 163 --> . Autrement dit, il s&#x27;agit d&#x27;un mode d&#x27;emploi expliquant comment décrire le contenu d’un document académique d&#x27;une façon conventionnelle &amp; prévisible. Ce dernier décrit comment les données d&#x27;un récit écrit par un chercheur avec un outil compatible doivent être structurées, et contribue à produire un <!-- /react-text --><em data-reactid="164"><!-- react-text: 165 -->format de données<!-- /react-text --></em><!-- react-text: 166 --> particulier, le <!-- /react-text --><em data-reactid="167"><!-- react-text: 168 -->format Peritext.<!-- /react-text --></em></p><p data-reactid="169"><!-- react-text: 170 -->Autour du <!-- /react-text --><em data-reactid="171"><!-- react-text: 172 -->format Peritext<!-- /react-text --></em><!-- react-text: 173 --> s’articulent un ensemble de modules technologiques et des applications directement utilisables qui en actualisent les potentialités et lui donnent du sens<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-19b5f342-b154-4471-b32d-419ce087463c" data-reactid="174"><!-- react-text: 175 -->1<!-- /react-text --><!-- react-text: 176 --> <!-- /react-text --></sup><!-- react-text: 177 --> . Ces modules technologiques ont tous en commun le fait qu&#x27;ils visent à aider à automatiser certaines tâches relevant des normes techniques et éditoriales liées à la publication académique contemporaine<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-ac6cd150-c911-4d95-bde1-57a8e0fda7cf" data-reactid="178"><!-- react-text: 179 -->2<!-- /react-text --><!-- react-text: 180 --> <!-- /react-text --></sup><!-- react-text: 181 -->  , tout en ménageant beaucoup de place et de souplesse pour l’affichage de contenus non-conventionnels et leur design en accord avec l’argument fait par le texte.<!-- /react-text --></p><h1 id="9fm5a" data-reactid="182"><!-- react-text: 183 -->Une écriture et une édition multi-supports<!-- /react-text --></h1><p data-reactid="184"><strong data-reactid="185"><!-- react-text: 186 -->Le premier atout du format peritext est que sa manière de décrire un document permet de produire une diversité de documents de type &quot;codex&quot; (pdf, epub) comme de type &quot;site web&quot; à partir d&#x27;une seule et même représentation des contenus.<!-- /react-text --></strong></p><p data-reactid="187"><!-- react-text: 188 -->Par exemple, ce document même est directement accessible comme un site web, un fichier pdf imprimable, et un fichier epub exécutable sur liseuse numérique, une API de manière à ce qu&#x27;il soit utilisable par une autre application, etc.<!-- /react-text --></p><p data-reactid="189"><!-- react-text: 190 -->Peritext rentre donc dans la catégorie de technologies intitulées &quot;COPE&quot; (&quot;Create Once, Publish Everywhere&quot;<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-289d9f05-1392-4434-bce9-a5f1af1b456e" data-reactid="191"><!-- react-text: 192 -->3<!-- /react-text --><!-- react-text: 193 --> <!-- /react-text --></sup><!-- react-text: 194 --> ) qui consistent à produire une diversité de documents à partir d&#x27;un même texte source. Ainsi, avec Peritext les auteur.e.s peuvent écrire une seule fois leur article, chapitre ou livre, et disposer en retour et simultanément de diverses contextualisations de ce contenu pour les différents supports (site web, pdf, epub, ...).<!-- /react-text --></p><p data-reactid="195"><!-- react-text: 196 -->Cela dit, Peritext se distingue une première fois de ses voisins dans la mesure où il permet également aux utilisateurs de se faire “éditeurs-designers” et disposer de divers moyens très détaillés de mettre en forme leur récit pour chacun des supports disponibles, en fonction de leur corpus, de leur argument et de leur projet intellectuel -- ce qui n&#x27;est pas le cas de la plupart de ses voisins.<!-- /react-text --></p><h1 id="7pg52" data-reactid="197"><!-- react-text: 198 -->Un modèle unifié et souple pour gérer les arguments centrés sur des documents et autres éléments extérieurs<!-- /react-text --></h1><p data-reactid="199"><strong data-reactid="200"><!-- react-text: 201 -->Le second atout du format Peritext réside dans sa vocation à soutenir la convocation de nombreux éléments extérieurs dans la structure argumentative d’un texte académique (références, données, documents audiovisuels, etc.).<!-- /react-text --></strong><!-- react-text: 202 --> Pour ce faire, il repose sur un mode de représentation des contenus particulier, centré sur la séparation entre les ressources convoquées dans un récit et les différentes formes que ces dernières peuvent prendre dans le cadre de l&#x27;argumentation opérée par un texte.<!-- /react-text --></p><p data-reactid="203"><!-- react-text: 204 -->Pour en savoir plus, rendez-vous à la section &quot;Le format de données peritext&quot;.<!-- /react-text --></p><h1 id="aos5l" data-reactid="205"><!-- react-text: 206 -->Respect des normes techniques et éditoriales de la publication académique<!-- /react-text --></h1><p data-reactid="207"><!-- react-text: 208 -->Sur le plan documentaire, peritext prend en charge une série de nécessités spécifiques à la publication académique. <!-- /react-text --></p><p data-reactid="209"><!-- react-text: 210 -->Pour en savoir plus, rendez-vous à la section &quot;Des systèmes documentaires solides et faciles à mettre en place&quot;.<!-- /react-text --></p><h1 id="4im14" data-reactid="211"><!-- react-text: 212 -->Adaptation et modularité<!-- /react-text --></h1><p data-reactid="213"><!-- react-text: 214 -->Peritext est pensé selon une logique de &quot;boîte ouvrable&quot;, c&#x27;est-à-dire que ses différents modules fonctionnent avec des paramètres par défaut mais sont par ailleurs profondément paramétrables par les utilisateurs qui le souhaitent.<!-- /react-text --></p><p data-reactid="215"><!-- react-text: 216 -->Outre les paramètres exposés par chacun des modules, peritext prend en charge une diversité de langages permettant de préciser et de modeler les contenus avec beaucoup de liberté, comme par exemple le langage <!-- /react-text --><span data-reactid="217"><!-- react-text: 218 -->markdown<!-- /react-text --></span><!-- react-text: 219 --> pour certains contextualiseurs et les langages de mise en forme que sont <!-- /react-text --><span data-reactid="220"><!-- react-text: 221 -->css<!-- /react-text --></span><!-- react-text: 222 --> et <!-- /react-text --><span data-reactid="223"><!-- react-text: 224 -->css print <!-- /react-text --></span><!-- react-text: 225 -->qui peuvent être utilisés de manière distincte pour chacun des types de supports produits à partir d&#x27;un contenu.<!-- /react-text --></p><p data-reactid="226"><!-- react-text: 227 -->Enfin, il est construit selon une logique modulaire qui permet beaucoup de souplesse et de variations dans l&#x27;implémentation d&#x27;un écosystème éditorial spécifique (en termes de supports visés, de types de documents pris en charge, ...).<!-- /react-text --></p><p data-reactid="228"><!-- react-text: 229 -->Pour en savoir plus, rendez-vous à la section &quot;adaptation et modularité&quot;.<!-- /react-text --></p><h1 id="77mgb" data-reactid="230"><!-- react-text: 231 -->Économie de moyens technique<!-- /react-text --></h1><p data-reactid="232"><!-- react-text: 233 -->La représentation d&#x27;un document peritext est faite au <!-- /react-text --><span class="InlineAssetWrapper inline-glossary" id="da638728-f56a-4e85-aac2-2b1bcdfce691" data-reactid="234"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.genre=document" data-reactid="235"></span><span id="da638728-f56a-4e85-aac2-2b1bcdfce691" class="peritext-inline-glossary-mention peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-glossary" data-reactid="236"><b data-reactid="237">format json</b></span></span><!-- react-text: 238 -->  , ce qui veut dire qu&#x27;elle ne nécessite pas de base de données et peut être stockée dans un simple fichier. De la même manière, les modules composant peritext ont vocation à être assemblés à l&#x27;intérieur d&#x27;une application javascript, pouvant être déployée sur quantité de services gratuits.<!-- /react-text --></p><p data-reactid="239"><!-- react-text: 240 -->Enfin, le générateur de site web actuel produit un répertoire de fichiers html simples, qui peuvent être exportés sur un serveur ftp, ou sur un service d&#x27;hébergement gratuit tels que github pages ou surge.<!-- /react-text --></p><p data-reactid="241"><!-- react-text: 242 -->En conclusion, même s&#x27;il peut être intégré dans des <!-- /react-text --><span class="InlineAssetWrapper inline-glossary" id="9582b0e6-4e00-4be3-bdcd-80aa683137c1" data-reactid="243"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.genre=document" data-reactid="244"></span><span id="9582b0e6-4e00-4be3-bdcd-80aa683137c1" class="peritext-inline-glossary-mention peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-glossary" data-reactid="245"><b data-reactid="246">Très Grandes Infrastructures de Recherche</b></span></span><!-- react-text: 247 -->   ou des plateforme de grande envergure, l&#x27;écosystème peritext est d&#x27;abord pensé pour des contextes d&#x27;implémentations légers, décentralisés et peu coûteux en équipement.<!-- /react-text --></p><p data-reactid="248"><!-- react-text: 249 -->Pour en savoir plus, rendez-vous par exemple à la section &quot;générateurs&quot;.<!-- /react-text --></p></div><footer data-reactid="250"><ul data-reactid="251"><li data-reactid="252"><i data-reactid="253"><!-- react-text: 254 -->Peritext - publication multimodale orientée contexte<!-- /react-text --><!-- react-text: 255 --> - <!-- /react-text --><!-- react-text: 256 -->Introduction<!-- /react-text --></i></li><li class="next" data-reactid="257"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="258">Le format de données peritext &gt;</a></li></ul></footer><div class="notes-container notes-container-position-aside" data-reactid="259"><ol class="notes-list" data-reactid="260"><li class="note-item" id="19b5f342-b154-4471-b32d-419ce087463c" data-reactid="261"><span class="note-block-pointer" id="note-block-pointer-19b5f342-b154-4471-b32d-419ce087463c" data-reactid="262">1</span><div data-reactid="263"><p data-reactid="264"><!-- react-text: 265 -->Tous les modules sont écrits en Javascript et utilisent notamment sur la bibliothèque de rendu open source react, qui permet de produire indifféremment du code pour des applications client et des applications serveurs, et pour des environnements interactifs ou et des environnements statiques (type générateur de pdf).<!-- /react-text --></p></div></li><li class="note-item" id="ac6cd150-c911-4d95-bde1-57a8e0fda7cf" data-reactid="266"><span class="note-block-pointer" id="note-block-pointer-ac6cd150-c911-4d95-bde1-57a8e0fda7cf" data-reactid="267">2</span><div data-reactid="268"><p data-reactid="269"><!-- react-text: 270 -->Des tâches comme la documentation des sources, et la description des métadonnées du document et des documents qu&#x27;il cite.<!-- /react-text --></p></div></li><li class="note-item" id="289d9f05-1392-4434-bce9-a5f1af1b456e" data-reactid="271"><span class="note-block-pointer" id="note-block-pointer-289d9f05-1392-4434-bce9-a5f1af1b456e" data-reactid="272">3</span><div data-reactid="273"><p data-reactid="274"><!-- react-text: 275 -->&quot;Créer une seule fois, publier partout.&quot;. Voir par exemple la technologie Pandoc <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="a1c36d7a-c807-4932-bda9-88c3a4931f52" data-reactid="276"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Pandoc&amp;amp;rft_id=https%3A%2F%2Fpandoc.org%2F&amp;amp;rft.genre=document" data-reactid="277"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="a1c36d7a-c807-4932-bda9-88c3a4931f52" data-reactid="278">(25)</cite></span><!-- react-text: 279 -->   dans ce registre.<!-- /react-text --></p></div></li></ol></div><aside class="section-aside " style="left:84%;top:0;height:100%;width:16%;" data-reactid="280"></aside></section></section></section><style data-reactid="281"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
-          __NEXT_DATA__ = {"props":{},"pathname":"/section","query":{"id":"4a51caf9-7046-4d43-af61-65ec4182a92f"},"buildId":"dd7d89d1-222b-41a8-984a-4ef6f46c830d","buildStats":{"app.js":{"hash":"b0f231a65417c81b58521484262c5514"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="-426138404"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:27%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class="active section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introduction</a></li><li class=" section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="23">L&#x27;écosystème des modules peritext</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="25">Des systèmes documentaires riches et exploitables</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="27">Un design adaptable et modulaire</a></li><li class=" section-link-level-0" data-reactid="28"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="29">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="31">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="33">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="35">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="37">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="39">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="41">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="43">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="45">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="47">Contextualiseur vegalite</a></li><li class=" section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-1" data-reactid="50"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="51">Contextualiseur data-presentation</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="53">Gabarits</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="55">Générateurs</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="57">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="59">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="60"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="61">À propos</a></li></ul></div><div class="footer" data-reactid="62"><ul data-reactid="63"><li class="" data-reactid="64"><a href="/lexicon/" data-reactid="65">Glossaire</a></li><li class="" data-reactid="66"><a href="/bibliotheca/" data-reactid="67">Références</a></li><li class="" data-reactid="68"><a href="/dimensio/" data-reactid="69">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="70"><section class="main-contents-container section-player" data-reactid="71"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Introduction&amp;amp;rft.genre=document" data-reactid="72"></span><h1 class="section-title" data-reactid="73">Introduction</h1><!-- react-text: 74 --><!-- /react-text --><div data-reactid="75"><p data-reactid="76"><!-- react-text: 77 -->Ce document est dédié à la présentation (et la démonstration) de l&#x27;écosystème Peritext, un projet ouvert et libre développé pour supporter des pratiques de publication académique tirant parti des données du web et autres ressources numériques convoquées dans les recherches, et autorisant une publication à haute qualité graphique et éditoriale sur toute la palette des formats de communication utilisés par les chercheurs aujourd&#x27;hui.<!-- /react-text --></p><p data-reactid="78"><!-- react-text: 79 -->En quoi consiste Peritext ? pour commencer, à produire le site que vous lisez en ce moment !<!-- /react-text --></p><h1 id="1ps33" data-reactid="80"><!-- react-text: 81 -->Qu&#x27;est-ce que Peritext ?<!-- /react-text --></h1><p data-reactid="82"><!-- react-text: 83 -->Peritext est d&#x27;abord une <!-- /react-text --><strong data-reactid="84"><!-- react-text: 85 -->spécification technique<!-- /react-text --></strong><!-- react-text: 86 --> pour la description de documents académiques visant à terme à devenir un format ouvert et interopérable <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="3c0476d6-530a-492b-8f22-03663749697f" data-reactid="87"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=R%C3%A9pertoire%20peritext-core%20sur%20github&amp;amp;rft_id=https%3A%2F%2Fgithub.com%2Fperitext%2Fperitext-core&amp;amp;rft.genre=document" data-reactid="88"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="3c0476d6-530a-492b-8f22-03663749697f" data-reactid="89">(29)</cite></span><!-- react-text: 90 --> . Autrement dit, il s&#x27;agit d&#x27;un mode d&#x27;emploi expliquant comment décrire le contenu d’un document académique d&#x27;une façon conventionnelle &amp; prévisible. Ce dernier décrit comment les données d&#x27;un récit écrit par un chercheur avec un outil compatible doivent être structurées, et contribue à produire un <!-- /react-text --><em data-reactid="91"><!-- react-text: 92 -->format de données<!-- /react-text --></em><!-- react-text: 93 --> particulier, le <!-- /react-text --><em data-reactid="94"><!-- react-text: 95 -->format Peritext.<!-- /react-text --></em></p><p data-reactid="96"><!-- react-text: 97 -->Autour du <!-- /react-text --><em data-reactid="98"><!-- react-text: 99 -->format Peritext<!-- /react-text --></em><!-- react-text: 100 --> s’articulent un ensemble de modules technologiques et des applications directement utilisables qui en actualisent les potentialités et lui donnent du sens<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-19b5f342-b154-4471-b32d-419ce087463c" data-reactid="101"><!-- react-text: 102 -->1<!-- /react-text --><!-- react-text: 103 --> <!-- /react-text --></sup><!-- react-text: 104 --> . Ces modules technologiques ont tous en commun le fait qu&#x27;ils visent à aider à automatiser certaines tâches relevant des normes techniques et éditoriales liées à la publication académique contemporaine<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-ac6cd150-c911-4d95-bde1-57a8e0fda7cf" data-reactid="105"><!-- react-text: 106 -->2<!-- /react-text --><!-- react-text: 107 --> <!-- /react-text --></sup><!-- react-text: 108 -->  , tout en ménageant beaucoup de place et de souplesse pour l’affichage de contenus non-conventionnels et leur design en accord avec l’argument fait par le texte.<!-- /react-text --></p><h1 id="fnblr" data-reactid="109"><!-- react-text: 110 -->Pourquoi Peritext<!-- /react-text --></h1><p data-reactid="111"><!-- react-text: 112 -->En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent d&#x27;une manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.<!-- /react-text --></p><p data-reactid="113"><!-- react-text: 114 -->On assiste en effet, dans un large spectre de disciplines comme de sujets de publication, à la prolifération d’une variété d’objets hétéroclites qui participent de manière de plus en plus active aux processus de recherches. En témoignent des exemples aussi divers que l&#x27;utilisation croissante d’enregistrements audiovisuels en ligne produits ou analysés dans un contexte scientifique, l’utilisation des réseaux sociaux et de twitter comme élément de corpus et/ou de restitution des débats en cours, la mobilisation d’archives et de dépôts de sources numérisées rendant possible leur présentation sous forme diagrammatique ou tabulaire, etc.<!-- /react-text --></p><figure class="BlockAssetWrapper image" style="min-height:;height:;position:relative;" id="9b939ef6-f7d0-4d31-8ef2-6081b19cc565" data-reactid="115"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20cabinet%20d&#x27;Ole%20Worm&amp;amp;rft.genre=document" data-reactid="116"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-image" data-reactid="117"><img src="/static/generated/2f4d7b17-59f3-4a8a-9a8d-7a8c4529af63.png" data-reactid="118"/></figure><figcaption data-reactid="119"><h4 data-reactid="120">Le cabinet d&#x27;Ole Worm</h4><p data-reactid="121">Reproduction de la gravure conservée à Modène représentant un cabinet de curiosités</p><p data-reactid="122"><!-- react-text: 123 -->Source: <!-- /react-text --><i data-reactid="124">Bibliothèque Estense, Modène.</i></p><p data-reactid="125"><button style="cursor:pointer;" data-reactid="126">🔀</button></p></figcaption></figure><p data-reactid="127"><!-- react-text: 128 -->Cela dit, dans les formats les plus répandus de l’édition scientifique, les traces du web et autres ressources numériques peinent encore à sortir de la marge des pages : on les remarquera subrepticement au détour d’une note de bas de page (sous la forme d’un discret hyperlien), ou timidement reproduites dans une annexe secondaire, à la fin d’une entrée bibliographique ou dans la légende d’une figure, etc. Ces connexions à des éléments externes désignent des ressources riches, dont le contenu contribue aux arguments développés, et est souvent disponible en intégralité en ligne par ailleurs. Elles restent pourtant souvent sur le seuil des échanges et des arguments, notamment du fait qu’elles s’effacent des documents une fois traduites et formatées selon les conventions de publication instituées (articles, monographies, actes, mémoires, thèses, …).<!-- /react-text --></p><p data-reactid="129"><!-- react-text: 130 -->D’un autre côté, l’essor de la publication en ligne, du mouvement de l’accès ouvert au résultats de la recherche, et de nouvelles pratiques de communication de la part des chercheurs eux-mêmes qui vont de l’usage des réseaux sociaux à l’expérimentation de diverses formes de publication en ligne, ont instauré un régime de production et de circulation des documents académiques extrêmement riche où ces derniers se voient discutés, critiqués, reformatés et éditorialisés par-delà une multitude de mondes scientifiques, sociaux et médiatiques.<!-- /react-text --></p><p data-reactid="131"><!-- react-text: 132 -->Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : <!-- /react-text --><strong data-reactid="133"><!-- react-text: 134 -->les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques.<!-- /react-text --></strong><!-- react-text: 135 --> C’est là le projet à la base de Peritext.<!-- /react-text --></p><h1 id="7gqbf" data-reactid="136"><!-- react-text: 137 -->Pour quels contextes Peritext est-il fait (et pas fait) ?<!-- /react-text --></h1><p data-reactid="138"><!-- react-text: 139 -->Peritext ne s&#x27;adresse pas à toutes les pratiques de publication académique, il n&#x27;entend en aucun cas proposer une solution totale prenant en charge l&#x27;intégralité d&#x27;un processus d&#x27;édition académique, ou couvrir la totalité des contextes de projet scientifiques ou éditoriaux.<!-- /react-text --></p><p data-reactid="140"><!-- react-text: 141 -->Il s&#x27;agit plutôt d&#x27;un écosystème ouvert (c&#x27;est-à-dire fait pour se connecter à un archipel de normes, outils, pratiques et projets existants), conçu pour des projets qui se placent à la marge des mondes académiques, et à la marge des formes rhétoriques propres aux formats établis, fortement (et souvent exclusivement) fondés sur une argumentation ou un compte-rendu sous forme textuelle.<!-- /react-text --></p><p data-reactid="142"><!-- react-text: 143 -->Peritext pourrait donc être pertinent pour vous si vous remplissez certaines des conditions suivantes :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="144"><li data-reactid="145"><strong data-reactid="146"><!-- react-text: 147 -->Vos recherches convoquent de manière très importante des documents extérieurs<!-- /react-text --></strong><!-- react-text: 148 --> (tableaux de données, médias, sites web, ...) et votre activité consiste notamment à les analyser et les commenter en profondeur<!-- /react-text --></li><li data-reactid="149"><strong data-reactid="150"><!-- react-text: 151 -->Vous désirez publier au-delà des formats traditionnels associés à la promotion et la reconnaissance officielle des chercheurs<!-- /react-text --></strong><!-- react-text: 152 -->, notamment en ayant une activité sur le web<!-- /react-text --></li><li data-reactid="153"><strong data-reactid="154"><!-- react-text: 155 -->Vous êtes attaché à la qualité technique &amp; documentaire des documents que vous produisez<!-- /react-text --></strong><!-- react-text: 156 -->, notamment en termes de métadonnées et d&#x27;indexation<!-- /react-text --></li><li data-reactid="157"><strong data-reactid="158"><!-- react-text: 159 -->Vous êtes attaché à la qualité graphique et éditoriale des documents que vous produisez<!-- /react-text --></strong><!-- react-text: 160 --> en tant que chercheur, que ce soit vous ou un membre de votre équipe qui s&#x27;en occupe<!-- /react-text --></li></ul><p data-reactid="161"><!-- react-text: 162 -->Par ailleurs, Peritext en tant que tel ne sera pas pertinent pour vous si :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="163"><li data-reactid="164"><!-- react-text: 165 -->votre projet éditorial mise de manière centrale sur la dimension collective &amp; réticulaire du travail de communication scientifique (commentaires, réactions, collaboration, ...). Tout cela peut se passer autour d&#x27;un document peritext, mais pas en son sein. Ce point ne devrait pas évoluer dans le futur du projet, et pour l&#x27;instant l&#x27;utilisation d&#x27;outils tiers tels qu&#x27;Hypothes.is ou disq.us est favorisée pour cela.<!-- /react-text --></li><li data-reactid="166"><!-- react-text: 167 -->vous comptez expérimenter avec des structures rhétoriques qui se départissent de l&#x27;organisation traditionnelle des documents académiques, faits de sections (chapitres, parties, ...) se suivant de manière linéaire, et d&#x27;un hypertexte assez simple permettant de produire une table des matières, un glossaire, et une liste de référence. Ce point est soumis à une probable évolution ultérieure.<!-- /react-text --></li><li data-reactid="168"><!-- react-text: 169 -->vous comptez expérimenter de formes de publication académique qui ne prennent pas le texte pour médium principal et structurant pour l&#x27;argumentation (organisées autour d&#x27;une vidéo ou d&#x27;une image par exemple)<!-- /react-text --></li></ul><p data-reactid="170"></p><figure class="BlockAssetWrapper embed" style="min-height:;height:;position:relative;" id="131836e5-8f60-40b6-8129-b374877edd4f" data-reactid="171"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Eug%C3%A8ne%20de%20Gayffier&amp;amp;rft.atitle=Herbier%20forestier%20de%20la%20France.%20Reproduction%20par%20la%20photographie...%20des%20principales%20plantes%20ligneuses%20qui%20croissent%20spontan%C3%A9ment%20en%20for%C3%AAt.%20Description%20botanique...%20&amp;amp;rft_id=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b86260659%2Ff19.double%3F&amp;amp;rft.genre=document" data-reactid="172"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-embed" data-reactid="173"><div style="padding: 0; padding-bottom: 56.25%; position: relative;  display: block; height: 0; "><iframe style="position: absolute;  top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0;" src="http://gallica.bnf.fr/ark:/12148/btv1b86260659/f19.double.mini"></iframe></div></figure><figcaption data-reactid="174"><h4 data-reactid="175">Herbier forestier de la France. Reproduction par la photographie... des principales plantes ligneuses qui croissent spontanément en forêt. Description botanique... </h4><p data-reactid="176"></p><p data-reactid="177"><!-- react-text: 178 -->Source: <!-- /react-text --><i data-reactid="179">Gallica</i></p><p data-reactid="180"><button style="cursor:pointer;" data-reactid="181">🔀</button></p></figcaption></figure><h1 id="9fm5a" data-reactid="182"><!-- react-text: 183 -->Une écriture et une édition multi-supports<!-- /react-text --></h1><p data-reactid="184"><strong data-reactid="185"><!-- react-text: 186 -->Le premier atout du format peritext est que sa manière de décrire un document permet de produire une diversité de documents à partir d&#x27;une seule et même représentation des contenus.<!-- /react-text --></strong></p><p data-reactid="187"><!-- react-text: 188 -->Par exemple, ce document même est directement accessible comme un site web, un fichier pdf imprimable, et un fichier epub exécutable sur liseuse numérique, une API de manière à ce qu&#x27;il soit utilisable par une autre application, etc.<!-- /react-text --></p><p data-reactid="189"><!-- react-text: 190 -->Peritext rentre donc dans la catégorie de technologies intitulées &quot;COPE&quot; (&quot;Create Once, Publish Everywhere&quot;<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-289d9f05-1392-4434-bce9-a5f1af1b456e" data-reactid="191"><!-- react-text: 192 -->3<!-- /react-text --><!-- react-text: 193 --> <!-- /react-text --></sup><!-- react-text: 194 --> ) qui consistent à produire une diversité de documents à partir d&#x27;un même texte source. Ainsi, avec Peritext les auteur.e.s peuvent écrire une seule fois leur article, chapitre ou livre, et disposer en retour et simultanément de diverses contextualisations de ce contenu pour les différents supports (site web, pdf, epub, ...).<!-- /react-text --></p><p data-reactid="195"><!-- react-text: 196 -->Cela dit, Peritext se distingue une première fois de ses voisins dans la mesure où il permet également aux utilisateurs de se faire “éditeurs-designers” et disposer de divers moyens très détaillés de mettre en forme leur récit pour chacun des supports disponibles, en fonction de leur corpus, de leur argument et de leur projet intellectuel -- ce qui n&#x27;est pas le cas de la plupart de ses voisins.<!-- /react-text --></p><h1 id="7pg52" data-reactid="197"><!-- react-text: 198 -->Un modèle unifié et souple pour gérer les arguments centrés sur des documents et autres éléments extérieurs<!-- /react-text --></h1><p data-reactid="199"><strong data-reactid="200"><!-- react-text: 201 -->Le second atout du format Peritext réside dans sa vocation à soutenir la convocation de nombreux éléments extérieurs dans la structure argumentative d’un texte académique (références, données, documents audiovisuels, etc.).<!-- /react-text --></strong><!-- react-text: 202 --> Pour ce faire, il repose sur un mode de représentation des contenus particulier, centré sur la séparation entre les ressources convoquées dans un récit et les différentes formes que ces dernières peuvent prendre dans le cadre de l&#x27;argumentation opérée par un texte.<!-- /react-text --></p><p data-reactid="203"><!-- react-text: 204 -->Pour en savoir plus, rendez-vous à la section &quot;Le format de données peritext&quot;.<!-- /react-text --></p><h1 id="aos5l" data-reactid="205"><!-- react-text: 206 -->Respect des normes techniques et éditoriales de la publication académique<!-- /react-text --></h1><p data-reactid="207"><!-- react-text: 208 -->Sur le plan documentaire, peritext prend en charge une série de nécessités spécifiques à la publication académique. <!-- /react-text --></p><p data-reactid="209"><!-- react-text: 210 -->Pour en savoir plus, rendez-vous à la section &quot;Des systèmes documentaires solides et faciles à mettre en place&quot;.<!-- /react-text --></p><h1 id="4im14" data-reactid="211"><!-- react-text: 212 -->Adaptation et modularité<!-- /react-text --></h1><p data-reactid="213"><!-- react-text: 214 -->Peritext est pensé selon une logique de &quot;boîte ouvrable&quot;, c&#x27;est-à-dire que ses différents modules fonctionnent avec des paramètres par défaut mais sont par ailleurs profondément paramétrables par les utilisateurs qui le souhaitent.<!-- /react-text --></p><p data-reactid="215"><!-- react-text: 216 -->Outre les paramètres exposés par chacun des modules, peritext prend en charge une diversité de langages permettant de préciser et de modeler les contenus avec beaucoup de liberté, comme par exemple le langage <!-- /react-text --><span data-reactid="217"><!-- react-text: 218 -->markdown<!-- /react-text --></span><!-- react-text: 219 --> pour certains contextualiseurs et les langages de mise en forme que sont <!-- /react-text --><span data-reactid="220"><!-- react-text: 221 -->css<!-- /react-text --></span><!-- react-text: 222 --> et <!-- /react-text --><span data-reactid="223"><!-- react-text: 224 -->css print <!-- /react-text --></span><!-- react-text: 225 -->qui peuvent être utilisés de manière distincte pour chacun des types de supports produits à partir d&#x27;un contenu.<!-- /react-text --></p><p data-reactid="226"><!-- react-text: 227 -->Enfin, il est construit selon une logique modulaire qui permet beaucoup de souplesse et de variations dans l&#x27;implémentation d&#x27;un écosystème éditorial spécifique (en termes de supports visés, de types de documents pris en charge, ...).<!-- /react-text --></p><p data-reactid="228"><!-- react-text: 229 -->Pour en savoir plus, rendez-vous à la section &quot;adaptation et modularité&quot;.<!-- /react-text --></p><h1 id="77mgb" data-reactid="230"><!-- react-text: 231 -->Économie de moyens technique<!-- /react-text --></h1><p data-reactid="232"><!-- react-text: 233 -->La représentation d&#x27;un document peritext est faite au <!-- /react-text --><span class="InlineAssetWrapper inline-glossary" id="da638728-f56a-4e85-aac2-2b1bcdfce691" data-reactid="234"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.genre=document" data-reactid="235"></span><span id="da638728-f56a-4e85-aac2-2b1bcdfce691" class="peritext-inline-glossary-mention peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-glossary" data-reactid="236"><b data-reactid="237">format json</b></span></span><!-- react-text: 238 -->  , ce qui veut dire qu&#x27;elle ne nécessite pas de base de données et peut être stockée dans un simple fichier. De la même manière, les modules composant peritext ont vocation à être assemblés à l&#x27;intérieur d&#x27;une application javascript, pouvant être déployée sur quantité de services gratuits.<!-- /react-text --></p><p data-reactid="239"><!-- react-text: 240 -->Enfin, le générateur de site web actuel produit un répertoire de fichiers html simples, qui peuvent être exportés sur un serveur ftp, ou sur un service d&#x27;hébergement gratuit tels que github pages ou surge.<!-- /react-text --></p><p data-reactid="241"><!-- react-text: 242 -->En conclusion, même s&#x27;il peut être intégré dans de <!-- /react-text --><span class="InlineAssetWrapper inline-glossary" id="9582b0e6-4e00-4be3-bdcd-80aa683137c1" data-reactid="243"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.genre=document" data-reactid="244"></span><span id="9582b0e6-4e00-4be3-bdcd-80aa683137c1" class="peritext-inline-glossary-mention peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-glossary" data-reactid="245"><b data-reactid="246">Très Grandes Infrastructures de Recherche</b></span></span><!-- react-text: 247 -->   et autres plateformes scientifiques et éditoriales, l&#x27;écosystème peritext est d&#x27;abord pensé pour des contextes d&#x27;implémentations légers, décentralisés et peu coûteux en équipement.<!-- /react-text --></p><p data-reactid="248"><!-- react-text: 249 -->Pour en savoir plus, rendez-vous par exemple à la section &quot;générateurs&quot;.<!-- /react-text --></p></div><footer data-reactid="250"><ul data-reactid="251"><li data-reactid="252"><i data-reactid="253"><!-- react-text: 254 -->Peritext - publication multimodale orientée contexte<!-- /react-text --><!-- react-text: 255 --> - <!-- /react-text --><!-- react-text: 256 -->Introduction<!-- /react-text --></i></li><li class="next" data-reactid="257"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="258">Le format de données peritext →</a></li></ul></footer><div class="notes-container notes-container-position-aside" data-reactid="259"><ol class="notes-list" data-reactid="260"><li class="note-item" id="19b5f342-b154-4471-b32d-419ce087463c" data-reactid="261"><span class="note-block-pointer" id="note-block-pointer-19b5f342-b154-4471-b32d-419ce087463c" data-reactid="262">1</span><div data-reactid="263"><p data-reactid="264"><!-- react-text: 265 -->Tous les modules sont écrits en Javascript et utilisent notamment sur la bibliothèque de rendu open source react, qui permet de produire indifféremment du code pour des applications client et des applications serveurs, et pour des environnements interactifs ou et des environnements statiques (type générateur de pdf).<!-- /react-text --></p></div></li><li class="note-item" id="ac6cd150-c911-4d95-bde1-57a8e0fda7cf" data-reactid="266"><span class="note-block-pointer" id="note-block-pointer-ac6cd150-c911-4d95-bde1-57a8e0fda7cf" data-reactid="267">2</span><div data-reactid="268"><p data-reactid="269"><!-- react-text: 270 -->Des tâches comme la documentation des sources, et la description des métadonnées du document et des documents qu&#x27;il cite.<!-- /react-text --></p></div></li><li class="note-item" id="289d9f05-1392-4434-bce9-a5f1af1b456e" data-reactid="271"><span class="note-block-pointer" id="note-block-pointer-289d9f05-1392-4434-bce9-a5f1af1b456e" data-reactid="272">3</span><div data-reactid="273"><p data-reactid="274"><!-- react-text: 275 -->&quot;Créer une seule fois, publier partout.&quot;. Voir par exemple la technologie Pandoc <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="a1c36d7a-c807-4932-bda9-88c3a4931f52" data-reactid="276"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Pandoc&amp;amp;rft_id=https%3A%2F%2Fpandoc.org%2F&amp;amp;rft.genre=document" data-reactid="277"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="a1c36d7a-c807-4932-bda9-88c3a4931f52" data-reactid="278">(24)</cite></span><!-- react-text: 279 -->   dans ce registre.<!-- /react-text --></p></div></li></ol></div><aside class="section-aside " style="left:84%;top:0;height:100%;width:16%;" data-reactid="280"></aside></section></section></section><style data-reactid="281"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
+          __NEXT_DATA__ = {"props":{},"pathname":"/section","query":{"id":"4a51caf9-7046-4d43-af61-65ec4182a92f"},"buildId":"4562cfb1-2071-4d09-af2f-8d36bf436f91","buildStats":{"app.js":{"hash":"a236e83d31b6188e8200082f832ee5c0"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
           module={}
           __NEXT_LOADED_PAGES__ = []
           __NEXT_LOADED_CHUNKS__ = []
@@ -2605,4 +2668,4 @@ body {
           __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
             __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
           }
-        </script><script async="" id="__NEXT_PAGE__/section" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/section/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/b0f231a65417c81b58521484262c5514/app.js" async=""></script></div></body></html>
+        </script><script async="" id="__NEXT_PAGE__/section" type="text/javascript" src="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/section/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/a236e83d31b6188e8200082f832ee5c0/app.js" async=""></script></div></body></html>

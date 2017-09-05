@@ -20,6 +20,8 @@ var _inherits2 = require('next/node_modules/babel-runtime/helpers/inherits');
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
+var _jsxFileName = '/Users/rawbin/Documents/Projets/peritext/peritext-2/peritext-server-garlic-flavoured/peritext-generator-next/pages/dimensio.js?entry';
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -72,7 +74,11 @@ var Contents = function (_Component) {
         storyTitle: title,
         pdfUrl: pdfUrl,
         epubUrl: epubUrl,
-        jsonUrl: jsonUrl
+        jsonUrl: jsonUrl,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        }
       });
     };
 
@@ -87,5 +93,14 @@ Contents.contextTypes = {
 };
 
 exports.default = function () {
-  return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: 'dimensio' }, _react2.default.createElement(Contents, null));
+  return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: 'dimensio', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    }
+  }, _react2.default.createElement(Contents, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    }
+  }));
 };

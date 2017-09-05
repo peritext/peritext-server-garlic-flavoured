@@ -9,6 +9,7 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var _jsxFileName = '/Users/rawbin/Documents/Projets/peritext/peritext-2/peritext-server-garlic-flavoured/peritext-generator-next/pages/lexicon.js?entry';
 
 
 var _GlobalsProvider = require('../components/GlobalsProvider');
@@ -32,8 +33,16 @@ function _interopRequireDefault(obj) {
 var Lexicon = _peritextConfig.templates.web.Lexicon;
 
 exports.default = function () {
-  return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: 'lexicon' }, _react2.default.createElement(Lexicon, {
+  return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: 'lexicon', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }, _react2.default.createElement(Lexicon, {
     glossary: _glossary2.default,
-    authorsIndex: _authorsIndex2.default
+    authorsIndex: _authorsIndex2.default,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
   }));
 };

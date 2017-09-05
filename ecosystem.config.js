@@ -2,7 +2,7 @@ module.exports = {
   apps : [{
     name        : "app",
     script      : "./server.js",
-    watch       : true,
+    ignoreWatch: "peritext-generator-next",
     env: {
       "NODE_ENV": "development",
     },

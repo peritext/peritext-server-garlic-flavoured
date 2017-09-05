@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === 'production') {
 //   config = require('./config');
 // }
 config = {
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 3001,
   };
 
 const app = express();

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/section/index.js" as="script"/><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js" as="script"/><link rel="preload" href="/_next/b0f231a65417c81b58521484262c5514/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-05T12:37:41.176Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
+<!DOCTYPE html><html><head><link rel="preload" href="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/section/index.js" as="script"/><link rel="preload" href="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/_error/index.js" as="script"/><link rel="preload" href="/_next/a236e83d31b6188e8200082f832ee5c0/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-05T21:19:51.974Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta name="viewport" content="user-scalable=no,width=device-width" class="next-head"/><meta name="twitter:card" value="summary" class="next-head"/><meta name="twitter:site" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta name="twitter:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="twitter:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta itemprop="name" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta itemprop="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta property="og:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta property="og:type" content="website" class="next-head"/><meta property="og:url" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta property="og:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
@@ -1635,6 +1635,7 @@ Il est donc nécessaire d’inventer de nouvelles manières de connecter les mod
 .dicto-player-Railway .player-ui button#volume-symbol:hover span {
   font-size: 1em; }
 
+@charset "UTF-8";
 /**
  * Template-specific reusable elements (variables, mixins, abstract classes)
  */
@@ -1854,7 +1855,9 @@ Il est donc nécessaire d’inventer de nouvelles manières de connecter les mod
   background: #f32e36; }
 
 body {
-  background: #fdfff8; }
+  background: #fdfff8;
+  text-rendering: optimizeLegibility;
+  hyphens: none; }
 
 /**
  * Animations
@@ -1886,7 +1889,7 @@ body {
  */
 .garlic-layout {
   font-family: Merriweather, serif;
-  font-size: 1.056rem;
+  font-size: 1.408rem;
   position: relative;
   color: #414e4d;
   background: #fdfff8;
@@ -1904,8 +1907,8 @@ body {
     .garlic-layout .section-player .notes-container {
       z-index: 3; }
       .garlic-layout .section-player .notes-container.notes-container-position-aside {
-        left: 2%;
-        width: 15%; }
+        left: 3%;
+        width: 22.5%; }
     .garlic-layout .section-player footer {
       position: absolute;
       bottom: 0;
@@ -1914,9 +1917,7 @@ body {
       .garlic-layout .section-player footer ul {
         padding: 0; }
         .garlic-layout .section-player footer ul li {
-          padding: 0;
-          padding-top: 2.9988rem;
-          padding-bottom: 2.9988rem;
+          padding: 1.3328rem;
           list-style-type: none;
           -webkit-transition: all 0.5s ease;
           -moz-transition: all 0.5s ease;
@@ -1925,10 +1926,18 @@ body {
           transition: all 0.5s ease;
           flex: 1; }
           .garlic-layout .section-player footer ul li:first-of-type {
-            padding-right: 2.9988rem; }
+            padding-right: 1.3328rem; }
           .garlic-layout .section-player footer ul li:last-of-type {
-            padding-left: 2.9988rem;
+            padding-left: 1.3328rem;
             text-align: right; }
+          .garlic-layout .section-player footer ul li.prev {
+            border-right: 1px solid #e7eae1; }
+          .garlic-layout .section-player footer ul li.next {
+            border-left: 1px solid #e7eae1; }
+          .garlic-layout .section-player footer ul li.next .link, .garlic-layout .section-player footer ul li.prev .link {
+            border: none;
+            font-size: 1.408rem;
+            font-weight: 800; }
           .garlic-layout .section-player footer ul li.next {
             text-align: right; }
     .garlic-layout .section-player .BlockAssetWrapper {
@@ -1946,7 +1955,7 @@ body {
         overflow: auto;
         max-width: 100%;
         margin-right: 18%;
-        margin-left: 18%;
+        margin-left: 27%;
         box-shadow: 0 0 5px #e7eae1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block iframe {
           width: 100%;
@@ -1956,7 +1965,7 @@ body {
           border: none; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block + figcaption {
         margin-right: 20%;
-        margin-left: 20%; }
+        margin-left: 30%; }
       .garlic-layout .section-player .BlockAssetWrapper.fixed {
         z-index: 4; }
         .garlic-layout .section-player .BlockAssetWrapper.fixed .peritext-contextualizer-video iframe {
@@ -1965,7 +1974,7 @@ body {
           width: 100%;
           height: 100%; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib {
-        padding: 0.9996rem;
+        padding: 1.3328rem;
         background: #e7eae1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib .csl-left-margin {
           display: none; }
@@ -1975,7 +1984,7 @@ body {
         color: #fdfff8;
         background: #f32e36; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list li {
-          padding: 0.9996rem;
+          padding: 1.3328rem;
           list-style-type: none;
           cursor: pointer; }
           .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list li.active {
@@ -1987,11 +1996,12 @@ body {
         counter-reset: line;
         flex: 1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line {
-          line-height: 0.9996rem;
+          font-size: 1.408rem;
+          line-height: 1.9712rem;
           display: block; }
           .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line:before {
             display: inline-block;
-            width: 0.9996rem;
+            width: 1.3328rem;
             margin-right: .5em;
             padding: 0 .5em;
             content: counter(line);
@@ -2019,21 +2029,23 @@ body {
         padding: 0; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-dicto .dicto-player-ColumnsLayout {
           font-family: Merriweather, serif;
-          font-size: 0.66rem;
+          font-size: 0.88rem;
           position: absolute;
           height: 100%; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-dicto figcaption {
           position: relative;
           top: 100%; }
+      .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-data-presentation h1 {
+        font-size: 2.2528rem; }
       .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player {
-        font-size: 0.66rem;
+        font-size: 0.88rem;
         background: #fdfff8; }
         .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .read-mode-toggler {
           z-index: 2;
           padding: 0;
-          padding: 0 0 0 2.499rem; }
+          padding: 0 0 0 3.332rem; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .read-mode-toggler li {
-            padding: 0.9996rem;
+            padding: 1.3328rem;
             list-style-type: none;
             cursor: pointer;
             text-transform: uppercase;
@@ -2054,13 +2066,13 @@ body {
           z-index: 2;
           background: #fdfff8; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .caption-header .presentation-title {
-            padding-left: 1.9992rem; }
+            padding-left: 2.6656rem; }
         .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .slide-caption {
           position: relative;
           cursor: pointer; }
           .garlic-layout .section-player .BlockAssetWrapper .quinoa-presentation-player .slide-caption .slide-content {
             overflow: visible;
-            padding: 0.9996rem;
+            padding: 1.3328rem;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -ms-transition: all 0.5s ease;
@@ -2070,12 +2082,12 @@ body {
               color: #fdfff8;
               background: #87240e; }
       .garlic-layout .section-player .BlockAssetWrapper .ReactTable {
-        font-size: 0.66rem; }
+        font-size: 0.88rem; }
       .garlic-layout .section-player .BlockAssetWrapper > figcaption {
-        font-size: 0.594rem;
-        margin-right: 0.9996rem;
-        margin-left: 0.6rem;
-        padding: 0.9996rem;
+        font-size: 0.792rem;
+        margin-right: 1.3328rem;
+        margin-left: 0.8rem;
+        padding: 1.3328rem;
         padding-top: 0;
         opacity: .7; }
         .garlic-layout .section-player .BlockAssetWrapper > figcaption > * {
@@ -2091,8 +2103,8 @@ body {
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom {
           position: absolute;
           z-index: 5;
-          right: 0.9996rem;
-          padding: 0.6rem;
+          right: 1.3328rem;
+          padding: 0.8rem;
           cursor: pointer;
           pointer-events: all;
           color: #fdfff8;
@@ -2107,60 +2119,91 @@ body {
           .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom:hover {
             background: #87240e; }
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-top {
-          top: 0.9996rem; }
+          top: 1.3328rem; }
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom {
-          bottom: 0.9996rem; }
+          bottom: 1.3328rem; }
   .garlic-layout .contents-wrapper .main-contents-container {
     min-height: 110%;
-    padding-bottom: 17.9928rem; }
+    padding-bottom: 23.9904rem; }
+    .garlic-layout .contents-wrapper .main-contents-container li {
+      margin-bottom: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote {
+      padding: 3.9984rem;
+      background: #e7eae1;
+      line-height: 2.112rem;
+      quotes: "\AB   " " \BB";
+      position: relative; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote::before {
+      content: open-quote;
+      position: absolute;
+      top: 1.3328rem;
+      left: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container blockquote::after {
+      content: close-quote;
+      position: absolute;
+      bottom: 1.3328rem;
+      right: 1.3328rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h1, .garlic-layout .contents-wrapper .main-contents-container h2, .garlic-layout .contents-wrapper .main-contents-container h3 {
+      font-family: Roboto, serif; }
+    .garlic-layout .contents-wrapper .main-contents-container h1 {
+      font-size: 3.60448rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h2 {
+      font-size: 2.2528rem; }
+    .garlic-layout .contents-wrapper .main-contents-container h3 {
+      font-size: 1.408rem; }
     .garlic-layout .contents-wrapper .main-contents-container .home-header {
-      margin-top: 0.9996rem;
+      margin-top: 1.3328rem;
       margin-right: 20%;
-      margin-left: 20%;
+      margin-left: 30%;
       text-align: center; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header.hidden {
         display: none; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header h1 {
-        font-size: 2.70336rem;
+        font-size: 3.60448rem;
         margin: 0; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header .subtitle {
-        font-size: 1.6896rem;
+        font-size: 2.2528rem;
         font-style: italic;
         margin: 0; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header .authors {
-        font-size: 1.056rem; }
+        font-size: 1.408rem; }
     .garlic-layout .contents-wrapper .main-contents-container .story-description {
       margin: 0;
-      margin-top: 2.9988rem;
-      margin-bottom: 2.9988rem;
-      padding: 2.9988rem;
+      margin-top: 3.9984rem;
+      margin-bottom: 3.9984rem;
+      padding: 3.9984rem;
       background: #e7eae1; }
     .garlic-layout .contents-wrapper .main-contents-container .cover-image {
-      margin-top: 0.9996rem;
+      margin-top: 1.3328rem;
       box-shadow: 0 0 5px #e7eae1; }
       .garlic-layout .contents-wrapper .main-contents-container .cover-image .link {
         border: none; }
+      .garlic-layout .contents-wrapper .main-contents-container .cover-image a {
+        border-bottom: none; }
     .garlic-layout .contents-wrapper .main-contents-container .contents-guttered {
       margin-right: 20%;
-      margin-left: 20%; }
+      margin-left: 30%; }
+      .garlic-layout .contents-wrapper .main-contents-container .contents-guttered p {
+        font-size: 1.408rem;
+        line-height: 1.9712rem; }
     .garlic-layout .contents-wrapper .main-contents-container footer {
-      left: 20%;
-      width: 60%; }
+      left: 30%;
+      width: 50%; }
     .garlic-layout .contents-wrapper .main-contents-container .section-title {
       font-family: Roboto, serif;
-      font-size: 4.32538rem;
+      font-size: 5.76717rem;
       margin-top: 0;
       margin-right: 20%;
-      margin-left: 20%; }
+      margin-left: 30%; }
     .garlic-layout .contents-wrapper .main-contents-container > div {
       position: relative; }
       .garlic-layout .contents-wrapper .main-contents-container > div > h1, .garlic-layout .contents-wrapper .main-contents-container > div > h2, .garlic-layout .contents-wrapper .main-contents-container > div > h3, .garlic-layout .contents-wrapper .main-contents-container > div > h4, .garlic-layout .contents-wrapper .main-contents-container > div > h5, .garlic-layout .contents-wrapper .main-contents-container > div > h6, .garlic-layout .contents-wrapper .main-contents-container > div > p, .garlic-layout .contents-wrapper .main-contents-container > div > ul, .garlic-layout .contents-wrapper .main-contents-container > div > ol, .garlic-layout .contents-wrapper .main-contents-container > div > blockquote, .garlic-layout .contents-wrapper .main-contents-container > div > pre {
         margin-right: 20%;
-        margin-left: 20%; }
+        margin-left: 30%; }
   .garlic-layout nav {
     font-family: Roboto, serif;
     z-index: 5;
-    width: 20%;
+    width: 30%;
     height: 100%;
     user-select: none;
     pointer-events: none;
@@ -2187,7 +2230,7 @@ body {
     .garlic-layout nav .body,
     .garlic-layout nav .footer {
       max-height: 0;
-      padding: 0.9996rem 0.9996rem 0 0.9996rem;
+      padding: 1.3328rem 1.3328rem 0 1.3328rem;
       opacity: 0;
       -webkit-transition: 0.5s all ease;
       -moz-transition: 0.5s all ease;
@@ -2224,7 +2267,7 @@ body {
         max-height: 100%;
         opacity: 1; }
     .garlic-layout nav .link {
-      font-size: 1.056rem;
+      font-size: 1.408rem;
       border: none;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
@@ -2236,22 +2279,22 @@ body {
     .garlic-layout nav .nav-title {
       text-overflow: ellipsis; }
       .garlic-layout nav .nav-title .link {
-        font-size: 1.6896rem;
+        font-size: 2.2528rem;
         font-weight: 700; }
   .garlic-layout .table-of-contents .section-link-level-0 {
     padding-left: 0; }
   .garlic-layout .table-of-contents .section-link-level-1 {
-    padding-left: 0.6rem; }
+    padding-left: 0.8rem; }
   .garlic-layout .table-of-contents .section-link-level-2 {
-    padding-left: 0.9rem; }
-  .garlic-layout .table-of-contents .section-link-level-3 {
     padding-left: 1.2rem; }
+  .garlic-layout .table-of-contents .section-link-level-3 {
+    padding-left: 1.6rem; }
   .garlic-layout .table-of-contents .section-link-level-4 {
-    padding-left: 1.5rem; }
+    padding-left: 2rem; }
   .garlic-layout .table-of-contents .section-link-level-5 {
-    padding-left: 1.8rem; }
+    padding-left: 2.4rem; }
   .garlic-layout .section-aside {
-    font-size: 0.66rem;
+    font-size: 0.88rem;
     position: fixed;
     z-index: 4;
     width: 16%;
@@ -2270,18 +2313,18 @@ body {
   .garlic-layout .RelatedContexts {
     overflow: hidden; }
     .garlic-layout .RelatedContexts > .header, .garlic-layout .RelatedContexts > .body {
-      margin-right: 0.9996rem; }
+      margin-right: 1.3328rem; }
     .garlic-layout .RelatedContexts > .header {
       padding-left: 0;
       border-bottom: 1px solid #f32e36; }
       .garlic-layout .RelatedContexts > .header h2 {
         font-family: Roboto, serif;
-        font-size: 1.056rem; }
+        font-size: 1.408rem; }
         .garlic-layout .RelatedContexts > .header h2 .csl-left-margin {
           display: none; }
       .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib {
         margin: 0;
-        margin-bottom: 0.9996rem;
+        margin-bottom: 1.3328rem;
         padding: 0; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib ul {
           padding: 0; }
@@ -2293,18 +2336,18 @@ body {
     .garlic-layout .RelatedContexts .body {
       overflow: auto;
       padding: 0;
-      padding-top: 0.9996rem;
+      padding-top: 1.3328rem;
       flex: 1; }
       .garlic-layout .RelatedContexts .body li {
         padding: 0;
         list-style-type: none; }
       .garlic-layout .RelatedContexts .body .ContextMention {
-        margin-bottom: 0.9996rem; }
+        margin-bottom: 1.3328rem; }
     .garlic-layout .RelatedContexts .close-context-btn {
-      font-size: 0.66rem;
+      font-size: 0.88rem;
       position: absolute;
-      top: 0.9996rem;
-      right: 0.9996rem;
+      top: 1.3328rem;
+      right: 1.3328rem;
       cursor: pointer;
       text-align: center;
       color: #f32e36;
@@ -2321,13 +2364,14 @@ body {
   .garlic-layout .output-group > h2 {
     font-family: Roboto, serif;
     margin-bottom: 0;
-    padding-bottom: 0.9996rem;
-    border-bottom: 3px solid #f32e36; }
+    padding-bottom: 1.3328rem;
+    border-bottom: 3px solid #f32e36;
+    font-weight: 400; }
   .garlic-layout .mentions-container .csl-left-margin,
   .garlic-layout .output-group .csl-left-margin {
     display: none; }
   .garlic-layout .mentions-list-container .mentions-list {
-    font-family: 0.66rem;
+    font-family: 0.88rem;
     overflow: hidden;
     max-height: 0;
     margin: 0;
@@ -2348,14 +2392,15 @@ body {
     margin: 0;
     padding: 0; }
     .garlic-layout .index-list li {
-      margin-bottom: 0.9996rem;
+      margin-bottom: 1.3328rem;
       padding: 0;
       list-style-type: none; }
     .garlic-layout .index-list .index-list-title {
-      padding-bottom: 0.9996rem;
-      cursor: pointer; }
+      padding-bottom: 1.3328rem;
+      cursor: pointer;
+      font-weight: 400; }
       .garlic-layout .index-list .index-list-title .collapse-btn {
-        padding: 0.6rem;
+        padding: 0.8rem;
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
@@ -2371,7 +2416,7 @@ body {
           background: #87240e; }
   .garlic-layout .download-button {
     display: block;
-    padding: 0.6rem;
+    padding: 0.8rem;
     text-align: center;
     color: #fdfff8 !important;
     background: #f32e36;
@@ -2383,7 +2428,7 @@ body {
     .garlic-layout .download-button:hover {
       background: #87240e; }
   .garlic-layout .pdf-nav button {
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     cursor: pointer;
     text-align: center;
     background: #e7eae1;
@@ -2397,7 +2442,7 @@ body {
       color: #fdfff8;
       background: #f32e36; }
   .garlic-layout .pdf-nav span {
-    padding: 0.9996rem; }
+    padding: 1.3328rem; }
   .garlic-layout .pdf-player-container {
     text-align: center; }
     .garlic-layout .pdf-player-container canvas {
@@ -2444,20 +2489,20 @@ body {
     max-width: 100%;
     max-height: 100%; }
   .garlic-layout .ContextMention {
-    padding: 0.6rem;
+    padding: 0.8rem;
     background: #e7eae1; }
     .garlic-layout .ContextMention .header {
-      margin-bottom: 0.6rem; }
+      margin-bottom: 0.8rem; }
     .garlic-layout .ContextMention .exerpt {
       overflow: auto;
       max-height: 20rem;
-      padding: 0.6rem;
+      padding: 0.8rem;
       color: #fdfff8;
       background: #414e4d; }
     .garlic-layout .ContextMention .footer {
-      padding: 0.6rem; }
+      padding: 0.8rem; }
   .garlic-layout .popover-button {
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     cursor: pointer;
     color: #fdfff8;
     background: #414e4d;
@@ -2471,9 +2516,9 @@ body {
   .garlic-layout #burger-menu {
     position: relative;
     display: inline-block;
-    width: 1.056rem;
-    height: 1.056rem;
-    margin-bottom: 0.9996rem;
+    width: 1.408rem;
+    height: 1.408rem;
+    margin-bottom: 1.3328rem;
     cursor: pointer;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -2488,7 +2533,7 @@ body {
       left: 0;
       display: block;
       width: 100%;
-      height: 0.2112rem;
+      height: 0.2816rem;
       -webkit-transition: .25s ease-in-out;
       -moz-transition: .25s ease-in-out;
       -o-transition: .25s ease-in-out;
@@ -2498,18 +2543,18 @@ body {
       -o-transform: rotate(0deg);
       transform: rotate(0deg);
       opacity: 1;
-      border-radius: 0.0352rem;
+      border-radius: 0.04693rem;
       background: #f32e36; }
       .garlic-layout #burger-menu span:nth-child(1), .garlic-layout #burger-menu span:nth-child(2) {
         top: 0; }
       .garlic-layout #burger-menu span:nth-child(3) {
-        top: 0.35165rem; }
+        top: 0.46886rem; }
       .garlic-layout #burger-menu span:nth-child(4) {
-        top: 0.7033rem; }
+        top: 0.93773rem; }
     .garlic-layout #burger-menu.open span {
       background: #87240e; }
       .garlic-layout #burger-menu.open span:nth-child(1) {
-        top: 0.352rem;
+        top: 0.46933rem;
         left: 50%;
         width: 0; }
       .garlic-layout #burger-menu.open span:nth-child(2) {
@@ -2523,18 +2568,19 @@ body {
         -o-transform: rotate(-45deg) translateX(25%);
         transform: rotate(-45deg) translateX(25%); }
       .garlic-layout #burger-menu.open span:nth-child(4) {
-        top: 0.352rem;
+        top: 0.46933rem;
         left: 50%;
         width: 0; }
   .garlic-layout .note-item {
-    font-size: 0.66rem;
+    font-size: 0.88rem;
     position: relative;
     overflow: visible;
     max-width: 100%;
-    margin-bottom: 0.9996rem;
-    padding-bottom: 0.6rem;
+    margin-bottom: 1.3328rem;
+    padding-bottom: 0.8rem;
     list-style-type: none;
-    border-bottom: 0.132rem solid #f32e36;
+    border-bottom: 0.176rem solid #f32e36;
+    opacity: .8;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -2542,32 +2588,49 @@ body {
     transition: all 0.5s ease; }
     .garlic-layout .note-item p,
     .garlic-layout .note-item ul {
-      line-height: 1.32rem; }
+      font-size: 0.88rem;
+      line-height: 1.232rem; }
     .garlic-layout .note-item > div {
       display: inline;
-      margin-left: 0.6rem; }
+      margin-left: 0.8rem; }
       .garlic-layout .note-item > div > * {
         display: inline; }
     .garlic-layout .note-item iframe {
       max-width: 100%; }
-  .garlic-layout .note-content-pointer,
+    .garlic-layout .note-item .BlockAssetWrapper .peritext-contextualization,
+    .garlic-layout .note-item .BlockAssetWrapper > figcaption {
+      padding: 0 !important;
+      margin: 0 !important; }
   .garlic-layout .note-block-pointer {
-    font-size: 0.66rem;
-    line-height: 1.386rem;
+    font-size: 0.44rem;
+    line-height: 0.88rem;
     display: inline-block;
-    width: 1.2672rem;
-    height: 1.2672rem;
+    width: 0.8448rem;
+    height: 0.8448rem;
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
     color: #fdfff8;
     border-radius: 50%;
     background: #f32e36; }
-    .garlic-layout .note-content-pointer:hover,
     .garlic-layout .note-block-pointer:hover {
       background: #87240e; }
   .garlic-layout .note-content-pointer {
-    margin-left: 0.6rem; }
+    font-size: 0.88rem;
+    line-height: 1.76rem;
+    display: inline-block;
+    width: 1.6896rem;
+    height: 1.6896rem;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: #fdfff8;
+    border-radius: 50%;
+    background: #f32e36; }
+    .garlic-layout .note-content-pointer:hover {
+      background: #87240e; }
+  .garlic-layout .note-content-pointer {
+    margin-left: 0.8rem; }
   .garlic-layout .player-container canvas {
     box-shadow: 0 0 5px #e7eae1; }
   .garlic-layout .epub-player-wrapper .epub-player-container {
@@ -2585,15 +2648,15 @@ body {
   .garlic-layout pre {
     font-family: monospace;
     overflow: auto;
-    padding: 0.9996rem;
+    padding: 1.3328rem;
     background: #e7eae1; }
   .garlic-layout #disqus_thread {
-    margin-top: 2.9988rem;
+    margin-top: 3.9984rem;
     margin-right: 20%;
-    margin-left: 20%; }
+    margin-left: 30%; }
 
-</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="505983701"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:17%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class=" section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introduction</a></li><li class="active section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="23">L&#x27;écosystème des modules peritext</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="25">Des systèmes documentaires riches et exploitables</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="27">Un design adaptable et modulaire</a></li><li class=" section-link-level-0" data-reactid="28"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="29">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="31">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="33">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="35">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="37">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="39">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="41">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="43">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="45">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="47">Contextualiseur vegalite</a></li><li class=" section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-1" data-reactid="50"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="51">Contextualiseur data-presentation</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="53">Gabarits</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="55">Générateurs</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="57">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="59">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="60"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="61">À propos</a></li></ul></div><div class="footer" data-reactid="62"><ul data-reactid="63"><li class="" data-reactid="64"><a href="/lexicon/" data-reactid="65">Glossaire</a></li><li class="" data-reactid="66"><a href="/bibliotheca/" data-reactid="67">Références</a></li><li class="" data-reactid="68"><a href="/dimensio/" data-reactid="69">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="70"><section class="main-contents-container section-player" data-reactid="71"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20format%20de%20donn%C3%A9es%20peritext&amp;amp;rft.genre=document" data-reactid="72"></span><h1 class="section-title" data-reactid="73">Le format de données peritext</h1><!-- react-text: 74 --><!-- /react-text --><div data-reactid="75"><p data-reactid="76"><!-- react-text: 77 -->Peritext est d&#x27;abord une <!-- /react-text --><strong data-reactid="78"><!-- react-text: 79 -->spécification technique<!-- /react-text --></strong><!-- react-text: 80 --> pour la description de documents académiques visant à terme à devenir un format ouvert et interopérable. Autrement dit, il s&#x27;agit d&#x27;un mode d&#x27;emploi expliquant comment décrire le contenu d’un document académique d&#x27;une façon conventionnelle &amp; prévisible. Ce dernier décrit comment les données d&#x27;un récit écrit par un chercheur avec un outil compatible doivent être structurées, et contribue à produire un <!-- /react-text --><em data-reactid="81"><!-- react-text: 82 -->format de données<!-- /react-text --></em><!-- react-text: 83 --> particulier, le <!-- /react-text --><em data-reactid="84"><!-- react-text: 85 -->format Peritext.<!-- /react-text --></em></p><p data-reactid="86"><!-- react-text: 87 -->Le schéma de données du format peritext est dédié à la description de &quot;récits&quot; académiques, qui peuvent correspondre à des formats traditionnels aussi variés que :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="88"><li data-reactid="89"><!-- react-text: 90 -->un article de revue académique <!-- /react-text --></li><li data-reactid="91"><!-- react-text: 92 -->une monographie<!-- /react-text --></li><li data-reactid="93"><!-- react-text: 94 -->des actes de colloque<!-- /react-text --></li><li data-reactid="95"><!-- react-text: 96 -->un numéro de revue académique<!-- /react-text --></li></ul><p data-reactid="97"><!-- react-text: 98 -->... ou à des formes ne correspondant à aucun des formats de publication académique établis.<!-- /react-text --></p><p data-reactid="99"><!-- react-text: 100 -->Techniquement, peritext se fonde sur une description au <!-- /react-text --><span class="InlineAssetWrapper inline-glossary" id="670d4249-bdb2-4e32-8a33-6a6a94f3f849" data-reactid="101"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.genre=document" data-reactid="102"></span><span id="670d4249-bdb2-4e32-8a33-6a6a94f3f849" class="peritext-inline-glossary-mention peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-glossary" data-reactid="103"><b data-reactid="104">format json</b></span></span><!-- react-text: 105 -->  , qui permet de décrire un objet selon une structuration complexe faite d&#x27;éléments imbriqués, et de stocker cette description dans de simples chaînes de caractères et autres fichiers de texte.<!-- /react-text --></p><p data-reactid="106"><!-- react-text: 107 -->La spécification exacte du format, actuellement encore en gestation<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-413779c4-5319-4d36-805f-57a6b93aebde" data-reactid="108"><!-- react-text: 109 -->1<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --></sup><!-- react-text: 111 --> , est définie dans un premier module du projet intitulé <!-- /react-text --><span data-reactid="112"><!-- react-text: 113 -->peritext-core <!-- /react-text --></span><span class="InlineAssetWrapper inline-bib" id="80348433-cdc5-4d6a-b9b3-b44dc741b44d" data-reactid="114"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=R%C3%A9pertoire%20peritext-core%20sur%20github&amp;amp;rft_id=https%3A%2F%2Fgithub.com%2Fperitext%2Fperitext-core&amp;amp;rft.genre=document" data-reactid="115"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="80348433-cdc5-4d6a-b9b3-b44dc741b44d" data-reactid="116">(30)</cite></span><!-- react-text: 117 --> <!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-568ead3d-a848-4fe7-9f43-ad8a1dc07874" data-reactid="118"><!-- react-text: 119 -->2<!-- /react-text --><!-- react-text: 120 --> <!-- /react-text --></sup><!-- react-text: 121 -->  <!-- /react-text --><span data-reactid="122"><!-- react-text: 123 -->.<!-- /react-text --></span></p><p data-reactid="124"><!-- react-text: 125 -->Les paragraphes qui suivent décrivent et justifient les grandes lignes du format peritext. Pour une idée plus précise et technique du schéma, voir le répertoire <!-- /react-text --><span data-reactid="126"><!-- react-text: 127 -->peritext-core<!-- /react-text --></span><!-- react-text: 128 --> ou sa documentation technique <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="335421ed-3d9d-427a-978b-63f98d2f93a5" data-reactid="129"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Peritext%20core%20-%20documentation%20technique&amp;amp;rft_id=https%3A%2F%2Fperitext.github.io%2Fperitext-core%2F&amp;amp;rft.genre=document" data-reactid="130"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="335421ed-3d9d-427a-978b-63f98d2f93a5" data-reactid="131">(31)</cite></span><!-- react-text: 132 -->.  <!-- /react-text --></p><h1 id="59tcr" data-reactid="133"><!-- react-text: 134 -->Caractéristiques générales du format peritext <!-- /react-text --></h1><p data-reactid="135"><!-- react-text: 136 -->Le format peritext est d&#x27;abord structuré autour des aspects suivants :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="137"><li data-reactid="138"><!-- react-text: 139 -->un récit Peritext est décrit par une série de métadonnées qui décrivent : son titre et sous-titre, son ou ses auteurs, etc.<!-- /react-text --></li><li data-reactid="140"><!-- react-text: 141 -->un récit Peritext est structuré en <!-- /react-text --><em data-reactid="142"><!-- react-text: 143 -->sections. <!-- /react-text --></em><!-- react-text: 144 -->Une section peut être une partie, un chapitre, une introduction, des remerciements, ... les sections sont assemblées dans un ordre linéaire pour construire le <!-- /react-text --><em data-reactid="145"><!-- react-text: 146 -->sommaire<!-- /react-text --></em><!-- react-text: 147 --> du récit. Elles peuvent disposer d&#x27;un niveau hiérarchique qui permet de définir les sections les plus générales et les sections d&#x27;importance moindre.<!-- /react-text --></li><li data-reactid="148"><!-- react-text: 149 -->chaque section dispose de ses propres métadonnées (titre, auteurs, ...) <!-- /react-text --></li><li data-reactid="150"><!-- react-text: 151 -->chaque section dispose d&#x27;un contenu structuré autour d&#x27;un texte principal et d&#x27;une série de notes.<!-- /react-text --></li><li data-reactid="152"><!-- react-text: 153 -->les contenus d&#x27;une section ou d&#x27;une note en particulier sont aussi représentés sous la forme de blocs de textes annotés avec des styles et des entités spécifiques selon une norme établie<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-9f4a6225-e77f-4e3b-8bc0-8e38f0180ed6" data-reactid="154"><!-- react-text: 155 -->3<!-- /react-text --><!-- react-text: 156 --> <!-- /react-text --></sup><!-- react-text: 157 -->.<!-- /react-text --></li><li data-reactid="158"><!-- react-text: 159 -->outre les sections et leur contenu, au niveau d&#x27;un récit peritext sont également définis des paramètres (settings) qui définissent des informations relatives à l&#x27;affichage du récit telles que : le gabarit à utiliser, les règles de citation, des paramètres tels que la position des notes, et enfin le code css à injecter pour chacun des types de supports<!-- /react-text --></li><li data-reactid="160"><!-- react-text: 161 -->enfin, un récit peritext est décrit par une série d&#x27;objets relatifs à la contextualisation d&#x27;éléments extérieurs dans l&#x27;argument : les ressources, les contextualiseurs et les contextualisations<!-- /react-text --></li></ul><p data-reactid="162"></p><h1 id="17lt8" data-reactid="163"><!-- react-text: 164 -->Caractéristiques spécifiques liées à l&#x27;argumentation fondée sur les documents : le modèle RCC<!-- /react-text --></h1><p data-reactid="165"><!-- react-text: 166 --> <!-- /react-text --></p><figure class="BlockAssetWrapper image" style="min-height:;height:;position:relative;" id="e867acd6-33d7-4bb7-b697-004f7b22dcdc" data-reactid="167"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20mod%C3%A8le%20de%20document%20Peritext&amp;amp;rft.genre=document" data-reactid="168"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-image" data-reactid="169"><img src="/static/generated/c0252b4d-7be0-4c15-be86-41cea6c0b038.png" data-reactid="170"/></figure><figcaption data-reactid="171"><h4 data-reactid="172">Le modèle de document Peritext</h4><p data-reactid="173"></p><!-- react-text: 174 --><!-- /react-text --><p data-reactid="175"><button style="cursor:pointer;" data-reactid="176">🔀</button></p></figcaption></figure><p data-reactid="177"><!-- react-text: 178 -->Peritext tire sa spécificité de sa vocation à soutenir la convocation de nombreux éléments extérieurs dans la structure argumentative d’un texte académique (références, données, documents audiovisuels, etc.).<!-- /react-text --></p><p data-reactid="179"><!-- react-text: 180 -->Pour ce faire, dans un récit Peritext, la convocation d&#x27;éléments extérieurs dans l&#x27;argument du récit s&#x27;effectue via trois types d&#x27;objets :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="181"><li data-reactid="182"><strong data-reactid="183"><!-- react-text: 184 -->les ressources<!-- /react-text --></strong><!-- react-text: 185 --> décrivent tous les éléments à convoquer dans le texte, selon un <!-- /react-text --><strong data-reactid="186"><!-- react-text: 187 -->registre<!-- /react-text --></strong><!-- react-text: 188 --> <!-- /react-text --><strong data-reactid="189"><!-- react-text: 190 -->documentaire<!-- /react-text --></strong><!-- react-text: 191 --> indifférent à la forme qu&#x27;ils prendront dans le récit. Les ressources peuvent désigner des éléments très variés dans leur nature (références, données, médias, mais aussi entités de glossaire telles que personnes, lieux, thèmes, ou encore morceaux de code, …)<!-- /react-text --></li><li data-reactid="192"><strong data-reactid="193"><!-- react-text: 194 -->les contextualiseurs<!-- /react-text --></strong><!-- react-text: 195 --> décrivent un ensemble de paramètres permettant d&#x27;afficher une ressource d&#x27;une certaine manière. Ils agissent sur un <!-- /react-text --><strong data-reactid="196"><!-- react-text: 197 -->registre rhétorique<!-- /react-text --></strong><!-- react-text: 198 --> pour préciser comment la ressource doit être affichée.<!-- /react-text --></li><li data-reactid="199"><strong data-reactid="200"><!-- react-text: 201 -->les contextualisations<!-- /react-text --></strong><!-- react-text: 202 --> enfin sont la conjonction d&#x27;une ressource et d&#x27;un contextualiseur à un endroit précis de l&#x27;argument. Elles sont par ailleurs assorties d&#x27;un titre et d&#x27;une légende.<!-- /react-text --></li></ul><p data-reactid="203"><!-- react-text: 204 -->Le modèle de données de Peritext est donc intitulé RCC car il sépare la liste des Ressources utilisées dans le documents, les Contextualisations de ces ressources à des endroits spécifiques et les Contextualiseurs qui les font s’afficher d’une manière spécifique.<!-- /react-text --></p><h1 id="3deb3" data-reactid="205"><!-- react-text: 206 -->Une démonstration du modèle RCC<!-- /react-text --></h1><blockquote data-reactid="207"><!-- react-text: 208 -->George, chercheur en archéologie, explique le résultat de sa dernière expédition en Egypte via un tableau représentant la quantité de vases retrouvés sur une liste de sites qu&#x27;il a listés par lettres (&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, ...)<!-- /react-text --><br data-reactid="209"/></blockquote><p data-reactid="210"></p><p data-reactid="211"><!-- react-text: 212 -->Au moyen d&#x27;un éditeur compatible Peritext comme Ovide <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="7249e237-a684-46d0-a6bb-a5cd981a1566" data-reactid="213"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=%C3%89diteur%20Ovide&amp;amp;rft_id=http%3A%2F%2Fovide.surge.sh%2F&amp;amp;rft.genre=document" data-reactid="214"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="7249e237-a684-46d0-a6bb-a5cd981a1566" data-reactid="215">(7)</cite></span><!-- react-text: 216 -->  , George stocke d&#x27;abord son résultat (consigné avec un autre logiciel  type excel dans un fichier de tableur) dans une ressource de type &quot;table&quot;, c&#x27;est-à-dire un simple tableau de données.<!-- /react-text --></p><p data-reactid="217"><!-- react-text: 218 -->Il est d&#x27;abord possible de la contextualiser au moyen d&#x27;un contextualiseur de type &quot;table&quot;, qui est le contextualiseur par défaut pour ce type de ressource. Ce dernier consiste à représenter la ressource sous la forme d&#x27;un tableau. En l&#x27;utilisant pour contextualiser sa ressource dans le paragraphe qui suit, George obtient le tableau suivant :<!-- /react-text --></p><p data-reactid="219"></p><figure class="BlockAssetWrapper table" style="min-height:;height:;position:relative;" id="e9a7894f-6ae4-44fd-8cd5-439bc84d8668" data-reactid="220"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Dataset%20tr%C3%A8s%20simple&amp;amp;rft.genre=document" data-reactid="221"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-table" data-reactid="222"><div class="ReactTable" data-reactid="223"><div class="rt-table" data-reactid="224"><div class="rt-thead -header" style="min-width:200px;" data-reactid="225"><div class="rt-tr" data-reactid="226"><div class=" rt-resizable-header -cursor-pointer rt-th" style="flex:100 0 auto;width:100px;" data-reactid="227"><div class="rt-resizable-header-content" data-reactid="228">a</div><div class="rt-resizer" data-reactid="229"></div></div><div class=" rt-resizable-header -cursor-pointer rt-th" style="flex:100 0 auto;width:100px;" data-reactid="230"><div class="rt-resizable-header-content" data-reactid="231">b</div><div class="rt-resizer" data-reactid="232"></div></div></div></div><div class="rt-tbody" style="min-width:200px;" data-reactid="233"><div class="rt-tr-group" data-reactid="234"><div class="rt-tr -odd" data-reactid="235"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="236">A</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="237">2</div></div></div><div class="rt-tr-group" data-reactid="238"><div class="rt-tr -even" data-reactid="239"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="240">B</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="241">4</div></div></div><div class="rt-tr-group" data-reactid="242"><div class="rt-tr -odd" data-reactid="243"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="244">C</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="245">6</div></div></div><div class="rt-tr-group" data-reactid="246"><div class="rt-tr -even" data-reactid="247"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="248">D</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="249">8</div></div></div><div class="rt-tr-group" data-reactid="250"><div class="rt-tr -odd" data-reactid="251"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="252">E</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="253">2</div></div></div><div class="rt-tr-group" data-reactid="254"><div class="rt-tr -even" data-reactid="255"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="256">F</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="257">3</div></div></div><div class="rt-tr-group" data-reactid="258"><div class="rt-tr -odd" data-reactid="259"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="260">G</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="261">5</div></div></div><div class="rt-tr-group" data-reactid="262"><div class="rt-tr -padRow -even" data-reactid="263"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="264"><span data-reactid="265"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="266"><span data-reactid="267"> </span></div></div></div><div class="rt-tr-group" data-reactid="268"><div class="rt-tr -padRow -odd" data-reactid="269"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="270"><span data-reactid="271"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="272"><span data-reactid="273"> </span></div></div></div><div class="rt-tr-group" data-reactid="274"><div class="rt-tr -padRow -even" data-reactid="275"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="276"><span data-reactid="277"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="278"><span data-reactid="279"> </span></div></div></div><div class="rt-tr-group" data-reactid="280"><div class="rt-tr -padRow -odd" data-reactid="281"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="282"><span data-reactid="283"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="284"><span data-reactid="285"> </span></div></div></div><div class="rt-tr-group" data-reactid="286"><div class="rt-tr -padRow -even" data-reactid="287"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="288"><span data-reactid="289"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="290"><span data-reactid="291"> </span></div></div></div><div class="rt-tr-group" data-reactid="292"><div class="rt-tr -padRow -odd" data-reactid="293"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="294"><span data-reactid="295"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="296"><span data-reactid="297"> </span></div></div></div><div class="rt-tr-group" data-reactid="298"><div class="rt-tr -padRow -even" data-reactid="299"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="300"><span data-reactid="301"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="302"><span data-reactid="303"> </span></div></div></div><div class="rt-tr-group" data-reactid="304"><div class="rt-tr -padRow -odd" data-reactid="305"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="306"><span data-reactid="307"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="308"><span data-reactid="309"> </span></div></div></div><div class="rt-tr-group" data-reactid="310"><div class="rt-tr -padRow -even" data-reactid="311"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="312"><span data-reactid="313"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="314"><span data-reactid="315"> </span></div></div></div><div class="rt-tr-group" data-reactid="316"><div class="rt-tr -padRow -odd" data-reactid="317"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="318"><span data-reactid="319"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="320"><span data-reactid="321"> </span></div></div></div><div class="rt-tr-group" data-reactid="322"><div class="rt-tr -padRow -even" data-reactid="323"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="324"><span data-reactid="325"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="326"><span data-reactid="327"> </span></div></div></div><div class="rt-tr-group" data-reactid="328"><div class="rt-tr -padRow -odd" data-reactid="329"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="330"><span data-reactid="331"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="332"><span data-reactid="333"> </span></div></div></div><div class="rt-tr-group" data-reactid="334"><div class="rt-tr -padRow -even" data-reactid="335"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="336"><span data-reactid="337"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="338"><span data-reactid="339"> </span></div></div></div></div></div><div class="pagination-bottom" data-reactid="340"><div class="-pagination" data-reactid="341"><div class="-previous" data-reactid="342"><button type="button" disabled="" class="-btn" data-reactid="343">Previous</button></div><div class="-center" data-reactid="344"><span class="-pageInfo" data-reactid="345"><!-- react-text: 346 -->Page<!-- /react-text --><!-- react-text: 347 --> <!-- /react-text --><div class="-pageJump" data-reactid="348"><input type="number" value="1" data-reactid="349"/></div><!-- react-text: 350 --> <!-- /react-text --><!-- react-text: 351 -->of<!-- /react-text --><!-- react-text: 352 --> <!-- /react-text --><span class="-totalPages" data-reactid="353">1</span></span><span class="select-wrap -pageSizeOptions" data-reactid="354"><select data-reactid="355"><option value="5" data-reactid="356">5 rows</option><option value="10" data-reactid="357">10 rows</option><option selected="" value="20" data-reactid="358">20 rows</option><option value="25" data-reactid="359">25 rows</option><option value="50" data-reactid="360">50 rows</option><option value="100" data-reactid="361">100 rows</option></select></span></div><div class="-next" data-reactid="362"><button type="button" disabled="" class="-btn" data-reactid="363">Next</button></div></div></div><div class="-loading" data-reactid="364"><div class="-loading-inner" data-reactid="365">Loading...</div></div></div></figure><figcaption data-reactid="366"><h4 data-reactid="367">(exemple) une ressource contextualisée en table</h4><p data-reactid="368">Les vases de George représentés comme un tableau.</p><!-- react-text: 369 --><!-- /react-text --><p data-reactid="370"><button style="cursor:pointer;" data-reactid="371">🔀</button></p></figcaption></figure><p data-reactid="372"><!-- react-text: 373 -->Maintenant, George souhaite à nouveau faire mention de cette ressource sans pour autant souhaiter l&#x27;afficher à nouveau sous la forme d&#x27;un encombrant tableau. Pour ce faire, il va utiliser le contextualiseur &quot;bib&quot; qui contextualise la ressource sous la forme d&#x27;une référence bibliographique. C&#x27;est ce qui va être fait à la fin de ce paragraphe<!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="da14ac70-3c75-4909-828f-3972e4fd3ba7" data-reactid="374"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Dataset%20tr%C3%A8s%20simple&amp;amp;rft.genre=document" data-reactid="375"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="da14ac70-3c75-4909-828f-3972e4fd3ba7" data-reactid="376">(26)</cite></span><!-- react-text: 377 -->.<!-- /react-text --></p><p data-reactid="378"><!-- react-text: 379 -->Enfin, mettons que notre auteur décide maintenant de discuter de la comparaison des valeurs numériques décrites dans les données de cette ressource. Il utilisera alors un troisième contextualiseur de type &quot;vegalite&quot;, qui permet de construire des visualisations de données. C&#x27;est ce qui va être fait dans le prochain paragraphe :<!-- /react-text --></p><p data-reactid="380"></p><figure class="BlockAssetWrapper vegalite" style="min-height:;height:;position:relative;" id="39484c52-77a5-4476-a885-e370d1def22c" data-reactid="381"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Dataset%20tr%C3%A8s%20simple&amp;amp;rft.genre=document" data-reactid="382"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-vegalite" data-reactid="383"><div class="" data-reactid="384"></div></figure><figcaption data-reactid="385"><h4 data-reactid="386">(exemple) La ressource contextualisée avec vegalite</h4><p data-reactid="387">Les vases de George représentés comme un histogramme.</p><!-- react-text: 388 --><!-- /react-text --><p data-reactid="389"><button style="cursor:pointer;" data-reactid="390">🔀</button></p></figcaption></figure><p data-reactid="391"><!-- react-text: 392 -->C&#x27;est ainsi que le modèle RCC implémenté par le format Peritext permet :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="393"><li data-reactid="394"><!-- react-text: 395 -->de représenter les éléments convoqués dans un argument de plusieurs manières différentes, selon les besoins de l&#x27;argumentation<!-- /react-text --></li><li data-reactid="396"><!-- react-text: 397 -->et de paramétrer finement la manière dont on veut voir affichée une ressource grâce aux paramètres des contextualiseurs et à l&#x27;injection de code css via l&#x27;éditeur<!-- /react-text --></li><li data-reactid="398"><!-- react-text: 399 -->tout en maintenant une rigueur documentaire qui pourra être exploitée ensuite pour l&#x27;indexation du document et pour la génération d&#x27;une interface utilisateur exploitant le système hypertexte ainsi créé de manière homogène malgré la diversité des contextualisations possibles. En effet, malgré la diversité des diverses formes de contextualisations pouvant être appliquées à une ressource donnée, le lien avec cette dernière restera toujours présent, permettant par exemple de produire une liste de mention ou une liant ressources et contextualisations. Ainsi, il est à noter que dans le présent gabarit de présentation en cliquant sur l&#x27;icône en dessous de chacune des contextualisations il est possible de prévisualiser toutes les autres contextualisations de la même ressource dans le récit et d&#x27;y accéder.<!-- /react-text --></li></ul><h1 id="d5198" data-reactid="400"><strong data-reactid="401"><!-- react-text: 402 -->Remarque sur les principes du format peritext et sa relation à la forme<!-- /react-text --></strong></h1><p data-reactid="403"><!-- react-text: 404 -->Dans une application d’édition suivant le modèle de données Peritext, l’auteur a donc non seulement la main sur les éléments extérieurs qu’il veut citer dans son texte, mais également sur la manière de les afficher et sur un ensemble de paramètres lui permettant de modeler précisément l’usage qu’il veut en faire dans son argument (par exemple : préciser un passage de texte, mettre en lumière une certaine dimension d’un jeu de données, spécifier un cadrage particulier sur une visualisation, etc.). <!-- /react-text --><strong data-reactid="405"><!-- react-text: 406 -->Il a ainsi ainsi la possibilité de développer un fil argumentatif pleinement articulé autour de la mobilisation des ressources qu’il convoque.<!-- /react-text --></strong></p><p data-reactid="407"><!-- react-text: 408 -->Peritext tente de se départir de la traditionnelle distinction entre les modèles de description centrés sur les contenus (<!-- /react-text --><em data-reactid="409"><!-- react-text: 410 -->What You See is What You Mean<!-- /react-text --></em><sup class="note-content-pointer" id="note-content-pointer-6e34daed-f056-43e0-bd56-fab147ca1ee1" data-reactid="411"><!-- react-text: 412 -->4<!-- /react-text --><!-- react-text: 413 --> <!-- /react-text --></sup><!-- react-text: 414 -->  ) et ceux centrés sur la forme propre à un type de support pour le document (<!-- /react-text --><em data-reactid="415"><!-- react-text: 416 -->What You See is What You Get<!-- /react-text --></em><sup class="note-content-pointer" id="note-content-pointer-ed3048fd-1edd-4256-92cf-490995a132c8" data-reactid="417"><!-- react-text: 418 -->5<!-- /react-text --><!-- react-text: 419 --> <!-- /react-text --></sup><!-- react-text: 420 -->  ). Il s’agit plutôt de modéliser les <!-- /react-text --><em data-reactid="421"><!-- react-text: 422 -->intentions argumentatives<!-- /react-text --></em><!-- react-text: 423 --> attachées à un moment particulier du texte (<!-- /react-text --><em data-reactid="424"><!-- react-text: 425 -->What you see is What You Argue<!-- /react-text --></em><sup class="note-content-pointer" id="note-content-pointer-8aed683f-ef29-431e-b33d-bf57101ccdca" data-reactid="426"><!-- react-text: 427 -->6<!-- /react-text --><!-- react-text: 428 --> <!-- /react-text --></sup><!-- react-text: 429 --> ) , plutôt qu’une “forme finie” ou un “contenu sans forme”. La notion de <!-- /react-text --><em data-reactid="430"><!-- react-text: 431 -->représentation intermédiaire<!-- /react-text --></em><!-- react-text: 432 --> joue ici un rôle crucial, comme nom de cet état intermédiaire des contenus décrits selon le format Peritext. <!-- /react-text --></p></div><footer data-reactid="433"><ul data-reactid="434"><li class="prev" data-reactid="435"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="436">&lt; Introduction</a></li><li data-reactid="437"><i data-reactid="438"><!-- react-text: 439 -->Peritext - publication multimodale orientée contexte<!-- /react-text --><!-- react-text: 440 --> - <!-- /react-text --><!-- react-text: 441 -->Le format de données peritext<!-- /react-text --></i></li><li class="next" data-reactid="442"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="443">L&#x27;écosystème des modules peritext &gt;</a></li></ul></footer><div class="notes-container notes-container-position-aside" data-reactid="444"><ol class="notes-list" data-reactid="445"><li class="note-item" id="413779c4-5319-4d36-805f-57a6b93aebde" data-reactid="446"><span class="note-block-pointer" id="note-block-pointer-413779c4-5319-4d36-805f-57a6b93aebde" data-reactid="447">1</span><div data-reactid="448"><p data-reactid="449"><!-- react-text: 450 -->C&#x27;est pourquoi tous les modules du projets sont pour l&#x27;instant à l&#x27;état de version &quot;pre-alpha&quot;, c&#x27;est-à-dire qu&#x27;ils sont instables &amp; non utilisables pour des situations réelles car appelés à évoluer de manière non-compatible avec leur version actuelle.<!-- /react-text --></p></div></li><li class="note-item" id="568ead3d-a848-4fe7-9f43-ad8a1dc07874" data-reactid="451"><span class="note-block-pointer" id="note-block-pointer-568ead3d-a848-4fe7-9f43-ad8a1dc07874" data-reactid="452">2</span><div data-reactid="453"><p data-reactid="454"><!-- react-text: 455 -->Peritext-core est notamment dédié à décrire le format peritext au moyen de la spécification <!-- /react-text --><span data-reactid="456"><!-- react-text: 457 -->json-schema<!-- /react-text --></span><!-- react-text: 458 --> développée par l&#x27;Internet Engineering Task Force <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="d59c40ac-6285-4edd-8345-f7a97cffc151" data-reactid="459"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Internet%20Engineering%20Task%20Force&amp;amp;rft.atitle=Sp%C3%A9cification%20JSON%20Schema&amp;amp;rft_id=http%3A%2F%2Fjson-schema.org%2F&amp;amp;rft.genre=document" data-reactid="460"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="d59c40ac-6285-4edd-8345-f7a97cffc151" data-reactid="461">(32)</cite></span><!-- react-text: 462 -->  <!-- /react-text --></p></div></li><li class="note-item" id="9f4a6225-e77f-4e3b-8bc0-8e38f0180ed6" data-reactid="463"><span class="note-block-pointer" id="note-block-pointer-9f4a6225-e77f-4e3b-8bc0-8e38f0180ed6" data-reactid="464">3</span><div data-reactid="465"><p data-reactid="466"><!-- react-text: 467 -->Ce type d&#x27;annotation s&#x27;adosse à la spécification open source <!-- /react-text --><span data-reactid="468"><!-- react-text: 469 -->draft-raw<!-- /react-text --></span><!-- react-text: 470 -->  développé par l&#x27;équipe de développement de l&#x27;entreprise Facebook, qui sert à décrire au format <!-- /react-text --><span data-reactid="471"><!-- react-text: 472 -->json<!-- /react-text --></span><!-- react-text: 473 --> des contenus textuels &quot;riches&quot; pour des applications utilisant la technologie de rendu html intitulée <!-- /react-text --><span data-reactid="474"><!-- react-text: 475 -->react<!-- /react-text --></span><!-- react-text: 476 -->, qui est utilisée dans tous les modules de l&#x27;écosystème peritext. Voir le site du projet draft-js pour plus d&#x27;informations <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="05956db5-1c93-4351-80de-581ee0439025" data-reactid="477"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Conventions%20de%20conversion%20de%20donn%C3%A9es%20pour%20le%20projet%20draft-js&amp;amp;rft_id=https%3A%2F%2Fdraftjs.org%2Fdocs%2Fapi-reference-data-conversion.html&amp;amp;rft.genre=document" data-reactid="478"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="05956db5-1c93-4351-80de-581ee0439025" data-reactid="479">(28)</cite></span><!-- react-text: 480 --> .<!-- /react-text --></p></div></li><li class="note-item" id="6e34daed-f056-43e0-bd56-fab147ca1ee1" data-reactid="481"><span class="note-block-pointer" id="note-block-pointer-6e34daed-f056-43e0-bd56-fab147ca1ee1" data-reactid="482">4</span><div data-reactid="483"><p data-reactid="484"><!-- react-text: 485 -->&quot;Ce que vous voyez est ce que vous voulez dire&quot;. Voir des formats comme <!-- /react-text --></p></div></li><li class="note-item" id="ed3048fd-1edd-4256-92cf-490995a132c8" data-reactid="486"><span class="note-block-pointer" id="note-block-pointer-ed3048fd-1edd-4256-92cf-490995a132c8" data-reactid="487">5</span><div data-reactid="488"><p data-reactid="489"><!-- react-text: 490 -->&quot;Ce que vous voyez est ce que vous obtenez&quot; (à l&#x27;impression). Voir des formats comme word dans cette catégorie.<!-- /react-text --></p></div></li><li class="note-item" id="8aed683f-ef29-431e-b33d-bf57101ccdca" data-reactid="491"><span class="note-block-pointer" id="note-block-pointer-8aed683f-ef29-431e-b33d-bf57101ccdca" data-reactid="492">6</span><div data-reactid="493"><p data-reactid="494"><!-- react-text: 495 -->&quot;Ce que vous voyez est ce que vous argumentez&quot;. Nous proposons cette expression pour décrire cette troisième voie qui par se référence à la rhétorique ne sépare pas la question de la forme de la question du sens.<!-- /react-text --></p></div></li></ol></div><aside class="section-aside " style="left:84%;top:0;height:100%;width:16%;" data-reactid="496"></aside></section></section></section><style data-reactid="497"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
-          __NEXT_DATA__ = {"props":{},"pathname":"/section","query":{"id":"3c16343b-bc1a-4214-9769-aca5970a87fd"},"buildId":"dd7d89d1-222b-41a8-984a-4ef6f46c830d","buildStats":{"app.js":{"hash":"b0f231a65417c81b58521484262c5514"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="-1708330122"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:27%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class=" section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introduction</a></li><li class="active section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="23">L&#x27;écosystème des modules peritext</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="25">Des systèmes documentaires riches et exploitables</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="27">Un design adaptable et modulaire</a></li><li class=" section-link-level-0" data-reactid="28"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="29">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="31">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="33">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="35">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="37">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="39">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="41">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="43">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="45">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="47">Contextualiseur vegalite</a></li><li class=" section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-1" data-reactid="50"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="51">Contextualiseur data-presentation</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="53">Gabarits</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="55">Générateurs</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="57">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="59">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="60"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="61">À propos</a></li></ul></div><div class="footer" data-reactid="62"><ul data-reactid="63"><li class="" data-reactid="64"><a href="/lexicon/" data-reactid="65">Glossaire</a></li><li class="" data-reactid="66"><a href="/bibliotheca/" data-reactid="67">Références</a></li><li class="" data-reactid="68"><a href="/dimensio/" data-reactid="69">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="70"><section class="main-contents-container section-player" data-reactid="71"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20format%20de%20donn%C3%A9es%20peritext&amp;amp;rft.genre=document" data-reactid="72"></span><h1 class="section-title" data-reactid="73">Le format de données peritext</h1><!-- react-text: 74 --><!-- /react-text --><div data-reactid="75"><p data-reactid="76"><!-- react-text: 77 -->Peritext est d&#x27;abord une <!-- /react-text --><strong data-reactid="78"><!-- react-text: 79 -->spécification technique<!-- /react-text --></strong><!-- react-text: 80 --> pour la description de documents académiques visant à terme à devenir un format ouvert et interopérable. Autrement dit, il s&#x27;agit d&#x27;un mode d&#x27;emploi expliquant comment décrire le contenu d’un document académique d&#x27;une façon conventionnelle &amp; prévisible. Ce dernier décrit comment les données d&#x27;un récit écrit par un chercheur avec un outil compatible doivent être structurées, et contribue à produire un <!-- /react-text --><em data-reactid="81"><!-- react-text: 82 -->format de données<!-- /react-text --></em><!-- react-text: 83 --> particulier, le <!-- /react-text --><em data-reactid="84"><!-- react-text: 85 -->format Peritext.<!-- /react-text --></em></p><p data-reactid="86"><!-- react-text: 87 -->Le schéma de données du format peritext est dédié à la description de &quot;récits&quot; académiques, qui peuvent correspondre à des formats traditionnels aussi variés que :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="88"><li data-reactid="89"><!-- react-text: 90 -->un article de revue académique <!-- /react-text --></li><li data-reactid="91"><!-- react-text: 92 -->une monographie<!-- /react-text --></li><li data-reactid="93"><!-- react-text: 94 -->des actes de colloque<!-- /react-text --></li><li data-reactid="95"><!-- react-text: 96 -->un numéro de revue académique<!-- /react-text --></li></ul><p data-reactid="97"><!-- react-text: 98 -->... ou à des formes ne correspondant à aucun des formats de publication académique établis.<!-- /react-text --></p><p data-reactid="99"><!-- react-text: 100 -->Techniquement, peritext se fonde sur une description au <!-- /react-text --><span class="InlineAssetWrapper inline-glossary" id="670d4249-bdb2-4e32-8a33-6a6a94f3f849" data-reactid="101"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.genre=document" data-reactid="102"></span><span id="670d4249-bdb2-4e32-8a33-6a6a94f3f849" class="peritext-inline-glossary-mention peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-glossary" data-reactid="103"><b data-reactid="104">format json</b></span></span><!-- react-text: 105 -->  , qui permet de décrire un objet selon une structuration complexe faite d&#x27;éléments imbriqués, et de stocker cette description dans de simples chaînes de caractères et autres fichiers de texte.<!-- /react-text --></p><p data-reactid="106"><!-- react-text: 107 -->La spécification exacte du format, actuellement encore en gestation<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-413779c4-5319-4d36-805f-57a6b93aebde" data-reactid="108"><!-- react-text: 109 -->1<!-- /react-text --><!-- react-text: 110 --> <!-- /react-text --></sup><!-- react-text: 111 --> , est définie dans un premier module du projet intitulé <!-- /react-text --><span data-reactid="112"><!-- react-text: 113 -->peritext-core <!-- /react-text --></span><span class="InlineAssetWrapper inline-bib" id="80348433-cdc5-4d6a-b9b3-b44dc741b44d" data-reactid="114"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=R%C3%A9pertoire%20peritext-core%20sur%20github&amp;amp;rft_id=https%3A%2F%2Fgithub.com%2Fperitext%2Fperitext-core&amp;amp;rft.genre=document" data-reactid="115"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="80348433-cdc5-4d6a-b9b3-b44dc741b44d" data-reactid="116">(29)</cite></span><!-- react-text: 117 --> <!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-568ead3d-a848-4fe7-9f43-ad8a1dc07874" data-reactid="118"><!-- react-text: 119 -->2<!-- /react-text --><!-- react-text: 120 --> <!-- /react-text --></sup><!-- react-text: 121 -->  <!-- /react-text --><span data-reactid="122"><!-- react-text: 123 -->.<!-- /react-text --></span></p><p data-reactid="124"><!-- react-text: 125 -->Les paragraphes qui suivent décrivent et justifient les grandes lignes du format peritext. Pour une idée plus précise et technique du schéma, voir le répertoire <!-- /react-text --><span data-reactid="126"><!-- react-text: 127 -->peritext-core<!-- /react-text --></span><!-- react-text: 128 --> ou sa documentation technique <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="335421ed-3d9d-427a-978b-63f98d2f93a5" data-reactid="129"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Peritext%20core%20-%20documentation%20technique&amp;amp;rft_id=https%3A%2F%2Fperitext.github.io%2Fperitext-core%2F&amp;amp;rft.genre=document" data-reactid="130"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="335421ed-3d9d-427a-978b-63f98d2f93a5" data-reactid="131">(30)</cite></span><!-- react-text: 132 -->.  <!-- /react-text --></p><h1 id="59tcr" data-reactid="133"><!-- react-text: 134 -->Caractéristiques générales du format peritext <!-- /react-text --></h1><p data-reactid="135"><!-- react-text: 136 -->Le format peritext est d&#x27;abord structuré autour des aspects suivants :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="137"><li data-reactid="138"><!-- react-text: 139 -->un récit Peritext est décrit par une série de métadonnées qui décrivent : son titre et sous-titre, son ou ses auteurs, etc.<!-- /react-text --></li><li data-reactid="140"><!-- react-text: 141 -->un récit Peritext est structuré en <!-- /react-text --><em data-reactid="142"><!-- react-text: 143 -->sections. <!-- /react-text --></em><!-- react-text: 144 -->Une section peut être une partie, un chapitre, une introduction, des remerciements, ... les sections sont assemblées dans un ordre linéaire pour construire le <!-- /react-text --><em data-reactid="145"><!-- react-text: 146 -->sommaire<!-- /react-text --></em><!-- react-text: 147 --> du récit. Elles peuvent disposer d&#x27;un niveau hiérarchique qui permet de définir les sections les plus générales et les sections d&#x27;importance moindre.<!-- /react-text --></li><li data-reactid="148"><!-- react-text: 149 -->chaque section dispose de ses propres métadonnées (titre, auteurs, ...) <!-- /react-text --></li><li data-reactid="150"><!-- react-text: 151 -->chaque section dispose d&#x27;un contenu structuré autour d&#x27;un texte principal et d&#x27;une série de notes.<!-- /react-text --></li><li data-reactid="152"><!-- react-text: 153 -->les contenus d&#x27;une section ou d&#x27;une note en particulier sont aussi représentés sous la forme de blocs de textes annotés avec des styles et des entités spécifiques selon une norme établie<!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-9f4a6225-e77f-4e3b-8bc0-8e38f0180ed6" data-reactid="154"><!-- react-text: 155 -->3<!-- /react-text --><!-- react-text: 156 --> <!-- /react-text --></sup><!-- react-text: 157 -->.<!-- /react-text --></li><li data-reactid="158"><!-- react-text: 159 -->outre les sections et leur contenu, au niveau d&#x27;un récit peritext sont également définis des paramètres (settings) qui définissent des informations relatives à l&#x27;affichage du récit telles que : le gabarit à utiliser, les règles de citation, des paramètres tels que la position des notes, et enfin le code css à injecter pour chacun des types de supports<!-- /react-text --></li><li data-reactid="160"><!-- react-text: 161 -->enfin, un récit peritext est décrit par une série d&#x27;objets relatifs à la contextualisation d&#x27;éléments extérieurs dans l&#x27;argument : les ressources, les contextualiseurs et les contextualisations<!-- /react-text --></li></ul><p data-reactid="162"></p><h1 id="17lt8" data-reactid="163"><!-- react-text: 164 -->Caractéristiques spécifiques liées à l&#x27;argumentation fondée sur les documents : le modèle RCC<!-- /react-text --></h1><p data-reactid="165"><!-- react-text: 166 --> <!-- /react-text --></p><figure class="BlockAssetWrapper image" style="min-height:;height:;position:relative;" id="e867acd6-33d7-4bb7-b697-004f7b22dcdc" data-reactid="167"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Le%20mod%C3%A8le%20de%20document%20Peritext&amp;amp;rft.genre=document" data-reactid="168"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-image" data-reactid="169"><img src="/static/generated/7be99ea3-315f-438f-80f0-7f9c6edf0341.png" data-reactid="170"/></figure><figcaption data-reactid="171"><h4 data-reactid="172">Le modèle de document Peritext</h4><p data-reactid="173"></p><!-- react-text: 174 --><!-- /react-text --><p data-reactid="175"><button style="cursor:pointer;" data-reactid="176">🔀</button></p></figcaption></figure><p data-reactid="177"><!-- react-text: 178 -->Peritext tire sa spécificité de sa vocation à soutenir la convocation de nombreux éléments extérieurs dans la structure argumentative d’un texte académique (références, données, documents audiovisuels, etc.).<!-- /react-text --></p><p data-reactid="179"><!-- react-text: 180 -->Pour ce faire, dans un récit Peritext, la convocation d&#x27;éléments extérieurs dans l&#x27;argument du récit s&#x27;effectue via trois types d&#x27;objets :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="181"><li data-reactid="182"><strong data-reactid="183"><!-- react-text: 184 -->les ressources<!-- /react-text --></strong><!-- react-text: 185 --> décrivent tous les éléments à convoquer dans le texte, selon un <!-- /react-text --><strong data-reactid="186"><!-- react-text: 187 -->registre<!-- /react-text --></strong><!-- react-text: 188 --> <!-- /react-text --><strong data-reactid="189"><!-- react-text: 190 -->documentaire<!-- /react-text --></strong><!-- react-text: 191 --> indifférent à la forme qu&#x27;ils prendront dans le récit. Les ressources peuvent désigner des éléments très variés dans leur nature (références, données, médias, mais aussi entités de glossaire telles que personnes, lieux, thèmes, ou encore morceaux de code, …)<!-- /react-text --></li><li data-reactid="192"><strong data-reactid="193"><!-- react-text: 194 -->les contextualiseurs<!-- /react-text --></strong><!-- react-text: 195 --> décrivent un ensemble de paramètres permettant d&#x27;afficher une ressource d&#x27;une certaine manière. Ils agissent sur un <!-- /react-text --><strong data-reactid="196"><!-- react-text: 197 -->registre rhétorique<!-- /react-text --></strong><!-- react-text: 198 --> pour préciser comment la ressource doit être affichée.<!-- /react-text --></li><li data-reactid="199"><strong data-reactid="200"><!-- react-text: 201 -->les contextualisations<!-- /react-text --></strong><!-- react-text: 202 --> enfin sont la conjonction d&#x27;une ressource et d&#x27;un contextualiseur à un endroit précis de l&#x27;argument. Elles sont par ailleurs assorties d&#x27;un titre et d&#x27;une légende.<!-- /react-text --></li></ul><p data-reactid="203"><!-- react-text: 204 -->Le modèle de données de Peritext est donc intitulé RCC car il sépare la liste des Ressources utilisées dans le documents, les Contextualisations de ces ressources à des endroits spécifiques et les Contextualiseurs qui les font s’afficher d’une manière spécifique.<!-- /react-text --></p><h1 id="3deb3" data-reactid="205"><!-- react-text: 206 -->Une démonstration du modèle RCC<!-- /react-text --></h1><blockquote data-reactid="207"><!-- react-text: 208 -->George, chercheur en archéologie, explique le résultat de sa dernière expédition en Egypte via un tableau représentant la quantité de vases retrouvés sur une liste de sites qu&#x27;il a listés par lettres (&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, ...)<!-- /react-text --><br data-reactid="209"/></blockquote><p data-reactid="210"></p><p data-reactid="211"><!-- react-text: 212 -->Au moyen d&#x27;un éditeur compatible Peritext comme Ovide <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="7249e237-a684-46d0-a6bb-a5cd981a1566" data-reactid="213"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=%C3%89diteur%20Ovide&amp;amp;rft_id=http%3A%2F%2Fovide.surge.sh%2F&amp;amp;rft.genre=document" data-reactid="214"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="7249e237-a684-46d0-a6bb-a5cd981a1566" data-reactid="215">(7)</cite></span><!-- react-text: 216 -->  , George stocke d&#x27;abord son résultat (consigné avec un autre logiciel  type excel dans un fichier de tableur) dans une ressource de type &quot;table&quot;, c&#x27;est-à-dire un simple tableau de données.<!-- /react-text --></p><p data-reactid="217"><!-- react-text: 218 -->Il est d&#x27;abord possible de la contextualiser au moyen d&#x27;un contextualiseur de type &quot;table&quot;, qui est le contextualiseur par défaut pour ce type de ressource. Ce dernier consiste à représenter la ressource sous la forme d&#x27;un tableau. En l&#x27;utilisant pour contextualiser sa ressource dans le paragraphe qui suit, George obtient le tableau suivant :<!-- /react-text --></p><p data-reactid="219"></p><figure class="BlockAssetWrapper table" style="min-height:;height:;position:relative;" id="e9a7894f-6ae4-44fd-8cd5-439bc84d8668" data-reactid="220"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Dataset%20tr%C3%A8s%20simple&amp;amp;rft.genre=document" data-reactid="221"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-table" data-reactid="222"><div class="ReactTable" data-reactid="223"><div class="rt-table" data-reactid="224"><div class="rt-thead -header" style="min-width:200px;" data-reactid="225"><div class="rt-tr" data-reactid="226"><div class=" rt-resizable-header -cursor-pointer rt-th" style="flex:100 0 auto;width:100px;" data-reactid="227"><div class="rt-resizable-header-content" data-reactid="228">a</div><div class="rt-resizer" data-reactid="229"></div></div><div class=" rt-resizable-header -cursor-pointer rt-th" style="flex:100 0 auto;width:100px;" data-reactid="230"><div class="rt-resizable-header-content" data-reactid="231">b</div><div class="rt-resizer" data-reactid="232"></div></div></div></div><div class="rt-tbody" style="min-width:200px;" data-reactid="233"><div class="rt-tr-group" data-reactid="234"><div class="rt-tr -odd" data-reactid="235"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="236">A</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="237">2</div></div></div><div class="rt-tr-group" data-reactid="238"><div class="rt-tr -even" data-reactid="239"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="240">B</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="241">4</div></div></div><div class="rt-tr-group" data-reactid="242"><div class="rt-tr -odd" data-reactid="243"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="244">C</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="245">6</div></div></div><div class="rt-tr-group" data-reactid="246"><div class="rt-tr -even" data-reactid="247"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="248">D</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="249">8</div></div></div><div class="rt-tr-group" data-reactid="250"><div class="rt-tr -odd" data-reactid="251"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="252">E</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="253">2</div></div></div><div class="rt-tr-group" data-reactid="254"><div class="rt-tr -even" data-reactid="255"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="256">F</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="257">3</div></div></div><div class="rt-tr-group" data-reactid="258"><div class="rt-tr -odd" data-reactid="259"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="260">G</div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="261">5</div></div></div><div class="rt-tr-group" data-reactid="262"><div class="rt-tr -padRow -even" data-reactid="263"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="264"><span data-reactid="265"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="266"><span data-reactid="267"> </span></div></div></div><div class="rt-tr-group" data-reactid="268"><div class="rt-tr -padRow -odd" data-reactid="269"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="270"><span data-reactid="271"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="272"><span data-reactid="273"> </span></div></div></div><div class="rt-tr-group" data-reactid="274"><div class="rt-tr -padRow -even" data-reactid="275"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="276"><span data-reactid="277"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="278"><span data-reactid="279"> </span></div></div></div><div class="rt-tr-group" data-reactid="280"><div class="rt-tr -padRow -odd" data-reactid="281"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="282"><span data-reactid="283"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="284"><span data-reactid="285"> </span></div></div></div><div class="rt-tr-group" data-reactid="286"><div class="rt-tr -padRow -even" data-reactid="287"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="288"><span data-reactid="289"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="290"><span data-reactid="291"> </span></div></div></div><div class="rt-tr-group" data-reactid="292"><div class="rt-tr -padRow -odd" data-reactid="293"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="294"><span data-reactid="295"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="296"><span data-reactid="297"> </span></div></div></div><div class="rt-tr-group" data-reactid="298"><div class="rt-tr -padRow -even" data-reactid="299"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="300"><span data-reactid="301"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="302"><span data-reactid="303"> </span></div></div></div><div class="rt-tr-group" data-reactid="304"><div class="rt-tr -padRow -odd" data-reactid="305"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="306"><span data-reactid="307"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="308"><span data-reactid="309"> </span></div></div></div><div class="rt-tr-group" data-reactid="310"><div class="rt-tr -padRow -even" data-reactid="311"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="312"><span data-reactid="313"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="314"><span data-reactid="315"> </span></div></div></div><div class="rt-tr-group" data-reactid="316"><div class="rt-tr -padRow -odd" data-reactid="317"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="318"><span data-reactid="319"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="320"><span data-reactid="321"> </span></div></div></div><div class="rt-tr-group" data-reactid="322"><div class="rt-tr -padRow -even" data-reactid="323"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="324"><span data-reactid="325"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="326"><span data-reactid="327"> </span></div></div></div><div class="rt-tr-group" data-reactid="328"><div class="rt-tr -padRow -odd" data-reactid="329"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="330"><span data-reactid="331"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="332"><span data-reactid="333"> </span></div></div></div><div class="rt-tr-group" data-reactid="334"><div class="rt-tr -padRow -even" data-reactid="335"><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="336"><span data-reactid="337"> </span></div><div class="rt-td" style="flex:100 0 auto;width:100px;" data-reactid="338"><span data-reactid="339"> </span></div></div></div></div></div><div class="pagination-bottom" data-reactid="340"><div class="-pagination" data-reactid="341"><div class="-previous" data-reactid="342"><button type="button" disabled="" class="-btn" data-reactid="343">Previous</button></div><div class="-center" data-reactid="344"><span class="-pageInfo" data-reactid="345"><!-- react-text: 346 -->Page<!-- /react-text --><!-- react-text: 347 --> <!-- /react-text --><div class="-pageJump" data-reactid="348"><input type="number" value="1" data-reactid="349"/></div><!-- react-text: 350 --> <!-- /react-text --><!-- react-text: 351 -->of<!-- /react-text --><!-- react-text: 352 --> <!-- /react-text --><span class="-totalPages" data-reactid="353">1</span></span><span class="select-wrap -pageSizeOptions" data-reactid="354"><select data-reactid="355"><option value="5" data-reactid="356">5 rows</option><option value="10" data-reactid="357">10 rows</option><option selected="" value="20" data-reactid="358">20 rows</option><option value="25" data-reactid="359">25 rows</option><option value="50" data-reactid="360">50 rows</option><option value="100" data-reactid="361">100 rows</option></select></span></div><div class="-next" data-reactid="362"><button type="button" disabled="" class="-btn" data-reactid="363">Next</button></div></div></div><div class="-loading" data-reactid="364"><div class="-loading-inner" data-reactid="365">Loading...</div></div></div></figure><figcaption data-reactid="366"><h4 data-reactid="367">(exemple) une ressource contextualisée en table</h4><p data-reactid="368">Les vases de George représentés comme un tableau.</p><!-- react-text: 369 --><!-- /react-text --><p data-reactid="370"><button style="cursor:pointer;" data-reactid="371">🔀</button></p></figcaption></figure><p data-reactid="372"><!-- react-text: 373 -->Maintenant, George souhaite à nouveau faire mention de cette ressource sans pour autant souhaiter l&#x27;afficher à nouveau sous la forme d&#x27;un encombrant tableau. Pour ce faire, il va utiliser le contextualiseur &quot;bib&quot; qui contextualise la ressource sous la forme d&#x27;une référence bibliographique. C&#x27;est ce qui va être fait à la fin de ce paragraphe<!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="da14ac70-3c75-4909-828f-3972e4fd3ba7" data-reactid="374"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Dataset%20tr%C3%A8s%20simple&amp;amp;rft.genre=document" data-reactid="375"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="da14ac70-3c75-4909-828f-3972e4fd3ba7" data-reactid="376">(25)</cite></span><!-- react-text: 377 -->.<!-- /react-text --></p><p data-reactid="378"><!-- react-text: 379 -->Enfin, mettons que notre auteur décide maintenant de discuter de la comparaison des valeurs numériques décrites dans les données de cette ressource. Il utilisera alors un troisième contextualiseur de type &quot;vegalite&quot;, qui permet de construire des visualisations de données. C&#x27;est ce qui va être fait dans le prochain paragraphe :<!-- /react-text --></p><p data-reactid="380"></p><figure class="BlockAssetWrapper vegalite" style="min-height:;height:;position:relative;" id="39484c52-77a5-4476-a885-e370d1def22c" data-reactid="381"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Dataset%20tr%C3%A8s%20simple&amp;amp;rft.genre=document" data-reactid="382"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-vegalite" data-reactid="383"><div class="" data-reactid="384"></div></figure><figcaption data-reactid="385"><h4 data-reactid="386">(exemple) La ressource contextualisée avec vegalite</h4><p data-reactid="387">Les vases de George représentés comme un histogramme.</p><!-- react-text: 388 --><!-- /react-text --><p data-reactid="389"><button style="cursor:pointer;" data-reactid="390">🔀</button></p></figcaption></figure><p data-reactid="391"><!-- react-text: 392 -->C&#x27;est ainsi que le modèle RCC implémenté par le format Peritext permet :<!-- /react-text --></p><ul class="ul-level-0" data-reactid="393"><li data-reactid="394"><!-- react-text: 395 -->de représenter les éléments convoqués dans un argument de plusieurs manières différentes, selon les besoins de l&#x27;argumentation<!-- /react-text --></li><li data-reactid="396"><!-- react-text: 397 -->et de paramétrer finement la manière dont on veut voir affichée une ressource grâce aux paramètres des contextualiseurs et à l&#x27;injection de code css via l&#x27;éditeur<!-- /react-text --></li><li data-reactid="398"><!-- react-text: 399 -->tout en maintenant une rigueur documentaire qui pourra être exploitée ensuite pour l&#x27;indexation du document et pour la génération d&#x27;une interface utilisateur exploitant le système hypertexte ainsi créé de manière homogène malgré la diversité des contextualisations possibles. En effet, malgré la diversité des diverses formes de contextualisations pouvant être appliquées à une ressource donnée, le lien avec cette dernière restera toujours présent, permettant par exemple de produire une liste de mention ou une liant ressources et contextualisations. Ainsi, il est à noter que dans le présent gabarit de présentation en cliquant sur l&#x27;icône en dessous de chacune des contextualisations il est possible de prévisualiser toutes les autres contextualisations de la même ressource dans le récit et d&#x27;y accéder.<!-- /react-text --></li></ul><h1 id="d5198" data-reactid="400"><strong data-reactid="401"><!-- react-text: 402 -->Remarque sur les principes du format peritext et sa relation à la forme<!-- /react-text --></strong></h1><p data-reactid="403"><!-- react-text: 404 -->Dans une application d’édition suivant le modèle de données Peritext, l’auteur a donc non seulement la main sur les éléments extérieurs qu’il veut citer dans son texte, mais également sur la manière de les afficher et sur un ensemble de paramètres lui permettant de modeler précisément l’usage qu’il veut en faire dans son argument (par exemple : préciser un passage de texte, mettre en lumière une certaine dimension d’un jeu de données, spécifier un cadrage particulier sur une visualisation, etc.). <!-- /react-text --><strong data-reactid="405"><!-- react-text: 406 -->Il a ainsi ainsi la possibilité de développer un fil argumentatif pleinement articulé autour de la mobilisation des ressources qu’il convoque.<!-- /react-text --></strong></p><p data-reactid="407"><!-- react-text: 408 -->Peritext tente de se départir de la traditionnelle distinction entre les modèles de description centrés sur les contenus (<!-- /react-text --><em data-reactid="409"><!-- react-text: 410 -->What You See is What You Mean<!-- /react-text --></em><sup class="note-content-pointer" id="note-content-pointer-6e34daed-f056-43e0-bd56-fab147ca1ee1" data-reactid="411"><!-- react-text: 412 -->4<!-- /react-text --><!-- react-text: 413 --> <!-- /react-text --></sup><!-- react-text: 414 -->  ) et ceux centrés sur la forme propre à un type de support pour le document (<!-- /react-text --><em data-reactid="415"><!-- react-text: 416 -->What You See is What You Get<!-- /react-text --></em><sup class="note-content-pointer" id="note-content-pointer-ed3048fd-1edd-4256-92cf-490995a132c8" data-reactid="417"><!-- react-text: 418 -->5<!-- /react-text --><!-- react-text: 419 --> <!-- /react-text --></sup><!-- react-text: 420 -->  ). Il s’agit plutôt de modéliser les <!-- /react-text --><em data-reactid="421"><!-- react-text: 422 -->intentions argumentatives<!-- /react-text --></em><!-- react-text: 423 --> attachées à un moment particulier du texte (<!-- /react-text --><em data-reactid="424"><!-- react-text: 425 -->What you see is What You Argue<!-- /react-text --></em><sup class="note-content-pointer" id="note-content-pointer-8aed683f-ef29-431e-b33d-bf57101ccdca" data-reactid="426"><!-- react-text: 427 -->6<!-- /react-text --><!-- react-text: 428 --> <!-- /react-text --></sup><!-- react-text: 429 --> ) , plutôt qu’une “forme finie” ou un “contenu sans forme”. La notion de <!-- /react-text --><em data-reactid="430"><!-- react-text: 431 -->représentation intermédiaire<!-- /react-text --></em><!-- react-text: 432 --> joue ici un rôle crucial, comme nom de cet état intermédiaire des contenus décrits selon le format Peritext. <!-- /react-text --></p></div><footer data-reactid="433"><ul data-reactid="434"><li class="prev" data-reactid="435"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="436">← Introduction</a></li><li data-reactid="437"><i data-reactid="438"><!-- react-text: 439 -->Peritext - publication multimodale orientée contexte<!-- /react-text --><!-- react-text: 440 --> - <!-- /react-text --><!-- react-text: 441 -->Le format de données peritext<!-- /react-text --></i></li><li class="next" data-reactid="442"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="443">L&#x27;écosystème des modules peritext →</a></li></ul></footer><div class="notes-container notes-container-position-aside" data-reactid="444"><ol class="notes-list" data-reactid="445"><li class="note-item" id="413779c4-5319-4d36-805f-57a6b93aebde" data-reactid="446"><span class="note-block-pointer" id="note-block-pointer-413779c4-5319-4d36-805f-57a6b93aebde" data-reactid="447">1</span><div data-reactid="448"><p data-reactid="449"><!-- react-text: 450 -->C&#x27;est pourquoi tous les modules du projets sont pour l&#x27;instant à l&#x27;état de version &quot;pre-alpha&quot;, c&#x27;est-à-dire qu&#x27;ils sont instables &amp; non utilisables pour des situations réelles car appelés à évoluer de manière non-compatible avec leur version actuelle.<!-- /react-text --></p></div></li><li class="note-item" id="568ead3d-a848-4fe7-9f43-ad8a1dc07874" data-reactid="451"><span class="note-block-pointer" id="note-block-pointer-568ead3d-a848-4fe7-9f43-ad8a1dc07874" data-reactid="452">2</span><div data-reactid="453"><p data-reactid="454"><!-- react-text: 455 -->Peritext-core est notamment dédié à décrire le format peritext au moyen de la spécification <!-- /react-text --><span data-reactid="456"><!-- react-text: 457 -->json-schema<!-- /react-text --></span><!-- react-text: 458 --> développée par l&#x27;Internet Engineering Task Force <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="d59c40ac-6285-4edd-8345-f7a97cffc151" data-reactid="459"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Internet%20Engineering%20Task%20Force&amp;amp;rft.atitle=Sp%C3%A9cification%20JSON%20Schema&amp;amp;rft_id=http%3A%2F%2Fjson-schema.org%2F&amp;amp;rft.genre=document" data-reactid="460"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="d59c40ac-6285-4edd-8345-f7a97cffc151" data-reactid="461">(31)</cite></span><!-- react-text: 462 -->  <!-- /react-text --></p></div></li><li class="note-item" id="9f4a6225-e77f-4e3b-8bc0-8e38f0180ed6" data-reactid="463"><span class="note-block-pointer" id="note-block-pointer-9f4a6225-e77f-4e3b-8bc0-8e38f0180ed6" data-reactid="464">3</span><div data-reactid="465"><p data-reactid="466"><!-- react-text: 467 -->Ce type d&#x27;annotation s&#x27;adosse à la spécification open source <!-- /react-text --><span data-reactid="468"><!-- react-text: 469 -->draft-raw<!-- /react-text --></span><!-- react-text: 470 -->  développé par l&#x27;équipe de développement de l&#x27;entreprise Facebook, qui sert à décrire au format <!-- /react-text --><span data-reactid="471"><!-- react-text: 472 -->json<!-- /react-text --></span><!-- react-text: 473 --> des contenus textuels &quot;riches&quot; pour des applications utilisant la technologie de rendu html intitulée <!-- /react-text --><span data-reactid="474"><!-- react-text: 475 -->react<!-- /react-text --></span><!-- react-text: 476 -->, qui est utilisée dans tous les modules de l&#x27;écosystème peritext. Voir le site du projet draft-js pour plus d&#x27;informations <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="05956db5-1c93-4351-80de-581ee0439025" data-reactid="477"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Conventions%20de%20conversion%20de%20donn%C3%A9es%20pour%20le%20projet%20draft-js&amp;amp;rft_id=https%3A%2F%2Fdraftjs.org%2Fdocs%2Fapi-reference-data-conversion.html&amp;amp;rft.genre=document" data-reactid="478"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="05956db5-1c93-4351-80de-581ee0439025" data-reactid="479">(27)</cite></span><!-- react-text: 480 --> .<!-- /react-text --></p></div></li><li class="note-item" id="6e34daed-f056-43e0-bd56-fab147ca1ee1" data-reactid="481"><span class="note-block-pointer" id="note-block-pointer-6e34daed-f056-43e0-bd56-fab147ca1ee1" data-reactid="482">4</span><div data-reactid="483"><p data-reactid="484"><!-- react-text: 485 -->&quot;Ce que vous voyez est ce que vous voulez dire&quot;. Voir des formats comme <!-- /react-text --></p></div></li><li class="note-item" id="ed3048fd-1edd-4256-92cf-490995a132c8" data-reactid="486"><span class="note-block-pointer" id="note-block-pointer-ed3048fd-1edd-4256-92cf-490995a132c8" data-reactid="487">5</span><div data-reactid="488"><p data-reactid="489"><!-- react-text: 490 -->&quot;Ce que vous voyez est ce que vous obtenez&quot; (à l&#x27;impression). Voir des formats comme word dans cette catégorie.<!-- /react-text --></p></div></li><li class="note-item" id="8aed683f-ef29-431e-b33d-bf57101ccdca" data-reactid="491"><span class="note-block-pointer" id="note-block-pointer-8aed683f-ef29-431e-b33d-bf57101ccdca" data-reactid="492">6</span><div data-reactid="493"><p data-reactid="494"><!-- react-text: 495 -->&quot;Ce que vous voyez est ce que vous argumentez&quot;. Nous proposons cette expression pour décrire cette troisième voie qui par se référence à la rhétorique ne sépare pas la question de la forme de la question du sens.<!-- /react-text --></p></div></li></ol></div><aside class="section-aside " style="left:84%;top:0;height:100%;width:16%;" data-reactid="496"></aside></section></section></section><style data-reactid="497"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
+          __NEXT_DATA__ = {"props":{},"pathname":"/section","query":{"id":"3c16343b-bc1a-4214-9769-aca5970a87fd"},"buildId":"4562cfb1-2071-4d09-af2f-8d36bf436f91","buildStats":{"app.js":{"hash":"a236e83d31b6188e8200082f832ee5c0"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
           module={}
           __NEXT_LOADED_PAGES__ = []
           __NEXT_LOADED_CHUNKS__ = []
@@ -2605,4 +2668,4 @@ body {
           __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
             __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
           }
-        </script><script async="" id="__NEXT_PAGE__/section" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/section/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/b0f231a65417c81b58521484262c5514/app.js" async=""></script></div></body></html>
+        </script><script async="" id="__NEXT_PAGE__/section" type="text/javascript" src="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/section/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/4562cfb1-2071-4d09-af2f-8d36bf436f91/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/a236e83d31b6188e8200082f832ee5c0/app.js" async=""></script></div></body></html>

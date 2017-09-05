@@ -25,6 +25,8 @@ var _inherits2 = require('next/node_modules/babel-runtime/helpers/inherits');
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
+var _jsxFileName = '/Users/rawbin/Documents/Projets/peritext/peritext-2/peritext-server-garlic-flavoured/peritext-generator-next/components/GlobalsProvider.js';
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -103,15 +105,35 @@ var GlobalsProvider = function (_Component) {
       var children = _this.props.children;
 
       var styles = _this.makeStyles();
-      return _react2.default.createElement('div', { id: 'globals-provider' }, _react2.default.createElement(_HeadMaker2.default, {
+      return _react2.default.createElement('div', { id: 'globals-provider', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        }
+      }, _react2.default.createElement(_HeadMaker2.default, {
         title: _story2.default.metadata.title,
         authors: _story2.default.metadata.authors,
         description: _story2.default.metadata.description,
-        url: _config.url
-      }, _react2.default.createElement('base', { href: '/' }), _peritextTemplateWebGarlic.typefaceNames.map(function (name) {
+        url: _config.url,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        }
+      }, _react2.default.createElement('base', { href: '/', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        }
+      }), _peritextTemplateWebGarlic.typefaceNames.map(function (name) {
         var googleName = capitalizeFirstLetter(name).replace(' ', '+');
-        return _react2.default.createElement('link', { key: name, href: 'https://fonts.googleapis.com/css?family=' + googleName + ':300,400,700,800', rel: 'stylesheet' });
-      }), _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: styles } })), children);
+        return _react2.default.createElement('link', { key: name, href: 'https://fonts.googleapis.com/css?family=' + googleName + ':300,400,700,800', rel: 'stylesheet', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 64
+          }
+        });
+      }), _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: styles }, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        }
+      })), children);
     };
 
     return _this;

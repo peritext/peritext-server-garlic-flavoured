@@ -9,6 +9,7 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var _jsxFileName = '/Users/rawbin/Documents/Projets/peritext/peritext-2/peritext-server-garlic-flavoured/peritext-generator-next/pages/index.js?entry';
 
 
 var _GlobalsProvider = require('../components/GlobalsProvider');
@@ -24,5 +25,14 @@ function _interopRequireDefault(obj) {
 var Home = _peritextConfig.templates.web.Home;
 
 exports.default = function () {
-  return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: 'home' }, _react2.default.createElement(Home, null));
+  return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: 'home', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }, _react2.default.createElement(Home, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }));
 };
