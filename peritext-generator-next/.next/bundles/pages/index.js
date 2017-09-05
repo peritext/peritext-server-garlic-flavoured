@@ -1,6 +1,6 @@
 
           window.__NEXT_REGISTER_PAGE('/', function() {
-            var comp = module.exports=webpackJsonp([9],{2009:function(e,t,u){e.exports=u(762)},762:function(e,t,u){"use strict";var n=function(e){return e&&e.__esModule?e:{default:e}}(u(1));Object.defineProperty(t,"__esModule",{value:!0});var l=function(e){return e&&e.__esModule?e:{default:e}}(u(154)),o=u(126).templates.web.Home;t.default=function(){return n.default.createElement(l.default,{activeViewId:"home"},n.default.createElement(o,null))}}},[2009]);
+            var comp = module.exports=webpackJsonp([9],{1276:function(e,t,u){e.exports=u(1277)},1277:function(e,t,u){"use strict";var n=u(1),l=function(e){return e&&e.__esModule?e:{default:e}}(n);Object.defineProperty(t,"__esModule",{value:!0});var o=u(144),r=function(e){return e&&e.__esModule?e:{default:e}}(o),a=u(94),d=a.templates.web.Home;t.default=function(){return l.default.createElement(r.default,{activeViewId:"home"},l.default.createElement(d,null))}}},[1276]);
             return { page: comp.default }
           })
         

@@ -1,8 +1,10 @@
 const story = require('./static/story');
 const path = require('path')
 const glob = require('glob')
-const UglifyEsPlugin = require('uglify-es-webpack-plugin')
 var nodeExternals = require('webpack-node-externals');
+
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const ANALYZE = process.env.ANALYZE;
 
 /**
  * Building the static routes
@@ -52,7 +54,6 @@ module.exports = {
         ]
       }
     )
-    // Perform customizations to webpack config
     
 
     config.node = {
@@ -60,11 +61,19 @@ module.exports = {
       'child_process': 'empty'
     };
 
-    if (process.env.NODE_ENV === 'production'){
-      // remove UglifyJS to use UglifyEs instead
-      config.plugins = config.plugins.filter(plugin => plugin.constructor.name !== 'UglifyJsPlugin')
-      config.plugins.unshift(new UglifyEsPlugin())
+    if (ANALYZE) {
+      config.plugins.push(new BundleAnalyzerPlugin({
+        analyzerMode: 'server',
+        analyzerPort: 8888,
+        openAnalyzer: true
+      }))
     }
+
+    // if (process.env.NODE_ENV === 'production'){
+    //   // remove UglifyJS to use UglifyEs instead
+    //   config.plugins = config.plugins.filter(plugin => plugin.constructor.name !== 'UglifyJsPlugin')
+    //   config.plugins.unshift(new UglifyEsPlugin())
+    // }
     return config
   },
 }

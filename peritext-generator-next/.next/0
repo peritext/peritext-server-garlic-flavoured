@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 2015:
+/***/ 1301:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process, global) {/* Copyright 2017 Mozilla Foundation
@@ -24517,8 +24517,8 @@ exports.getUnicodeForGlyph = getUnicodeForGlyph;
 "use strict";
 
 
-var pdfjsVersion = '1.9.516';
-var pdfjsBuild = '336d26dd';
+var pdfjsVersion = '1.9.524';
+var pdfjsBuild = 'cd25a51a';
 var pdfjsCoreWorker = __w_pdfjs_require__(62);
 exports.WorkerMessageHandler = pdfjsCoreWorker.WorkerMessageHandler;
 
@@ -43864,7 +43864,7 @@ exports.AnnotationFactory = AnnotationFactory;
 /******/ ]);
 });
 //# sourceMappingURL=pdf.worker.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31), __webpack_require__(15)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(27), __webpack_require__(13)))
 
 /***/ })
 

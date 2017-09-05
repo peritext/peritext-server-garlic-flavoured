@@ -22,6 +22,20 @@ module.exports = function renderStory(story, format, finalCallback) {
   switch (format) {
     case 'html': 
       waterfall([
+        // clean existing static data
+        (callback) => {
+          const command = 'cd peritext-generator-next/static;rm -rf story.json generated; mkdir generated;cd ../..; exit 59';
+          console.log('cleaning existing data with comment: ', command);
+          const child = runScript(command);
+          child.once('error', (error) => {
+            console.trace(error);
+            callback(error);
+          });
+          child.once('exit', (exitCode) => {
+            console.trace('exit in', exitCode);
+            callback(null);
+          });
+        },
         // prepare data
         (callback) => {
           console.log('preparing data');
@@ -94,7 +108,8 @@ module.exports = function renderStory(story, format, finalCallback) {
         template: staticTemplate,
         locale: locale,
         outputDirPath: path.resolve(__dirname + '/../../temp/'),
-        tempDirPath: path.resolve(__dirname + '/../../temp/')
+        tempDirPath: path.resolve(__dirname + '/../../temp/'),
+        additionalStylesheets: config.additionalStylesheets.shared.concat(config.additionalStylesheets.codex)
       }, (err, url) => {
         finalCallback(null, '/temp/' + story.id + '.pdf');
         // res.status(200).send('/temp/' + story.id + '.pdf');
@@ -108,7 +123,7 @@ module.exports = function renderStory(story, format, finalCallback) {
         locale: locale,
         outputDirPath: path.resolve(__dirname + '/../../temp/'),
         tempDirPath: path.resolve(__dirname + '/../../temp/'),
-        additionalStylesheets: config.additionalStylesheets.shared.concat(config.additionalStylesheets.web)
+        additionalStylesheets: config.additionalStylesheets.shared.concat(config.additionalStylesheets.codex)
       }, (err, url) => {
         console.log('returning the result', '/temp/' + story.id + '.epub');
         finalCallback(err, '/temp/' + story.id + '.epub');

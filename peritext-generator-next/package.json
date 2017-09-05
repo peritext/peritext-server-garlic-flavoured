@@ -9,7 +9,9 @@
     "start": "NODE_ENV=production node server.js",
     "build-html": "next build && next export",
     "export": "next export",
-    "postinstall": "chmod -R +x node_modules/next/dist/bin/next-* && npm run build"
+    "postinstall": "chmod -R +x node_modules/next/dist/bin/next-* && npm run build",
+    "postinstallold": "npm run build",
+    "analyze": "cross-env ANALYZE=1 next build"
   },
   "author": "Robin de Mourat",
   "license": "ISC",
@@ -31,12 +33,15 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "citeproc": "^2.1.177",
+    "cross-env": "^5.0.1",
     "css-loader": "^0.28.0",
     "csscomb": "^4.0.1",
     "extract-text-webpack-plugin": "^3.0.0",
+    "faker": "^4.1.0",
     "glob": "^7.1.2",
     "kotatsu": "^0.15.2",
-    "next": "^3.0.0-beta13",
+    "nested-property": "0.0.7",
+    "next": "^3.2.1",
     "node-sass": "^4.4.0",
     "normalize.css": "^7.0.0",
     "peritext-contextualizer-bib": "0.0.9",
@@ -51,14 +56,14 @@
     "peritext-contextualizer-vegalite": "0.0.9",
     "peritext-contextualizer-video": "0.0.8",
     "peritext-contextualizer-webpage": "0.0.8",
-    "peritext-generator-epub": "0.0.5",
+    "peritext-generator-epub": "0.0.6",
     "peritext-generator-pdf": "0.0.3",
     "peritext-rendering-utils": "0.0.15",
-    "peritext-template-codex-garlic": "0.0.20",
-    "peritext-template-web-garlic": "0.0.25",
+    "peritext-template-codex-garlic": "0.0.23",
+    "peritext-template-web-garlic": "0.0.26",
     "postcss": "^6.0.8",
     "postcss-cssnext": "^3.0.2",
-    "postcss-easy-import": "^2.0.0",
+    "postcss-easy-import": "^2.1.0",
     "postcss-loader": "^2.0.6",
     "raw-loader": "^0.5.1",
     "react": "^15.4.2",
@@ -68,7 +73,9 @@
     "style-loader": "^0.18.2",
     "typeface-merriweather": "0.0.35",
     "typeface-roboto": "0.0.35",
-    "uglify-es-webpack-plugin": "^0.10.0"
+    "webpack": "^3.5.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^2.9.0"
+  }
 }

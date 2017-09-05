@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><link rel="preload" href="/_next/af4bc72b-486e-4a0c-8db7-50da034971eb/page/section/index.js" as="script"/><link rel="preload" href="/_next/af4bc72b-486e-4a0c-8db7-50da034971eb/page/_error/index.js" as="script"/><link rel="preload" href="/_next/9b109ae2e143412f2a47697d8106239d/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-02T22:56:29.956Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
+<!DOCTYPE html><html><head><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/section/index.js" as="script"/><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js" as="script"/><link rel="preload" href="/_next/b0f231a65417c81b58521484262c5514/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-05T12:37:45.359Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta name="viewport" content="user-scalable=no,width=device-width" class="next-head"/><meta name="twitter:card" value="summary" class="next-head"/><meta name="twitter:site" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta name="twitter:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="twitter:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta itemprop="name" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta itemprop="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta property="og:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta property="og:type" content="website" class="next-head"/><meta property="og:url" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta property="og:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
@@ -1860,26 +1860,26 @@ body {
  * Animations
  */
 .mentions-animation-enter {
-  opacity: 0.01;
+  overflow: hidden;
   max-height: 0;
-  overflow: hidden; }
+  opacity: .01; }
 
 .mentions-animation-enter.mentions-animation-enter-active {
-  opacity: 1;
+  overflow: hidden;
   max-height: 10000rem;
   transition: opacity 500ms ease-in;
-  overflow: hidden; }
+  opacity: 1; }
 
 .mentions-animation-leave {
+  overflow: hidden;
   max-height: 10000rem;
-  opacity: 1;
-  overflow: hidden; }
+  opacity: 1; }
 
 .mentions-animation-leave.mentions-animation-leave-active {
-  opacity: 0.01;
+  overflow: hidden;
   max-height: 0;
   transition: opacity 500ms ease-in;
-  overflow: hidden; }
+  opacity: .01; }
 
 /**
  * Very general
@@ -1931,25 +1931,23 @@ body {
             text-align: right; }
           .garlic-layout .section-player footer ul li.next {
             text-align: right; }
-    .garlic-layout .section-player .section-title {
-      font-family: Roboto, serif;
-      font-size: 2.70336rem;
-      margin-top: 0.9996rem; }
     .garlic-layout .section-player .BlockAssetWrapper {
       position: relative;
       z-index: 3;
       margin: 0; }
       .garlic-layout .section-player .BlockAssetWrapper.expandable {
         cursor: pointer; }
+        .garlic-layout .section-player .BlockAssetWrapper.expandable > figcaption {
+          display: none; }
       .garlic-layout .section-player .BlockAssetWrapper.active figcaption {
         color: #fdfff8;
         background: #f32e36; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block {
+        overflow: auto;
+        max-width: 100%;
         margin-right: 18%;
         margin-left: 18%;
-        box-shadow: 0 0 5px #e7eae1;
-        max-width: 100%;
-        overflow: auto; }
+        box-shadow: 0 0 5px #e7eae1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block iframe {
           width: 100%;
           max-width: 100%;
@@ -1957,13 +1955,13 @@ body {
           min-height: 30em;
           border: none; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block + figcaption {
-        margin-right: 18%;
-        margin-left: 18%; }
+        margin-right: 20%;
+        margin-left: 20%; }
       .garlic-layout .section-player .BlockAssetWrapper.fixed {
         z-index: 4; }
         .garlic-layout .section-player .BlockAssetWrapper.fixed .peritext-contextualizer-video iframe {
-          left: 0;
           top: 0;
+          left: 0;
           width: 100%;
           height: 100%; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib {
@@ -1972,8 +1970,8 @@ body {
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib .csl-left-margin {
           display: none; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list {
-        padding: 0;
         margin: 0;
+        padding: 0;
         color: #fdfff8;
         background: #f32e36; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list li {
@@ -1984,23 +1982,23 @@ body {
             font-weight: 900;
             background: #87240e; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content {
-        flex: 1;
-        margin: 0;
         font-family: monospace;
-        counter-reset: line; }
+        margin: 0;
+        counter-reset: line;
+        flex: 1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line {
-          display: block;
-          line-height: 0.9996rem; }
+          line-height: 0.9996rem;
+          display: block; }
           .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line:before {
-            width: 0.9996rem;
-            text-align: right;
-            counter-increment: line;
-            content: counter(line);
             display: inline-block;
-            border-right: 1px solid #ddd;
-            padding: 0 .5em;
+            width: 0.9996rem;
             margin-right: .5em;
-            color: #888; }
+            padding: 0 .5em;
+            content: counter(line);
+            counter-increment: line;
+            text-align: right;
+            color: #888;
+            border-right: 1px solid #ddd; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-p5,
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-vegalite {
         box-shadow: none; }
@@ -2113,13 +2111,15 @@ body {
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom {
           bottom: 0.9996rem; }
   .garlic-layout .contents-wrapper .main-contents-container {
-    padding-bottom: 17.9928rem;
-    min-height: 110%; }
+    min-height: 110%;
+    padding-bottom: 17.9928rem; }
     .garlic-layout .contents-wrapper .main-contents-container .home-header {
       margin-top: 0.9996rem;
       margin-right: 20%;
       margin-left: 20%;
       text-align: center; }
+      .garlic-layout .contents-wrapper .main-contents-container .home-header.hidden {
+        display: none; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header h1 {
         font-size: 2.70336rem;
         margin: 0; }
@@ -2130,12 +2130,13 @@ body {
       .garlic-layout .contents-wrapper .main-contents-container .home-header .authors {
         font-size: 1.056rem; }
     .garlic-layout .contents-wrapper .main-contents-container .story-description {
-      padding: 2.9988rem;
       margin: 0;
       margin-top: 2.9988rem;
       margin-bottom: 2.9988rem;
+      padding: 2.9988rem;
       background: #e7eae1; }
     .garlic-layout .contents-wrapper .main-contents-container .cover-image {
+      margin-top: 0.9996rem;
       box-shadow: 0 0 5px #e7eae1; }
       .garlic-layout .contents-wrapper .main-contents-container .cover-image .link {
         border: none; }
@@ -2146,6 +2147,9 @@ body {
       left: 20%;
       width: 60%; }
     .garlic-layout .contents-wrapper .main-contents-container .section-title {
+      font-family: Roboto, serif;
+      font-size: 4.32538rem;
+      margin-top: 0;
       margin-right: 20%;
       margin-left: 20%; }
     .garlic-layout .contents-wrapper .main-contents-container > div {
@@ -2177,6 +2181,8 @@ body {
       .garlic-layout nav li.active button,
       .garlic-layout nav li.active a {
         font-weight: 900; }
+    .garlic-layout nav a {
+      border-bottom: none !important; }
     .garlic-layout nav .header,
     .garlic-layout nav .body,
     .garlic-layout nav .footer {
@@ -2274,14 +2280,14 @@ body {
         .garlic-layout .RelatedContexts > .header h2 .csl-left-margin {
           display: none; }
       .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib {
-        padding: 0;
         margin: 0;
-        margin-bottom: 0.9996rem; }
+        margin-bottom: 0.9996rem;
+        padding: 0; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib ul {
           padding: 0; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib li {
-          list-style-type: none;
-          padding: 0; }
+          padding: 0;
+          list-style-type: none; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib .csl-left-margin {
           display: none; }
     .garlic-layout .RelatedContexts .body {
@@ -2314,9 +2320,14 @@ body {
   .garlic-layout .mentions-container > h2,
   .garlic-layout .output-group > h2 {
     font-family: Roboto, serif;
+    margin-bottom: 0;
     padding-bottom: 0.9996rem;
     border-bottom: 3px solid #f32e36; }
+  .garlic-layout .mentions-container .csl-left-margin,
+  .garlic-layout .output-group .csl-left-margin {
+    display: none; }
   .garlic-layout .mentions-list-container .mentions-list {
+    font-family: 0.66rem;
     overflow: hidden;
     max-height: 0;
     margin: 0;
@@ -2572,17 +2583,17 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .garlic-layout pre {
-    font-family: Roboto, serif;
+    font-family: monospace;
     overflow: auto;
     padding: 0.9996rem;
     background: #e7eae1; }
   .garlic-layout #disqus_thread {
+    margin-top: 2.9988rem;
     margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 2.9988rem; }
+    margin-left: 20%; }
 
-</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="-1852426104"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:17%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class=" section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introductionss</a></li><li class=" section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="23">Des documents de très bonne qualité technique et éditoriale</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="25">Adaptation et modularité</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="27">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="28"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="29">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="31">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="33">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="35">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="37">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="39">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="41">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="43">Contextualiseur vegalite</a></li><li class="active section-link-level-1" data-reactid="44"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="45">Contextualiseur data-presentation</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="47">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-0" data-reactid="50"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="51">Gabarits</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="53">Générateurs</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="55">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="57">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="59">À propos</a></li></ul></div><div class="footer" data-reactid="60"><ul data-reactid="61"><li class="" data-reactid="62"><a href="/lexicon/" data-reactid="63">Glossaire</a></li><li class="" data-reactid="64"><a href="/bibliotheca/" data-reactid="65">Références</a></li><li class="" data-reactid="66"><a href="/dimensio/" data-reactid="67">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="68"><section class="main-contents-container section-player" data-reactid="69"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Contextualiseur%20data-presentation&amp;amp;rft.genre=document" data-reactid="70"></span><h1 class="section-title" data-reactid="71">Contextualiseur data-presentation</h1><!-- react-text: 72 --><!-- /react-text --><div data-reactid="73"><h1 id="9rfl0" data-reactid="74"><!-- react-text: 75 -->Les présentations de données<!-- /react-text --></h1><p data-reactid="76"><!-- react-text: 77 -->Le concept de présentation de données désigne des documents qui consistent à proposer aux lecteurs une visite guidée dans une visualisation. Le lecteur parcourt des slides, qui sont associées à une vue particulière dans la visualisation associée.<!-- /react-text --></p><p data-reactid="78"><!-- react-text: 79 -->Le format des présentations de données est actuellement développé par le médialab de sciences po <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="83f60345-8551-4575-b1ad-fb6969770a30" data-reactid="80"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=M%C3%A9dialab%20Sciences%20Po&amp;amp;rft_id=http%3A%2F%2Fwww.medialab.sciences-po.fr%2Ffr%2F&amp;amp;rft.genre=document" data-reactid="81"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="83f60345-8551-4575-b1ad-fb6969770a30" data-reactid="82">(6)</cite></span><!-- react-text: 83 --> dans le cadre du programme FORCCAST <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="5790471c-cb57-4b92-9ebd-b2175e026008" data-reactid="84"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Programme%20FORCCAST&amp;amp;rft_id=http%3A%2F%2Fcontroverses.org%2F&amp;amp;rft.genre=document" data-reactid="85"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="5790471c-cb57-4b92-9ebd-b2175e026008" data-reactid="86">(8)</cite></span><!-- react-text: 87 --> .<!-- /react-text --></p><p data-reactid="88"><!-- react-text: 89 -->Un premier exemple de présentation de données peut être expérimenté via l&#x27;outil ManyLines  <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="8e65e026-0a6c-4131-add1-878b542ee23a" data-reactid="90"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=ManyLines&amp;amp;rft_id=http%3A%2F%2Ftools.medialab.sciences-po.fr%2Fmanylines&amp;amp;rft.genre=document" data-reactid="91"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="8e65e026-0a6c-4131-add1-878b542ee23a" data-reactid="92">(22)</cite></span><!-- react-text: 93 -->.<!-- /react-text --></p><p data-reactid="94"><!-- react-text: 95 -->Un outil plus récent permettant de construire les présentations<!-- /react-text --></p><p data-reactid="96"></p><p data-reactid="97"><!-- react-text: 98 --> qui suivent est appelé à être rendu public courant 2018.<!-- /react-text --></p><h1 id="57t3f" data-reactid="99"><!-- react-text: 100 -->Utiliser le contextualiseur data-presentation<!-- /react-text --></h1><p data-reactid="101"><!-- react-text: 102 -->Un exemple de présentation de réseau :<!-- /react-text --></p><figure class="BlockAssetWrapper data-presentation expandable" style="min-height:;height:;position:relative;" id="507d5628-fecb-4e16-b397-991e84a7c135" data-reactid="103"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Mon%20beau%20r%C3%A9seau%20roi%20des%20for%C3%AAts&amp;amp;rft.genre=document" data-reactid="104"></span><!-- react-empty: 105 --><figcaption data-reactid="106"><h4 data-reactid="107">Mon beau réseau roi des forêts</h4><p data-reactid="108"></p><!-- react-text: 109 --><!-- /react-text --><p data-reactid="110"><button style="cursor:pointer;" data-reactid="111">🔀</button></p></figcaption></figure><p data-reactid="112"><!-- react-text: 113 -->Un exemple de présentation de frise chronologique :<!-- /react-text --></p><p data-reactid="114"></p><figure class="BlockAssetWrapper data-presentation expandable" style="min-height:;height:;position:relative;" id="5d0e3c5c-d031-4a14-a43f-bc99ee775341" data-reactid="115"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Histoire%20de%20la%20visualisation&amp;amp;rft.genre=document" data-reactid="116"></span><!-- react-empty: 117 --><figcaption data-reactid="118"><h4 data-reactid="119">Histoire de la visualisation</h4><p data-reactid="120">Cette présentation traite de l&#x27;histoire de la visualisation</p><!-- react-text: 121 --><!-- /react-text --><p data-reactid="122"><button style="cursor:pointer;" data-reactid="123">🔀</button></p></figcaption></figure><p data-reactid="124"><!-- react-text: 125 -->Un exemple de présentation de carte :<!-- /react-text --></p><p data-reactid="126"></p><figure class="BlockAssetWrapper data-presentation expandable" style="min-height:;height:;position:relative;" id="8bd5bc64-1410-40c9-8708-c9fb2af43e73" data-reactid="127"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Histoire%20du%20Fort%20et%20des%20combats%20de%201870-1871&amp;amp;rft.genre=document" data-reactid="128"></span><!-- react-empty: 129 --><figcaption data-reactid="130"><h4 data-reactid="131">Histoire du Fort et des combats de 1870-1871</h4><p data-reactid="132">Une histoire du fort d&#x27;Issy</p><!-- react-text: 133 --><!-- /react-text --><p data-reactid="134"><button style="cursor:pointer;" data-reactid="135">🔀</button></p></figcaption></figure><p data-reactid="136"><!-- react-text: 137 -->Une exemple de présentation fondée sur un fichier svg :<!-- /react-text --></p><p data-reactid="138"></p><figure class="BlockAssetWrapper data-presentation expandable" style="min-height:;height:;position:relative;" id="afc81e34-4e36-4c68-a201-613b404ffbbd" data-reactid="139"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Exemple%20de%20pr%C3%A9sentation%20SVG&amp;amp;rft.genre=document" data-reactid="140"></span><!-- react-empty: 141 --><figcaption data-reactid="142"><h4 data-reactid="143">Exemple de présentation SVG</h4><p data-reactid="144"></p><!-- react-text: 145 --><!-- /react-text --><p data-reactid="146"><button style="cursor:pointer;" data-reactid="147">🔀</button></p></figcaption></figure><p data-reactid="148"><!-- react-text: 149 -->D&#x27;autres formats et types de présentation de données sont appelés à apparaître au fil du développement de ce projet voisin.<!-- /react-text --></p><p data-reactid="150"></p><p data-reactid="151"></p><p data-reactid="152"></p><p data-reactid="153"></p><p data-reactid="154"></p><p data-reactid="155"></p><p data-reactid="156"></p><p data-reactid="157"></p></div><footer data-reactid="158"><ul data-reactid="159"><li class="prev" data-reactid="160"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="161">&lt; Contextualiseur vegalite</a></li><li data-reactid="162"><i data-reactid="163"><!-- react-text: 164 -->Peritext - publication multimodale orientée contexte<!-- /react-text --><!-- react-text: 165 --> - <!-- /react-text --><!-- react-text: 166 -->Contextualiseur data-presentation<!-- /react-text --></i></li><li class="next" data-reactid="167"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="168">Contextualiseur codefiles &gt;</a></li></ul></footer><aside class="section-aside " style="left:84%;top:0;height:100%;width:16%;" data-reactid="169"></aside></section></section></section><style data-reactid="170"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
-          __NEXT_DATA__ = {"props":{},"pathname":"/section","query":{"id":"6a79846f-2892-4ed1-ac62-6f7695dda05a"},"buildId":"af4bc72b-486e-4a0c-8db7-50da034971eb","buildStats":{"app.js":{"hash":"9b109ae2e143412f2a47697d8106239d"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="-154752965"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:17%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class=" section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introduction</a></li><li class=" section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="23">L&#x27;écosystème des modules peritext</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="25">Des systèmes documentaires riches et exploitables</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="27">Un design adaptable et modulaire</a></li><li class=" section-link-level-0" data-reactid="28"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="29">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="31">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="33">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="35">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="37">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="39">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="41">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="43">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="45">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="47">Contextualiseur vegalite</a></li><li class=" section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class="active section-link-level-1" data-reactid="50"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="51">Contextualiseur data-presentation</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="53">Gabarits</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="55">Générateurs</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="57">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="59">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="60"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="61">À propos</a></li></ul></div><div class="footer" data-reactid="62"><ul data-reactid="63"><li class="" data-reactid="64"><a href="/lexicon/" data-reactid="65">Glossaire</a></li><li class="" data-reactid="66"><a href="/bibliotheca/" data-reactid="67">Références</a></li><li class="" data-reactid="68"><a href="/dimensio/" data-reactid="69">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="70"><section class="main-contents-container section-player" data-reactid="71"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Contextualiseur%20data-presentation&amp;amp;rft.genre=document" data-reactid="72"></span><h1 class="section-title" data-reactid="73">Contextualiseur data-presentation</h1><!-- react-text: 74 --><!-- /react-text --><div data-reactid="75"><h1 id="9rfl0" data-reactid="76"><!-- react-text: 77 -->Les présentations de données<!-- /react-text --></h1><p data-reactid="78"><!-- react-text: 79 -->Le concept de présentation de données désigne des documents qui consistent à proposer aux lecteurs une visite guidée dans une visualisation. Le lecteur parcourt des slides, qui sont associées à une vue particulière dans la visualisation associée.<!-- /react-text --></p><p data-reactid="80"><!-- react-text: 81 -->Le format des présentations de données est actuellement développé par le médialab de sciences po <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="83f60345-8551-4575-b1ad-fb6969770a30" data-reactid="82"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=M%C3%A9dialab%20Sciences%20Po&amp;amp;rft_id=http%3A%2F%2Fwww.medialab.sciences-po.fr%2Ffr%2F&amp;amp;rft.genre=document" data-reactid="83"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="83f60345-8551-4575-b1ad-fb6969770a30" data-reactid="84">(6)</cite></span><!-- react-text: 85 --> dans le cadre du programme FORCCAST <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="5790471c-cb57-4b92-9ebd-b2175e026008" data-reactid="86"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Programme%20FORCCAST&amp;amp;rft_id=http%3A%2F%2Fcontroverses.org%2F&amp;amp;rft.genre=document" data-reactid="87"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="5790471c-cb57-4b92-9ebd-b2175e026008" data-reactid="88">(8)</cite></span><!-- react-text: 89 --> .<!-- /react-text --></p><p data-reactid="90"><!-- react-text: 91 -->Un premier exemple de présentation de données fait pour les visualisations de réseaux peut être expérimenté via l&#x27;outil ManyLines  <!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="8e65e026-0a6c-4131-add1-878b542ee23a" data-reactid="92"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=ManyLines&amp;amp;rft_id=http%3A%2F%2Ftools.medialab.sciences-po.fr%2Fmanylines&amp;amp;rft.genre=document" data-reactid="93"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="8e65e026-0a6c-4131-add1-878b542ee23a" data-reactid="94">(22)</cite></span><!-- react-text: 95 -->.<!-- /react-text --></p><p data-reactid="96"><!-- react-text: 97 -->Un outil plus récent permettant de construire des présentations pour des frises chronologiques, cartes, graphiques, ... est actuellement en développement.<!-- /react-text --></p><p data-reactid="98"><!-- react-text: 99 -->L&#x27;outil permettant de construire les présentations qui suivent est appelé à être rendu public courant 2018.<!-- /react-text --></p><h1 id="57t3f" data-reactid="100"><!-- react-text: 101 -->Utiliser le contextualiseur data-presentation<!-- /react-text --></h1><p data-reactid="102"><!-- react-text: 103 -->Voici un exemple de présentation de réseau :<!-- /react-text --></p><figure class="BlockAssetWrapper data-presentation expandable" style="min-height:;height:;position:relative;" id="507d5628-fecb-4e16-b397-991e84a7c135" data-reactid="104"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Mon%20beau%20r%C3%A9seau%20roi%20des%20for%C3%AAts&amp;amp;rft.genre=document" data-reactid="105"></span><!-- react-empty: 106 --><figcaption data-reactid="107"><h4 data-reactid="108">Mon beau réseau roi des forêts</h4><p data-reactid="109"></p><!-- react-text: 110 --><!-- /react-text --><p data-reactid="111"><button style="cursor:pointer;" data-reactid="112">🔀</button></p></figcaption></figure><p data-reactid="113"><!-- react-text: 114 -->Les présentations de données fonctionnent, comme peritext, sur un modèle de gabarit. Pour l&#x27;instant deux gabarits sont possibles (&quot;déroulement&quot;, comme dans la contextualisation précédente, et &quot;étapes&quot;)<!-- /react-text --></p><p data-reactid="115"><!-- react-text: 116 -->Voici exemple de présentation de frise chronologique :<!-- /react-text --></p><p data-reactid="117"></p><figure class="BlockAssetWrapper data-presentation expandable" style="min-height:;height:;position:relative;" id="5d0e3c5c-d031-4a14-a43f-bc99ee775341" data-reactid="118"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Histoire%20de%20la%20visualisation&amp;amp;rft.genre=document" data-reactid="119"></span><!-- react-empty: 120 --><figcaption data-reactid="121"><h4 data-reactid="122">Histoire de la visualisation</h4><p data-reactid="123">Cette présentation traite de l&#x27;histoire de la visualisation</p><!-- react-text: 124 --><!-- /react-text --><p data-reactid="125"><button style="cursor:pointer;" data-reactid="126">🔀</button></p></figcaption></figure><p data-reactid="127"><!-- react-text: 128 -->Pour le mode codex, il est également possible de choisir si l&#x27;on veut afficher ou non les commentaires attachés à chacune des vues de la présentation.<!-- /react-text --></p><p data-reactid="129"><!-- react-text: 130 -->Un exemple de présentation de carte avec les commentaires affichés :<!-- /react-text --></p><p data-reactid="131"></p><figure class="BlockAssetWrapper data-presentation expandable" style="min-height:;height:;position:relative;" id="8bd5bc64-1410-40c9-8708-c9fb2af43e73" data-reactid="132"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Histoire%20du%20Fort%20et%20des%20combats%20de%201870-1871&amp;amp;rft.genre=document" data-reactid="133"></span><!-- react-empty: 134 --><figcaption data-reactid="135"><h4 data-reactid="136">Histoire du Fort et des combats de 1870-1871</h4><p data-reactid="137">Une histoire du fort d&#x27;Issy</p><!-- react-text: 138 --><!-- /react-text --><p data-reactid="139"><button style="cursor:pointer;" data-reactid="140">🔀</button></p></figcaption></figure><p data-reactid="141"><!-- react-text: 142 -->Il est à noter que les types de visualisations pris en charge par les présentations de données incluent les fichiers svg, ce qui permet de proposer des visites guidées sur de simples images vectorielles.<!-- /react-text --></p><p data-reactid="143"><!-- react-text: 144 -->Une exemple de présentation fondée sur un fichier svg :<!-- /react-text --></p><p data-reactid="145"></p><figure class="BlockAssetWrapper data-presentation expandable" style="min-height:;height:;position:relative;" id="afc81e34-4e36-4c68-a201-613b404ffbbd" data-reactid="146"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=Robin%20de%20Mourat&amp;amp;rft.atitle=Exemple%20de%20pr%C3%A9sentation%20SVG&amp;amp;rft.genre=document" data-reactid="147"></span><!-- react-empty: 148 --><figcaption data-reactid="149"><h4 data-reactid="150">Exemple de présentation SVG</h4><p data-reactid="151"></p><!-- react-text: 152 --><!-- /react-text --><p data-reactid="153"><button style="cursor:pointer;" data-reactid="154">🔀</button></p></figcaption></figure><p data-reactid="155"><!-- react-text: 156 -->D&#x27;autres gabarits, types de présentation de données et options disponibles sont appelés à apparaître au fil du développement de ce projet voisin ...<!-- /react-text --></p></div><footer data-reactid="157"><ul data-reactid="158"><li class="prev" data-reactid="159"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="160">&lt; Contextualiseur p5 (processing)</a></li><li data-reactid="161"><i data-reactid="162"><!-- react-text: 163 -->Peritext - publication multimodale orientée contexte<!-- /react-text --><!-- react-text: 164 --> - <!-- /react-text --><!-- react-text: 165 -->Contextualiseur data-presentation<!-- /react-text --></i></li><li class="next" data-reactid="166"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="167">Gabarits &gt;</a></li></ul></footer><aside class="section-aside " style="left:84%;top:0;height:100%;width:16%;" data-reactid="168"></aside></section></section></section><style data-reactid="169"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
+          __NEXT_DATA__ = {"props":{},"pathname":"/section","query":{"id":"6a79846f-2892-4ed1-ac62-6f7695dda05a"},"buildId":"dd7d89d1-222b-41a8-984a-4ef6f46c830d","buildStats":{"app.js":{"hash":"b0f231a65417c81b58521484262c5514"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
           module={}
           __NEXT_LOADED_PAGES__ = []
           __NEXT_LOADED_CHUNKS__ = []
@@ -2594,4 +2605,4 @@ body {
           __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
             __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
           }
-        </script><script async="" id="__NEXT_PAGE__/section" type="text/javascript" src="/_next/af4bc72b-486e-4a0c-8db7-50da034971eb/page/section/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/af4bc72b-486e-4a0c-8db7-50da034971eb/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/9b109ae2e143412f2a47697d8106239d/app.js" async=""></script></div></body></html>
+        </script><script async="" id="__NEXT_PAGE__/section" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/section/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/b0f231a65417c81b58521484262c5514/app.js" async=""></script></div></body></html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><link rel="preload" href="/_next/af4bc72b-486e-4a0c-8db7-50da034971eb/page/section/index.js" as="script"/><link rel="preload" href="/_next/af4bc72b-486e-4a0c-8db7-50da034971eb/page/_error/index.js" as="script"/><link rel="preload" href="/_next/9b109ae2e143412f2a47697d8106239d/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-02T22:56:30.312Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
+<!DOCTYPE html><html><head><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/section/index.js" as="script"/><link rel="preload" href="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js" as="script"/><link rel="preload" href="/_next/b0f231a65417c81b58521484262c5514/app.js" as="script"/><meta charset="utf-8" class="next-head"/><title class="next-head">Peritext - publication multimodale orientée contexte</title><meta name="generator" content="peritext" class="next-head"/><meta name="DC.Title" lang="fr" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="DC.Date.created" content="2017-09-05T12:37:45.047Z" class="next-head"/><meta name="author" content="Robin De Mourat" class="next-head"/><meta name="keywords" content="" class="next-head"/><meta name="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta name="viewport" content="user-scalable=no,width=device-width" class="next-head"/><meta name="twitter:card" value="summary" class="next-head"/><meta name="twitter:site" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta name="twitter:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta name="twitter:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta itemprop="name" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta itemprop="description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
 Il est donc nécessaire d’inventer de nouvelles manières de connecter les modes de production des documents académiques avec les contextes du web. Cette recontextualisation doit opérer dans les deux sens : les environnements numériques et toutes les ressources et formes qu’ils proposent doivent être plus significativement convocables dans les documents académiques, et les documents académiques doivent être plus significativement contextualisables dans les environnements numériques. C’est là le projet à la base de Peritext." class="next-head"/><meta property="og:title" content="Peritext - publication multimodale orientée contexte" class="next-head"/><meta property="og:type" content="website" class="next-head"/><meta property="og:url" content="https://peritext-garlic-server.herukuapp.com" class="next-head"/><meta property="og:description" content="En amont comme en aval de l’acte de publication, les textes produits et échangés par les chercheurs universitaires convoquent de manière de plus en plus intime les environnements numériques (au premier rang desquels le web) dans lesquels ils sont inscrits.
@@ -1860,26 +1860,26 @@ body {
  * Animations
  */
 .mentions-animation-enter {
-  opacity: 0.01;
+  overflow: hidden;
   max-height: 0;
-  overflow: hidden; }
+  opacity: .01; }
 
 .mentions-animation-enter.mentions-animation-enter-active {
-  opacity: 1;
+  overflow: hidden;
   max-height: 10000rem;
   transition: opacity 500ms ease-in;
-  overflow: hidden; }
+  opacity: 1; }
 
 .mentions-animation-leave {
+  overflow: hidden;
   max-height: 10000rem;
-  opacity: 1;
-  overflow: hidden; }
+  opacity: 1; }
 
 .mentions-animation-leave.mentions-animation-leave-active {
-  opacity: 0.01;
+  overflow: hidden;
   max-height: 0;
   transition: opacity 500ms ease-in;
-  overflow: hidden; }
+  opacity: .01; }
 
 /**
  * Very general
@@ -1931,25 +1931,23 @@ body {
             text-align: right; }
           .garlic-layout .section-player footer ul li.next {
             text-align: right; }
-    .garlic-layout .section-player .section-title {
-      font-family: Roboto, serif;
-      font-size: 2.70336rem;
-      margin-top: 0.9996rem; }
     .garlic-layout .section-player .BlockAssetWrapper {
       position: relative;
       z-index: 3;
       margin: 0; }
       .garlic-layout .section-player .BlockAssetWrapper.expandable {
         cursor: pointer; }
+        .garlic-layout .section-player .BlockAssetWrapper.expandable > figcaption {
+          display: none; }
       .garlic-layout .section-player .BlockAssetWrapper.active figcaption {
         color: #fdfff8;
         background: #f32e36; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block {
+        overflow: auto;
+        max-width: 100%;
         margin-right: 18%;
         margin-left: 18%;
-        box-shadow: 0 0 5px #e7eae1;
-        max-width: 100%;
-        overflow: auto; }
+        box-shadow: 0 0 5px #e7eae1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block iframe {
           width: 100%;
           max-width: 100%;
@@ -1957,13 +1955,13 @@ body {
           min-height: 30em;
           border: none; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualization-block + figcaption {
-        margin-right: 18%;
-        margin-left: 18%; }
+        margin-right: 20%;
+        margin-left: 20%; }
       .garlic-layout .section-player .BlockAssetWrapper.fixed {
         z-index: 4; }
         .garlic-layout .section-player .BlockAssetWrapper.fixed .peritext-contextualizer-video iframe {
-          left: 0;
           top: 0;
+          left: 0;
           width: 100%;
           height: 100%; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib {
@@ -1972,8 +1970,8 @@ body {
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-bib .csl-left-margin {
           display: none; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list {
-        padding: 0;
         margin: 0;
+        padding: 0;
         color: #fdfff8;
         background: #f32e36; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .files-list li {
@@ -1984,23 +1982,23 @@ body {
             font-weight: 900;
             background: #87240e; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content {
-        flex: 1;
-        margin: 0;
         font-family: monospace;
-        counter-reset: line; }
+        margin: 0;
+        counter-reset: line;
+        flex: 1; }
         .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line {
-          display: block;
-          line-height: 0.9996rem; }
+          line-height: 0.9996rem;
+          display: block; }
           .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-codefiles .file-content .code-line:before {
-            width: 0.9996rem;
-            text-align: right;
-            counter-increment: line;
-            content: counter(line);
             display: inline-block;
-            border-right: 1px solid #ddd;
-            padding: 0 .5em;
+            width: 0.9996rem;
             margin-right: .5em;
-            color: #888; }
+            padding: 0 .5em;
+            content: counter(line);
+            counter-increment: line;
+            text-align: right;
+            color: #888;
+            border-right: 1px solid #ddd; }
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-p5,
       .garlic-layout .section-player .BlockAssetWrapper .peritext-contextualizer-vegalite {
         box-shadow: none; }
@@ -2113,13 +2111,15 @@ body {
         .garlic-layout .section-player .BlockAssetWrapper .quick-exit-container .exit-bottom {
           bottom: 0.9996rem; }
   .garlic-layout .contents-wrapper .main-contents-container {
-    padding-bottom: 17.9928rem;
-    min-height: 110%; }
+    min-height: 110%;
+    padding-bottom: 17.9928rem; }
     .garlic-layout .contents-wrapper .main-contents-container .home-header {
       margin-top: 0.9996rem;
       margin-right: 20%;
       margin-left: 20%;
       text-align: center; }
+      .garlic-layout .contents-wrapper .main-contents-container .home-header.hidden {
+        display: none; }
       .garlic-layout .contents-wrapper .main-contents-container .home-header h1 {
         font-size: 2.70336rem;
         margin: 0; }
@@ -2130,12 +2130,13 @@ body {
       .garlic-layout .contents-wrapper .main-contents-container .home-header .authors {
         font-size: 1.056rem; }
     .garlic-layout .contents-wrapper .main-contents-container .story-description {
-      padding: 2.9988rem;
       margin: 0;
       margin-top: 2.9988rem;
       margin-bottom: 2.9988rem;
+      padding: 2.9988rem;
       background: #e7eae1; }
     .garlic-layout .contents-wrapper .main-contents-container .cover-image {
+      margin-top: 0.9996rem;
       box-shadow: 0 0 5px #e7eae1; }
       .garlic-layout .contents-wrapper .main-contents-container .cover-image .link {
         border: none; }
@@ -2146,6 +2147,9 @@ body {
       left: 20%;
       width: 60%; }
     .garlic-layout .contents-wrapper .main-contents-container .section-title {
+      font-family: Roboto, serif;
+      font-size: 4.32538rem;
+      margin-top: 0;
       margin-right: 20%;
       margin-left: 20%; }
     .garlic-layout .contents-wrapper .main-contents-container > div {
@@ -2177,6 +2181,8 @@ body {
       .garlic-layout nav li.active button,
       .garlic-layout nav li.active a {
         font-weight: 900; }
+    .garlic-layout nav a {
+      border-bottom: none !important; }
     .garlic-layout nav .header,
     .garlic-layout nav .body,
     .garlic-layout nav .footer {
@@ -2274,14 +2280,14 @@ body {
         .garlic-layout .RelatedContexts > .header h2 .csl-left-margin {
           display: none; }
       .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib {
-        padding: 0;
         margin: 0;
-        margin-bottom: 0.9996rem; }
+        margin-bottom: 0.9996rem;
+        padding: 0; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib ul {
           padding: 0; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib li {
-          list-style-type: none;
-          padding: 0; }
+          padding: 0;
+          list-style-type: none; }
         .garlic-layout .RelatedContexts > .header .peritext-contextualizer-bib .csl-left-margin {
           display: none; }
     .garlic-layout .RelatedContexts .body {
@@ -2314,9 +2320,14 @@ body {
   .garlic-layout .mentions-container > h2,
   .garlic-layout .output-group > h2 {
     font-family: Roboto, serif;
+    margin-bottom: 0;
     padding-bottom: 0.9996rem;
     border-bottom: 3px solid #f32e36; }
+  .garlic-layout .mentions-container .csl-left-margin,
+  .garlic-layout .output-group .csl-left-margin {
+    display: none; }
   .garlic-layout .mentions-list-container .mentions-list {
+    font-family: 0.66rem;
     overflow: hidden;
     max-height: 0;
     margin: 0;
@@ -2572,17 +2583,17 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .garlic-layout pre {
-    font-family: Roboto, serif;
+    font-family: monospace;
     overflow: auto;
     padding: 0.9996rem;
     background: #e7eae1; }
   .garlic-layout #disqus_thread {
+    margin-top: 2.9988rem;
     margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 2.9988rem; }
+    margin-left: 20%; }
 
-</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="1510613946"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:17%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class=" section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introductionss</a></li><li class=" section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="23">Des documents de très bonne qualité technique et éditoriale</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="25">Adaptation et modularité</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="27">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="28"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="29">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="31">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="33">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="35">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="37">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="39">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="41">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="43">Contextualiseur vegalite</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="45">Contextualiseur data-presentation</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="47">Contextualiseur codefiles</a></li><li class="active section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-0" data-reactid="50"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="51">Gabarits</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="53">Générateurs</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="55">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="57">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="59">À propos</a></li></ul></div><div class="footer" data-reactid="60"><ul data-reactid="61"><li class="" data-reactid="62"><a href="/lexicon/" data-reactid="63">Glossaire</a></li><li class="" data-reactid="64"><a href="/bibliotheca/" data-reactid="65">Références</a></li><li class="" data-reactid="66"><a href="/dimensio/" data-reactid="67">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="68"><section class="main-contents-container section-player" data-reactid="69"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Contextualiseur%20p5%20(processing)&amp;amp;rft.genre=document" data-reactid="70"></span><h1 class="section-title" data-reactid="71">Contextualiseur p5 (processing)</h1><!-- react-text: 72 --><!-- /react-text --><div data-reactid="73"><p data-reactid="74"><!-- react-text: 75 -->Le contextualiseur p5.js interprète une ressource de type &quot;fichiers de code&quot; pour en faire une application p5.js.<!-- /react-text --></p><p data-reactid="76"><!-- react-text: 77 -->Prenons la ressource de type &quot;fichiers de code&quot; suivante :<!-- /react-text --></p><figure class="BlockAssetWrapper codefiles" style="min-height:;height:;position:relative;" id="045bda37-f957-427f-9cd3-d23555a0aa16" data-reactid="78"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Ressource%20processing%20js&amp;amp;rft.genre=document" data-reactid="79"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-codefiles" data-reactid="80"><pre class="file-content" data-reactid="81"><code data-reactid="82"><span class="code-line" data-reactid="83">function sketch (p) {</span><span class="code-line" data-reactid="84">  var rotation = 0;</span><span class="code-line" data-reactid="85"> </span><span class="code-line" data-reactid="86">  p.setup = function () {</span><span class="code-line" data-reactid="87">    p.createCanvas(200, 200, p.WEBGL);</span><span class="code-line" data-reactid="88">  };</span><span class="code-line" data-reactid="89"> </span><span class="code-line" data-reactid="90"> </span><span class="code-line" data-reactid="91">  p.draw = function () {</span><span class="code-line" data-reactid="92">    rotation += 0.01;</span><span class="code-line" data-reactid="93">    p.background(100);</span><span class="code-line" data-reactid="94">    p.noStroke();</span><span class="code-line" data-reactid="95">    p.push();</span><span class="code-line" data-reactid="96"></span><span class="code-line" data-reactid="97">    p.rotateY(rotation);</span><span class="code-line" data-reactid="98">    p.box(100);</span><span class="code-line" data-reactid="99">    p.pop();</span><span class="code-line" data-reactid="100">  };</span><span class="code-line" data-reactid="101">};</span></code></pre></figure><figcaption data-reactid="102"><h4 data-reactid="103">Ressource processing js</h4><p data-reactid="104"></p><!-- react-text: 105 --><!-- /react-text --><p data-reactid="106"><button style="cursor:pointer;" data-reactid="107">🔀</button></p></figcaption></figure><p data-reactid="108"><!-- react-text: 109 -->Choisissons maintenant le contextualiseur p5 pour l&#x27;afficher :<!-- /react-text --></p><p data-reactid="110"></p><figure class="BlockAssetWrapper p5" style="min-height:;height:;position:relative;" id="8200b383-614b-4b1b-b999-f83dbcf964a5" data-reactid="111"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Ressource%20processing%20js&amp;amp;rft.genre=document" data-reactid="112"></span><!-- react-empty: 113 --><figcaption data-reactid="114"><h4 data-reactid="115">Ressource processing js</h4><p data-reactid="116"></p><!-- react-text: 117 --><!-- /react-text --><p data-reactid="118"><button style="cursor:pointer;" data-reactid="119">🔀</button></p></figcaption></figure><p data-reactid="120"><!-- react-text: 121 -->On obtient un &quot;canvas&quot; dans lequel est représenté un programme processing interprété à partir du code de la ressource.<!-- /react-text --></p><p data-reactid="122"></p><p data-reactid="123"><!-- react-text: 124 -->Pour en savoir plus sur les capacités de p5.js, rendez-vous sur le site officiel du projet<!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="4f493b32-adfc-443a-a2a4-96ad02edd07f" data-reactid="125"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Site%20officiel%20de%20p5.js&amp;amp;rft_id=https%3A%2F%2Fp5js.org%2F&amp;amp;rft.genre=document" data-reactid="126"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="4f493b32-adfc-443a-a2a4-96ad02edd07f" data-reactid="127">(27)</cite></span><!-- react-text: 128 --> . <!-- /react-text --></p></div><footer data-reactid="129"><ul data-reactid="130"><li class="prev" data-reactid="131"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="132">&lt; Contextualiseur codefiles</a></li><li data-reactid="133"><i data-reactid="134"><!-- react-text: 135 -->Peritext - publication multimodale orientée contexte<!-- /react-text --><!-- react-text: 136 --> - <!-- /react-text --><!-- react-text: 137 -->Contextualiseur p5 (processing)<!-- /react-text --></i></li><li class="next" data-reactid="138"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="139">Gabarits &gt;</a></li></ul></footer><aside class="section-aside " style="left:84%;top:0;height:100%;width:16%;" data-reactid="140"></aside></section></section></section><style data-reactid="141"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
-          __NEXT_DATA__ = {"props":{},"pathname":"/section","query":{"id":"65ca4e9b-c496-474d-b60c-ddf948d4dad1"},"buildId":"af4bc72b-486e-4a0c-8db7-50da034971eb","buildStats":{"app.js":{"hash":"9b109ae2e143412f2a47697d8106239d"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+</style></head><body><div><div id="__next"><div data-reactroot="" data-reactid="1" data-react-checksum="408072270"><div id="globals-provider" data-reactid="2"><!-- react-empty: 3 --><div class="references-manager" data-reactid="4"><section class="garlic-layout" data-reactid="5"><nav class="nav in-top" style="position:fixed;left:0;top:0;height:100%;width:17%;" data-reactid="6"><div class="header hidden" data-reactid="7"><button class="index-toggle " data-reactid="8"><span id="burger-menu" class="" data-reactid="9"><span data-reactid="10"></span><span data-reactid="11"></span><span data-reactid="12"></span><span data-reactid="13"></span></span></button></div><div class="body" data-reactid="14"><h2 class="nav-title " data-reactid="15"><a href="/" data-reactid="16">Peritext - publication multimodale orientée contexte</a></h2><ul class="table-of-contents" data-reactid="17"><li class=" section-link-level-0" data-reactid="18"><a href="/section/4a51caf9-7046-4d43-af61-65ec4182a92f/?id=4a51caf9-7046-4d43-af61-65ec4182a92f" data-reactid="19">Introduction</a></li><li class=" section-link-level-0" data-reactid="20"><a href="/section/3c16343b-bc1a-4214-9769-aca5970a87fd/?id=3c16343b-bc1a-4214-9769-aca5970a87fd" data-reactid="21">Le format de données peritext</a></li><li class=" section-link-level-0" data-reactid="22"><a href="/section/f6e23046-29fc-429c-83a0-46ee52efc02c/?id=f6e23046-29fc-429c-83a0-46ee52efc02c" data-reactid="23">L&#x27;écosystème des modules peritext</a></li><li class=" section-link-level-0" data-reactid="24"><a href="/section/de50fad3-4a31-467f-8ee1-56434a845d96/?id=de50fad3-4a31-467f-8ee1-56434a845d96" data-reactid="25">Des systèmes documentaires riches et exploitables</a></li><li class=" section-link-level-0" data-reactid="26"><a href="/section/59cb57a0-8695-41ce-9343-39201c7de05c/?id=59cb57a0-8695-41ce-9343-39201c7de05c" data-reactid="27">Un design adaptable et modulaire</a></li><li class=" section-link-level-0" data-reactid="28"><a href="/section/895a4448-f3d3-4bf3-b98e-71811a24b19d/?id=895a4448-f3d3-4bf3-b98e-71811a24b19d" data-reactid="29">Contextualiseurs</a></li><li class=" section-link-level-1" data-reactid="30"><a href="/section/24e92512-98c4-4717-8208-9e5ed533da77/?id=24e92512-98c4-4717-8208-9e5ed533da77" data-reactid="31">Contextualiseur bib</a></li><li class=" section-link-level-1" data-reactid="32"><a href="/section/3b07b4d9-1b3f-4930-ad88-f711b18b4c31/?id=3b07b4d9-1b3f-4930-ad88-f711b18b4c31" data-reactid="33">Contextualiseur glossary</a></li><li class=" section-link-level-1" data-reactid="34"><a href="/section/a5dfc3c7-2290-4bc0-93bc-680f8883b92b/?id=a5dfc3c7-2290-4bc0-93bc-680f8883b92b" data-reactid="35">Contextualiseur webpage</a></li><li class=" section-link-level-1" data-reactid="36"><a href="/section/e8ed33dd-8be2-4238-ac9e-d768054b1812/?id=e8ed33dd-8be2-4238-ac9e-d768054b1812" data-reactid="37">Contextualiseur embed</a></li><li class=" section-link-level-1" data-reactid="38"><a href="/section/9ec50111-e2f2-4c4d-96a3-4d752f7527ca/?id=9ec50111-e2f2-4c4d-96a3-4d752f7527ca" data-reactid="39">Contextualiseur vidéo</a></li><li class=" section-link-level-1" data-reactid="40"><a href="/section/286c22f9-e17f-4296-b630-34b830c80dc1/?id=286c22f9-e17f-4296-b630-34b830c80dc1" data-reactid="41">Contextualiseur dicto</a></li><li class=" section-link-level-1" data-reactid="42"><a href="/section/2b554e8d-78ff-4e45-a4bc-5d25c76db600/?id=2b554e8d-78ff-4e45-a4bc-5d25c76db600" data-reactid="43">Contextualiseur codefiles</a></li><li class=" section-link-level-1" data-reactid="44"><a href="/section/e0a8c10b-e762-40b9-9de7-e44c4a45894c/?id=e0a8c10b-e762-40b9-9de7-e44c4a45894c" data-reactid="45">Contextualiseur table</a></li><li class=" section-link-level-1" data-reactid="46"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="47">Contextualiseur vegalite</a></li><li class="active section-link-level-1" data-reactid="48"><a href="/section/65ca4e9b-c496-474d-b60c-ddf948d4dad1/?id=65ca4e9b-c496-474d-b60c-ddf948d4dad1" data-reactid="49">Contextualiseur p5 (processing)</a></li><li class=" section-link-level-1" data-reactid="50"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="51">Contextualiseur data-presentation</a></li><li class=" section-link-level-0" data-reactid="52"><a href="/section/8ea50018-b06e-4067-a5fa-4a869216a7cb/?id=8ea50018-b06e-4067-a5fa-4a869216a7cb" data-reactid="53">Gabarits</a></li><li class=" section-link-level-0" data-reactid="54"><a href="/section/0d0b729e-65cb-489d-9dbe-d6c91f26f359/?id=0d0b729e-65cb-489d-9dbe-d6c91f26f359" data-reactid="55">Générateurs</a></li><li class=" section-link-level-0" data-reactid="56"><a href="/section/1cf27869-bec0-4772-82a1-258cece2027a/?id=1cf27869-bec0-4772-82a1-258cece2027a" data-reactid="57">Éditeur Ovide</a></li><li class=" section-link-level-0" data-reactid="58"><a href="/section/25321061-6f01-46db-9347-cd495383510d/?id=25321061-6f01-46db-9347-cd495383510d" data-reactid="59">Contribuer à peritext</a></li><li class=" section-link-level-0" data-reactid="60"><a href="/section/1321983c-dbc7-49bb-b83d-283cb47bb186/?id=1321983c-dbc7-49bb-b83d-283cb47bb186" data-reactid="61">À propos</a></li></ul></div><div class="footer" data-reactid="62"><ul data-reactid="63"><li class="" data-reactid="64"><a href="/lexicon/" data-reactid="65">Glossaire</a></li><li class="" data-reactid="66"><a href="/bibliotheca/" data-reactid="67">Références</a></li><li class="" data-reactid="68"><a href="/dimensio/" data-reactid="69">Autres formats</a></li></ul></div></nav><section class="contents-wrapper" data-reactid="70"><section class="main-contents-container section-player" data-reactid="71"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Contextualiseur%20p5%20(processing)&amp;amp;rft.genre=document" data-reactid="72"></span><h1 class="section-title" data-reactid="73">Contextualiseur p5 (processing)</h1><!-- react-text: 74 --><!-- /react-text --><div data-reactid="75"><h1 id="eqhtg" data-reactid="76"><!-- react-text: 77 -->Le projet p5.js <!-- /react-text --></h1><p data-reactid="78"><!-- react-text: 79 -->Processing est un langage de programmation, une bibliothèque Java, un éditeur et une communauté dédiées au développement d&#x27;outil de programmation pour les artistes visuels.<!-- /react-text --></p><p data-reactid="80"><!-- react-text: 81 -->C&#x27;est aujourd&#x27;hui un langage utilisé et enseigné dans nombre de contextes artistiques et éducatifs.<!-- /react-text --></p><p data-reactid="82"><!-- react-text: 83 -->p5.js est un portage de la syntaxe mise en place par Processing pour le langage javascript.<!-- /react-text --></p><p data-reactid="84"><!-- react-text: 85 -->L&#x27;outil permet de créer diverses formes d&#x27;images mouvantes et interactives 2D et 3D, et optionnellement d&#x27;utiliser les options du navigateur (micro, caméra, ...) pour créer des expériences numériques merveilleuses.<!-- /react-text --></p><h1 id="bh730" data-reactid="86"><!-- react-text: 87 -->Utiliser le contextualiseur p5<!-- /react-text --></h1><p data-reactid="88"><!-- react-text: 89 --> Le contextualiseur p5.js interprète une ressource de type &quot;fichiers de code&quot; contenant un <!-- /react-text --><em data-reactid="90"><!-- react-text: 91 -->sketch<!-- /react-text --></em><!-- react-text: 92 --> p5 pour en faire une application interactive, stockée dans une balise <!-- /react-text --><span data-reactid="93"><!-- react-text: 94 -->canvas<!-- /react-text --></span><!-- react-text: 95 -->.<!-- /react-text --></p><p data-reactid="96"><!-- react-text: 97 -->Prenons la ressource de type &quot;fichiers de code&quot; suivante :<!-- /react-text --></p><figure class="BlockAssetWrapper codefiles" style="min-height:;height:;position:relative;" id="045bda37-f957-427f-9cd3-d23555a0aa16" data-reactid="98"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Ressource%20processing%20js&amp;amp;rft.genre=document" data-reactid="99"></span><figure class="peritext-contextualization peritext-contextualization-block peritext-contextualization-web peritext-contextualizer-codefiles" data-reactid="100"><pre class="file-content" data-reactid="101"><code data-reactid="102"><span class="code-line" data-reactid="103">function sketch (p) {</span><span class="code-line" data-reactid="104">  var rotation = 0;</span><span class="code-line" data-reactid="105"> </span><span class="code-line" data-reactid="106">  p.setup = function () {</span><span class="code-line" data-reactid="107">    p.createCanvas(200, 200, p.WEBGL);</span><span class="code-line" data-reactid="108">  };</span><span class="code-line" data-reactid="109"> </span><span class="code-line" data-reactid="110"> </span><span class="code-line" data-reactid="111">  p.draw = function () {</span><span class="code-line" data-reactid="112">    rotation += 0.01;</span><span class="code-line" data-reactid="113">    p.background(100);</span><span class="code-line" data-reactid="114">    p.noStroke();</span><span class="code-line" data-reactid="115">    p.push();</span><span class="code-line" data-reactid="116"></span><span class="code-line" data-reactid="117">    p.rotateY(rotation);</span><span class="code-line" data-reactid="118">    p.box(100);</span><span class="code-line" data-reactid="119">    p.pop();</span><span class="code-line" data-reactid="120">  };</span><span class="code-line" data-reactid="121">};</span></code></pre></figure><figcaption data-reactid="122"><h4 data-reactid="123">Ressource processing js</h4><p data-reactid="124"></p><!-- react-text: 125 --><!-- /react-text --><p data-reactid="126"><button style="cursor:pointer;" data-reactid="127">🔀</button></p></figcaption></figure><p data-reactid="128"><!-- react-text: 129 -->Choisissons maintenant le contextualiseur p5 pour l&#x27;afficher. On obtient l&#x27;image suivante :<!-- /react-text --></p><p data-reactid="130"></p><figure class="BlockAssetWrapper p5" style="min-height:;height:;position:relative;" id="8200b383-614b-4b1b-b999-f83dbcf964a5" data-reactid="131"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.atitle=Ressource%20processing%20js&amp;amp;rft.genre=document" data-reactid="132"></span><!-- react-empty: 133 --><figcaption data-reactid="134"><h4 data-reactid="135">Ressource processing js</h4><p data-reactid="136"></p><!-- react-text: 137 --><!-- /react-text --><p data-reactid="138"><button style="cursor:pointer;" data-reactid="139">🔀</button></p></figcaption></figure><p data-reactid="140"><!-- react-text: 141 -->On obtient un &quot;canvas&quot; dans lequel est représenté un programme processing interprété à partir du code de la ressource <!-- /react-text --><sup class="note-content-pointer" id="note-content-pointer-15482eee-53de-446b-9ae9-4a9f2ff5ba7b" data-reactid="142"><!-- react-text: 143 -->1<!-- /react-text --><!-- react-text: 144 --> <!-- /react-text --></sup><!-- react-text: 145 --> .<!-- /react-text --></p><p data-reactid="146"><!-- react-text: 147 -->Les possibilités offertes par ce contextualiseur sont nombreuses.<!-- /react-text --></p><p data-reactid="148"><!-- react-text: 149 -->Pour en savoir plus sur les capacités de p5.js, rendez-vous sur le site officiel du projet<!-- /react-text --><span class="InlineAssetWrapper inline-bib" id="4f493b32-adfc-443a-a2a4-96ad02edd07f" data-reactid="150"><span class="peritext-structured-context-object-in-span-container Z3988" title="ctx_ver=Z39.88-2004&amp;amp;rft.au=%20Communaut%C3%A9%20p5.js&amp;amp;rft.atitle=Site%20officiel%20de%20p5.js&amp;amp;rft_id=https%3A%2F%2Fp5js.org%2F&amp;amp;rft.genre=document" data-reactid="151"></span><cite class="peritext-contextualization peritext-contextualization-inline peritext-contextualization-web peritext-contextualizer-bib" id="4f493b32-adfc-443a-a2a4-96ad02edd07f" data-reactid="152">(27)</cite></span><!-- react-text: 153 --> . <!-- /react-text --></p></div><footer data-reactid="154"><ul data-reactid="155"><li class="prev" data-reactid="156"><a href="/section/6452556b-679d-43bf-9afc-4402c90c8b96/?id=6452556b-679d-43bf-9afc-4402c90c8b96" data-reactid="157">&lt; Contextualiseur vegalite</a></li><li data-reactid="158"><i data-reactid="159"><!-- react-text: 160 -->Peritext - publication multimodale orientée contexte<!-- /react-text --><!-- react-text: 161 --> - <!-- /react-text --><!-- react-text: 162 -->Contextualiseur p5 (processing)<!-- /react-text --></i></li><li class="next" data-reactid="163"><a href="/section/6a79846f-2892-4ed1-ac62-6f7695dda05a/?id=6a79846f-2892-4ed1-ac62-6f7695dda05a" data-reactid="164">Contextualiseur data-presentation &gt;</a></li></ul></footer><div class="notes-container notes-container-position-aside" data-reactid="165"><ol class="notes-list" data-reactid="166"><li class="note-item" id="15482eee-53de-446b-9ae9-4a9f2ff5ba7b" data-reactid="167"><span class="note-block-pointer" id="note-block-pointer-15482eee-53de-446b-9ae9-4a9f2ff5ba7b" data-reactid="168">1</span><div data-reactid="169"><p data-reactid="170"><!-- react-text: 171 -->Pour l&#x27;instant, les contextualisations de ce type ne sont pas visibles sur les documents de type codex directement. Il est donc possible de spécifier une image de vignette au niveau du contextualiseur qui sera utilisée en remplacement.<!-- /react-text --></p></div></li></ol></div><aside class="section-aside " style="left:84%;top:0;height:100%;width:16%;" data-reactid="172"></aside></section></section></section><style data-reactid="173"></style></div></div></div></div><div id="__next-error"></div></div><div><script>
+          __NEXT_DATA__ = {"props":{},"pathname":"/section","query":{"id":"65ca4e9b-c496-474d-b60c-ddf948d4dad1"},"buildId":"dd7d89d1-222b-41a8-984a-4ef6f46c830d","buildStats":{"app.js":{"hash":"b0f231a65417c81b58521484262c5514"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
           module={}
           __NEXT_LOADED_PAGES__ = []
           __NEXT_LOADED_CHUNKS__ = []
@@ -2594,4 +2605,4 @@ body {
           __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
             __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
           }
-        </script><script async="" id="__NEXT_PAGE__/section" type="text/javascript" src="/_next/af4bc72b-486e-4a0c-8db7-50da034971eb/page/section/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/af4bc72b-486e-4a0c-8db7-50da034971eb/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/9b109ae2e143412f2a47697d8106239d/app.js" async=""></script></div></body></html>
+        </script><script async="" id="__NEXT_PAGE__/section" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/section/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/dd7d89d1-222b-41a8-984a-4ef6f46c830d/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/b0f231a65417c81b58521484262c5514/app.js" async=""></script></div></body></html>
