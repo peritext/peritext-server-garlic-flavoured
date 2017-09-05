@@ -6,7 +6,7 @@
     "preinstall": "npm install pm2 -g",
     "test": "mocha -R spec --recursive $(find tests -name '*.spec.js')",
     "dev": "concurrently \"node cron\" \"node server\"",
-    "start": "pm2 start ecosystem.config.js",
+    "start": "pm2 start ecosystem.config.js -i max --attach",
     "build-apps": "# rm -rf builds; mkdir builds;node services/storyAppBuilder/",
     "postinstall": "rm -rf temp;mkdir temp;npm run build-apps;cd peritext-generator-next;npm install;cd .."
   },
