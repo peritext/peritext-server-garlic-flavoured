@@ -28,9 +28,9 @@ if (process.env.NODE_ENV === 'production') {
   };
 }
 // in development mode config variables are retrieved from a json file
-// else { 
-//   config = require('./config');
-// }
+else { 
+  config = require('./config');
+}
 
 const app = express();
 
