@@ -8,8 +8,6 @@ var _keys = require('next/node_modules/babel-runtime/core-js/object/keys');
 
 var _keys2 = _interopRequireDefault(_keys);
 
-var _jsxFileName = '/Users/rawbin/Documents/Projets/peritext/peritext-2/peritext-server-garlic-flavoured/peritext-generator-next/components/LinkWrapper.js';
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -40,15 +38,6 @@ exports.default = function (_ref) {
   var toFinal = '/' + to + queryString;
   return _react2.default.createElement(_link2.default, {
     href: toFinal,
-    as: asFinal,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    }
-  }, _react2.default.createElement('a', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    }
-  }, title));
+    as: asFinal
+  }, _react2.default.createElement('a', null, title));
 };

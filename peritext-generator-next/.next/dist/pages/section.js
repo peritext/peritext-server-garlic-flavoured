@@ -9,7 +9,6 @@ function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { d
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/rawbin/Documents/Projets/peritext/peritext-2/peritext-server-garlic-flavoured/peritext-generator-next/pages/section.js?entry';
 
 
 var _router = require('next/dist/lib/router/index.js');
@@ -40,17 +39,9 @@ exports.default = function (_ref) {
       _router2.default.replace('/section?id=' + query.id, '/section/' + query.id);
     }, 1000);
   }
-  return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: query.id, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    }
-  }, _react2.default.createElement(Section, {
+  return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: query.id }, _react2.default.createElement(Section, {
     id: query.id,
     citations: _citations2.default,
-    query: query,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    }
+    query: query
   }));
 };

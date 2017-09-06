@@ -3,7 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _jsxFileName = '/Users/rawbin/Documents/Projets/peritext/peritext-2/peritext-server-garlic-flavoured/peritext-generator-next/components/HeadMaker.js';
 
 var _react = require('react');
 
@@ -34,83 +33,5 @@ exports.default = function (_ref) {
     return author.given + ' ' + author.family;
   }).join(', ');
 
-  return _react2.default.createElement(_head2.default, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    }
-  }, _react2.default.createElement('title', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    }
-  }, title), _react2.default.createElement('meta', { name: 'generator', content: 'peritext', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    }
-  }), _react2.default.createElement('meta', { name: 'DC.Title', lang: 'fr', content: title, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    }
-  }), _react2.default.createElement('meta', { name: 'DC.Date.created', schema: 'W3CDTF', content: new Date().toISOString(), __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    }
-  }), _react2.default.createElement('meta', { name: 'author', content: authorsStr, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    }
-  }), _react2.default.createElement('meta', { name: 'keywords', content: tags.join(','), __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    }
-  }), _react2.default.createElement('meta', { name: 'description', content: description, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    }
-  }), _react2.default.createElement('meta', { name: 'viewport', content: 'user-scalable=no,width=device-width', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    }
-  }), _react2.default.createElement('meta', { name: 'twitter:card', value: 'summary', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    }
-  }), _react2.default.createElement('meta', { name: 'twitter:site', content: url, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    }
-  }), _react2.default.createElement('meta', { name: 'twitter:title', content: title, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    }
-  }), _react2.default.createElement('meta', { name: 'twitter:description', content: description, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    }
-  }), _react2.default.createElement('meta', { itemProp: 'name', content: title, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    }
-  }), _react2.default.createElement('meta', { itemProp: 'description', content: description, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    }
-  }), _react2.default.createElement('meta', { property: 'og:title', content: title, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    }
-  }), _react2.default.createElement('meta', { property: 'og:type', content: 'website', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    }
-  }), _react2.default.createElement('meta', { property: 'og:url', content: url, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    }
-  }), _react2.default.createElement('meta', { property: 'og:description', content: description, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    }
-  }), children);
+  return _react2.default.createElement(_head2.default, null, _react2.default.createElement('title', null, title), _react2.default.createElement('meta', { name: 'generator', content: 'peritext' }), _react2.default.createElement('meta', { name: 'DC.Title', lang: 'fr', content: title }), _react2.default.createElement('meta', { name: 'DC.Date.created', schema: 'W3CDTF', content: new Date().toISOString() }), _react2.default.createElement('meta', { name: 'author', content: authorsStr }), _react2.default.createElement('meta', { name: 'keywords', content: tags.join(',') }), _react2.default.createElement('meta', { name: 'description', content: description }), _react2.default.createElement('meta', { name: 'viewport', content: 'user-scalable=no,width=device-width' }), _react2.default.createElement('meta', { name: 'twitter:card', value: 'summary' }), _react2.default.createElement('meta', { name: 'twitter:site', content: url }), _react2.default.createElement('meta', { name: 'twitter:title', content: title }), _react2.default.createElement('meta', { name: 'twitter:description', content: description }), _react2.default.createElement('meta', { itemProp: 'name', content: title }), _react2.default.createElement('meta', { itemProp: 'description', content: description }), _react2.default.createElement('meta', { property: 'og:title', content: title }), _react2.default.createElement('meta', { property: 'og:type', content: 'website' }), _react2.default.createElement('meta', { property: 'og:url', content: url }), _react2.default.createElement('meta', { property: 'og:description', content: description }), children);
 };
