@@ -1,5 +1,5 @@
 /**
- * Quinoa-server
+ * Peritext server garlic flavoured
  * =============
  * entrypoint of the node-js application.
  * The app interfaces specific routes with the services provided by the app.
@@ -56,11 +56,11 @@ module.exports = app;
  * to facilitate further changes in the server's api
  */
 
-// app.post('/render-presentation', renderPresentation);
+// endpoints related to rendering jobs
 app.post('/render-story', cors(), renderStory.createRenderingJob);
 app.get('/render-story', cors(), renderStory.getRenderingJob);
 
-// citation data servers
+// expose citation related data (e.g. "APA style", "english locale")
 app.get('/citation-locales/:id?', citationLocales);
 app.get('/citation-styles/:id?', citationStyles);
 

@@ -8,3 +8,4 @@ peritext-generator-next/out/
 peritext-generator-next/.next
 temp/*
 deploy.sh
+config.json
