@@ -63,7 +63,7 @@ var Contents = function (_Component) {
 
       var pdfUrl = '/static/generated/' + id + '.pdf';
       var epubUrl = '/static/generated/' + id + '.epub';
-      var jsonUrl = '/static/story.json';
+      var jsonUrl = '/static/story-full.json';
       if (inBrowser) {
         pdfUrl = window.location.origin + pdfUrl;
         epubUrl = window.location.origin + epubUrl;

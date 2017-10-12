@@ -74,6 +74,13 @@ function prepareData({
   let prefix = path.resolve(__dirname + '/static/');
   console.log('prefix', prefix);
   waterfall([
+    // write full story to enable downloading it
+    function(callback) {
+      console.log('writing full story file at ', path.resolve(prefix + '/story.json'));
+      fs.writeFile(path.resolve(prefix + '/story-full.json'), JSON.stringify(story), function(error) {
+        callback(error);
+      });
+    },
     // lighten assets
     function(callback) {
       console.log('lightening assets story file at ', path.resolve(prefix + '/story.json'));

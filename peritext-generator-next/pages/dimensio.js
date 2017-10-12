@@ -36,7 +36,7 @@ class Contents extends Component {
     } = this.context;
     let pdfUrl = '/static/generated/' + id + '.pdf';
     let epubUrl = '/static/generated/' + id + '.epub';
-    let jsonUrl = '/static/story.json';
+    let jsonUrl = '/static/story-full.json';
     if (inBrowser) {
       pdfUrl =  window.location.origin + pdfUrl;
       epubUrl =  window.location.origin + epubUrl;
