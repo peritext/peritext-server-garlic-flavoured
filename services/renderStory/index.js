@@ -9,6 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');
 const generatePdf = require('peritext-generator-pdf');
+const generateWithPandoc = require('peritext-generator-pandoc');
 const generateEpub = require('peritext-generator-epub');
 const staticTemplate = require('peritext-template-codex-garlic');
 
@@ -128,6 +129,26 @@ module.exports = function renderStory(story, format, finalCallback) {
         console.log('returning the result', '/temp/' + story.id + '.epub');
         finalCallback(err, '/temp/' + story.id + '.epub');
         // res.status(200).send('/temp/' + story.id + '.epub');
+      });
+      break;
+    case 'icml':
+    case 'docx':
+    case 'odt':
+    case 'markdown':
+    case 'latex':
+    case 'rst':
+      generateWithPandoc({
+        format,
+        story: story,
+        contextualizers,
+        template: staticTemplate,
+        locale: locale,
+        outputDirPath: path.resolve(__dirname + '/../../temp/'),
+        tempDirPath: path.resolve(__dirname + '/../../temp/'),
+        additionalStylesheets: config.additionalStylesheets.shared.concat(config.additionalStylesheets.codex)
+      }, (err, url) => {
+        console.log('returning the result', '/temp/' + story.id + '.' + format);
+        finalCallback(err, '/temp/' + story.id + '.' + format);
       });
       break;
     default:
