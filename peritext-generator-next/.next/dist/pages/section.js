@@ -11,9 +11,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 
-var _router = require('next/dist/lib/router/index.js');
+var _index = require('next/dist/lib/router/index.js');
 
-var _router2 = _interopRequireDefault(_router);
+var _index2 = _interopRequireDefault(_index);
 
 var _GlobalsProvider = require('../components/GlobalsProvider');
 
@@ -34,11 +34,11 @@ var Section = _peritextConfig.templates.web.Section;
 exports.default = function (_ref) {
   var query = _ref.url.query;
 
-  if (query.contextualizationId) {
-    setTimeout(function () {
-      _router2.default.replace('/section?id=' + query.id, '/section/' + query.id);
-    }, 1000);
-  }
+  // if (query.contextualizationId || query.blockId) {
+  //   setTimeout(() => {
+  //     Router.replace('/section?id=' + query.id, '/section/' + query.id);
+  //   }, 2000);
+  // }
   return _react2.default.createElement(_GlobalsProvider2.default, { activeViewId: query.id }, _react2.default.createElement(Section, {
     id: query.id,
     citations: _citations2.default,

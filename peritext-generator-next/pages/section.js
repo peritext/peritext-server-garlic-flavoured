@@ -14,11 +14,11 @@ export default ({
     query
   }
 }) => {
-  if (query.contextualizationId) {
-    setTimeout(() => {
-      Router.replace('/section?id=' + query.id, '/section/' + query.id);
-    }, 1000);
-  }
+  // if (query.contextualizationId || query.blockId) {
+  //   setTimeout(() => {
+  //     Router.replace('/section?id=' + query.id, '/section/' + query.id);
+  //   }, 2000);
+  // }
   return (
     <GlobalsProvider activeViewId={query.id}>
         <Section 
