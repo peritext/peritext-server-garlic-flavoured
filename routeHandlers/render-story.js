@@ -53,7 +53,7 @@ q.on('success', function (result, job) {
 });
 
 /**
- * Resolves a story rendering request
+ * Resolves a story rendering request by creating a new rendering job and adding it to the queue
  * @param {obj} req - the request object
  * @param {obj} res- the resource object
  */
