@@ -40,8 +40,8 @@ const app = express();
 app.use(cors());
 
 // parse application/json
-app.use(bodyParser.json({limit: '20mb'}));
-app.use(bodyParser.urlencoded({limit: '20mb', extended: true}));
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 app.use('/temp', express.static(__dirname + '/temp'));
 
